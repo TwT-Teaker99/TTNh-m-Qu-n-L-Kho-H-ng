@@ -29,8 +29,8 @@ namespace QuanLyKhoHang
         private void btnLogin_Click(object sender, EventArgs e)
         {
             //Check username + password
-            db.readDataToAdapter("SELECT [MaNhanVien],[TaiKhoan],[MatKhau] FROM[dbo].[NhanVien] WHERE TaiKhoan = '" + textBoxUName.Text + "' and MatKhau = '" + textBoxPass.Text + "'", table);
-            if(table.Rows.Count==1)
+            //db.readDataToAdapter("SELECT [MaNhanVien],[TaiKhoan],[MatKhau] FROM[dbo].[NhanVien] WHERE TaiKhoan = '" + textBoxUName.Text + "' and MatKhau = '" + textBoxPass.Text + "'", table);
+            if(textBoxUName.Text=="Admin" && textBoxPass.Text=="123")
             {
                 this.Hide();
                 Main main = new Main();
