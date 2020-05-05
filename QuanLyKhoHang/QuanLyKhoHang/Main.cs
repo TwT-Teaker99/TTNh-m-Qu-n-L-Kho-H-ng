@@ -17,8 +17,16 @@ namespace QuanLyKhoHang
         {
             InitializeComponent();
         }
-
-
+        //NhaCungCap formNCC = new NhaCungCap();
+        //PhieuNhap formPN = new PhieuNhap();
+        //QuayHang formQuay = new QuayHang();
+        //PhieuTra formPT = new PhieuTra();
+        //LoaiHang formLH = new LoaiHang();
+        //MatHang formMH = new MatHang();
+        //NhanVien formNV = new NhanVien();
+        private void Main_Load(object sender, EventArgs e)
+        {
+        }
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
@@ -26,58 +34,102 @@ namespace QuanLyKhoHang
 
         private void nhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //ActiveMdiChild.Close();
             NhaCungCap formNCC = new NhaCungCap();
-            formNCC.MdiParent = this;
-            formNCC.Show();
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+            else
+            {
+                formNCC.MdiParent = this;
+                formNCC.Show();
+            }
+
         }
 
         private void phiếuNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //ActiveMdiChild.Close();
             PhieuNhap formPN = new PhieuNhap();
-            formPN.MdiParent = this;
-            formPN.Show();
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+            else
+            {
+                formPN.MdiParent = this;
+                formPN.Show();
+            }
+
         }
 
         private void quầyHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //ActiveMdiChild.Close();
             QuayHang formQuay = new QuayHang();
-            formQuay.MdiParent = this;
-            formQuay.Show();
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+            else
+            {
+                formQuay.MdiParent = this;
+                formQuay.Show();
+            }
         }
 
         private void phiếuTrảToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //ActiveMdiChild.Close();
             PhieuTra formPT = new PhieuTra();
-            formPT.MdiParent = this;
-            formPT.Show();
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+            else
+            {
+                formPT.MdiParent = this;
+                formPT.Show();
+            }
         }
 
         private void loạiHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //ActiveMdiChild.Close();
             LoaiHang formLH = new LoaiHang();
-            formLH.MdiParent = this;
-            formLH.Show();
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+            else
+            {
+                formLH.MdiParent = this;
+                formLH.Show();
+            }
         }
 
         private void mặtHàngToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            //ActiveMdiChild.Close();
             MatHang formMH = new MatHang();
-            formMH.MdiParent = this;
-            formMH.Show();
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+            else
+            {
+                formMH.MdiParent = this;
+                formMH.Show();
+            }
         }
 
         private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //ActiveMdiChild.Close();
             NhanVien formNV = new NhanVien();
-            formNV.MdiParent = this;
-            formNV.Show();
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+            else
+            {
+                formNV.MdiParent = this;
+                formNV.Show();
+            }
         }
     }
 }
