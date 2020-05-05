@@ -39,11 +39,9 @@ namespace QuanLyKhoHang
             {
                 ActiveMdiChild.Close();
             }
-            else
-            {
-                formNCC.MdiParent = this;
-                formNCC.Show();
-            }
+            formNCC.MdiParent = this;
+            formNCC.Dock = DockStyle.Fill;
+            formNCC.Show();
 
         }
 
@@ -54,11 +52,9 @@ namespace QuanLyKhoHang
             {
                 ActiveMdiChild.Close();
             }
-            else
-            {
-                formPN.MdiParent = this;
-                formPN.Show();
-            }
+            formPN.MdiParent = this;
+            formPN.Dock = DockStyle.Fill;
+            formPN.Show();
 
         }
 
@@ -69,11 +65,9 @@ namespace QuanLyKhoHang
             {
                 ActiveMdiChild.Close();
             }
-            else
-            {
-                formQuay.MdiParent = this;
-                formQuay.Show();
-            }
+            formQuay.MdiParent = this;
+            formQuay.Dock = DockStyle.Fill;
+            formQuay.Show();
         }
 
         private void phiếuTrảToolStripMenuItem_Click(object sender, EventArgs e)
@@ -83,11 +77,9 @@ namespace QuanLyKhoHang
             {
                 ActiveMdiChild.Close();
             }
-            else
-            {
-                formPT.MdiParent = this;
-                formPT.Show();
-            }
+            formPT.MdiParent = this;
+            formPT.Dock = DockStyle.Fill;
+            formPT.Show();
         }
 
         private void loạiHàngToolStripMenuItem_Click(object sender, EventArgs e)
@@ -97,11 +89,9 @@ namespace QuanLyKhoHang
             {
                 ActiveMdiChild.Close();
             }
-            else
-            {
-                formLH.MdiParent = this;
-                formLH.Show();
-            }
+            formLH.MdiParent = this;
+            formLH.Dock = DockStyle.Fill;
+            formLH.Show();
         }
 
         private void mặtHàngToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -111,11 +101,9 @@ namespace QuanLyKhoHang
             {
                 ActiveMdiChild.Close();
             }
-            else
-            {
-                formMH.MdiParent = this;
-                formMH.Show();
-            }
+            formMH.MdiParent = this;
+            formMH.Dock = DockStyle.Fill;
+            formMH.Show();
         }
 
         private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
@@ -125,11 +113,9 @@ namespace QuanLyKhoHang
             {
                 ActiveMdiChild.Close();
             }
-            else
-            {
-                formNV.MdiParent = this;
-                formNV.Show();
-            }
+            formNV.MdiParent = this;
+            formNV.Dock = DockStyle.Fill;
+            formNV.Show();
         }
     }
 }
