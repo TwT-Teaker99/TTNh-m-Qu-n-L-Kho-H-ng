@@ -1,6 +1,6 @@
-CREATE DATABASE QuanLyKho
+CREATE DATABASE QuanLyKhoHang
 GO
-USE QuanLyKho
+USE QuanLyKhoHang
 GO
 
 CREATE TABLE loai_hang(
