@@ -56,10 +56,11 @@ namespace QuanLyKhoHang
             }
         }
         //lấy dữ liệu vào gridview, hoặc dùng chạy câu lệnh 
-        public void GetData(string query, DataGridView grid, DataTable data)
+        public static void GetData(string query, DataGridView grid)
         {
             try
             {
+                DataTable data = new DataTable();
                 adapter = new SqlDataAdapter(query, connection);
                 adapter.Fill(data);
                 grid.DataSource = data;
