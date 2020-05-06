@@ -30,7 +30,7 @@ namespace QuanLyKhoHang
         {
             //Check username + password
             //db.readDataToAdapter("SELECT [MaNhanVien],[TaiKhoan],[MatKhau] FROM[dbo].[NhanVien] WHERE TaiKhoan = '" + textBoxUName.Text + "' and MatKhau = '" + textBoxPass.Text + "'", table);
-            if(textBoxUName.Text=="Admin" && textBoxPass.Text=="123")
+            if(textBoxUName.Text=="" && textBoxPass.Text=="")
             {
                 this.Hide();
                 Main main = new Main();

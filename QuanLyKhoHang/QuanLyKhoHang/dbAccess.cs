@@ -11,10 +11,10 @@ namespace QuanLyKhoHang
 {
     class dbAccess
     {
-        public static string strConn = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=TTCSDL;Integrated Security=True";
+        public static string strConn = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QuanLyKhoHang;Integrated Security=True";
         public static SqlConnection connection = new SqlConnection(strConn);
-        private static SqlDataAdapter adapter = new SqlDataAdapter();
-        private static SqlCommand command = new SqlCommand();
+        private static SqlDataAdapter adapter;
+        private static SqlCommand command;
 
         //tạo kết nối
         public void createConn()
@@ -40,11 +40,15 @@ namespace QuanLyKhoHang
                 {
                     createConn();
                 }
+                command = new SqlCommand();
                 command.Connection = connection;
                 command.CommandText = query;
                 command.CommandType = CommandType.Text;
+                adapter = new SqlDataAdapter();
                 adapter = new SqlDataAdapter(command);
                 adapter.Fill(data);
+                //command.Dispose();
+                //adapter.Dispose();
             }
             catch (Exception e)
             {
@@ -59,6 +63,7 @@ namespace QuanLyKhoHang
                 adapter = new SqlDataAdapter(query, connection);
                 adapter.Fill(data);
                 grid.DataSource = data;
+                //adapter.Dispose();
             }
             catch (Exception e)
             {
@@ -74,6 +79,22 @@ namespace QuanLyKhoHang
             cbo.ValueMember = ma; //Trường giá trị
             cbo.DisplayMember = ten; //Trường hiển thị
             cbo.DataSource = table;
+            //adapter.Dispose();
+        }
+
+        //đổ dữ liệu vào dataCollection để dùng suggest combobox
+        public static void FillColl(AutoCompleteStringCollection dataColl,string query)
+        {
+            DataSet ds = new DataSet();
+            command = new SqlCommand(query, connection);
+            adapter = new SqlDataAdapter();
+            adapter.SelectCommand = command;
+            adapter.Fill(ds);
+            //adapter.Dispose();
+            foreach(DataRow row in ds.Tables[0].Rows)
+            {
+                dataColl.Add(row[0].ToString());
+            }
         }
         // lấy dữ liệu trong 1 cell của table
         public static string GetFieldValues(string query)
@@ -83,6 +104,7 @@ namespace QuanLyKhoHang
             adapter.Fill(data);
             DataRow dr = data.Rows[0];
             string s = dr[0].ToString();
+            //adapter.Dispose();
             return s;
         }
         //kiểm tra một row data đã tồn tại trong table chưa
