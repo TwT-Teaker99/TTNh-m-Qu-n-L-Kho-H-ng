@@ -44,9 +44,9 @@ CREATE TABLE quay(
 GO
 CREATE TABLE mat_hang(
 	id INT IDENTITY(1,1) PRIMARY KEY,
-	ten NVARCHAR(100),
-	quay_id INT FOREIGN KEY(quay_id) REFERENCES dbo.quay(id),
-	loai_hang_id INT FOREIGN KEY(loai_hang_id) REFERENCES dbo.loai_hang(id)
+	ten NVARCHAR(100),	
+	loai_hang_id INT FOREIGN KEY(loai_hang_id) REFERENCES dbo.loai_hang(id),
+	remain INT 
 	
 )
 GO
@@ -55,7 +55,8 @@ CREATE TABLE chi_tiet_phieu_nhap(
 	phieu_nhap_id INT FOREIGN KEY(phieu_nhap_id) REFERENCES dbo.phieu_nhap(id),
 	mat_hang_id INT  FOREIGN KEY(mat_hang_id) REFERENCES dbo.mat_hang(id),
 	so_luong INT,
-	don_gia INT
+	don_gia INT,
+	don_vi NVARCHAR(30)
 )
 GO
 CREATE TABLE phieu_tra(
@@ -69,5 +70,20 @@ CREATE TABLE chi_tiet_phieu_tra(
 	phieu_tra_id INT FOREIGN KEY(phieu_tra_id) REFERENCES dbo.phieu_tra(id),
 	mat_hang_id INT  FOREIGN KEY(mat_hang_id) REFERENCES dbo.mat_hang(id),
 	so_luong INT
+)
+GO
+CREATE TABLE phieu_xuat(
+	id INT PRIMARY KEY IDENTITY(1,1),
+	quay_id INT FOREIGN KEY(quay_id) REFERENCES dbo.quay(id),
+	ngay_xuat DATE,
+	nhan_vien_id INT FOREIGN KEY(nhan_vien_id) REFERENCES dbo.nhan_vien(id)
+	
+)
+GO
+CREATE TABLE chi_tiet_phieu_xuat(
+	phieu_xuat_id INT FOREIGN KEY(phieu_xuat_id) REFERENCES dbo.phieu_xuat(id),
+	mat_hang_id INT  FOREIGN KEY(mat_hang_id) REFERENCES dbo.mat_hang(id),
+	so_luong INT
+
 )
 GO
