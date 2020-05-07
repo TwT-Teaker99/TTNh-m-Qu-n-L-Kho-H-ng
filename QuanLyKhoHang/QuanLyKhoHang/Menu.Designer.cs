@@ -61,6 +61,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.screen = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.p1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -84,7 +85,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 604);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 637);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // panel5
@@ -396,6 +397,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.butAdmin);
             this.panel1.Controls.Add(this.WELCOME);
             this.panel1.Controls.Add(this.label1);
@@ -403,7 +405,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(200, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(902, 71);
+            this.panel1.Size = new System.Drawing.Size(901, 77);
             this.panel1.TabIndex = 2;
             // 
             // butAdmin
@@ -422,8 +424,8 @@
             // WELCOME
             // 
             this.WELCOME.AutoSize = true;
-            this.WELCOME.Font = new System.Drawing.Font("Courier New", 36F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WELCOME.Location = new System.Drawing.Point(19, 13);
+            this.WELCOME.Font = new System.Drawing.Font("Courier New", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WELCOME.Location = new System.Drawing.Point(19, 9);
             this.WELCOME.Name = "WELCOME";
             this.WELCOME.Size = new System.Drawing.Size(167, 50);
             this.WELCOME.TabIndex = 3;
@@ -462,7 +464,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(244)))));
             this.button3.Dock = System.Windows.Forms.DockStyle.Top;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -476,7 +478,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(244)))));
             this.button2.Dock = System.Windows.Forms.DockStyle.Top;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -490,17 +492,28 @@
             // 
             // screen
             // 
+            this.screen.BackColor = System.Drawing.Color.White;
             this.screen.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.screen.Location = new System.Drawing.Point(200, 70);
+            this.screen.Location = new System.Drawing.Point(200, 77);
             this.screen.Name = "screen";
-            this.screen.Size = new System.Drawing.Size(902, 534);
+            this.screen.Size = new System.Drawing.Size(901, 560);
             this.screen.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(38, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(805, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "_________________________________________________________________________________" +
+    "____________________________________________________";
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1102, 604);
+            this.ClientSize = new System.Drawing.Size(1101, 637);
             this.Controls.Add(this.pAdmin);
             this.Controls.Add(this.screen);
             this.Controls.Add(this.panel1);
@@ -556,5 +569,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel screen;
+        private System.Windows.Forms.Label label2;
     }
 }
