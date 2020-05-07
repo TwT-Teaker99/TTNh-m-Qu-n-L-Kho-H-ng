@@ -146,5 +146,28 @@ namespace QuanLyKhoHang
             dbAccess.GetData(query, dataGridView1);
             LoaddataGridView();
         }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            cbMaQuay.Text = "";
+            cbMaNhanVien.Text = "";
+            getIDpx();
+            cbLoaiHang.Text = "";
+            tbSL.Text = "";
+        }
+
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            //string id;
+            if (dataGridView1.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if((MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes))
+            {
+
+            }
+        }
     }
 }
