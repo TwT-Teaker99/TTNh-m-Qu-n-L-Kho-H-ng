@@ -90,7 +90,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 637);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 650);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // panel5
@@ -444,7 +444,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(200, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(901, 77);
+            this.panel1.Size = new System.Drawing.Size(901, 82);
             this.panel1.TabIndex = 2;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -465,8 +465,8 @@
             this.but_resize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("but_resize.BackgroundImage")));
             this.but_resize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.but_resize.FlatAppearance.BorderSize = 0;
-            this.but_resize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
-            this.but_resize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(210)))), ((int)(((byte)(246)))));
+            this.but_resize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.but_resize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
             this.but_resize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.but_resize.Location = new System.Drawing.Point(3, 3);
             this.but_resize.Name = "but_resize";
@@ -481,8 +481,8 @@
             this.but_exit.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.exit;
             this.but_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.but_exit.FlatAppearance.BorderSize = 0;
-            this.but_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.but_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.but_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.but_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
             this.but_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.but_exit.Location = new System.Drawing.Point(39, 3);
             this.but_exit.Name = "but_exit";
@@ -494,25 +494,26 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 59);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 2.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(114)))), ((int)(((byte)(174)))));
+            this.label2.Location = new System.Drawing.Point(-1, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(805, 13);
+            this.label2.Size = new System.Drawing.Size(906, 4);
             this.label2.TabIndex = 5;
-            this.label2.Text = "_________________________________________________________________________________" +
-    "____________________________________________________";
+            this.label2.Text = resources.GetString("label2.Text");
             // 
             // butAdmin
             // 
             this.butAdmin.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.down;
-            this.butAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.butAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.butAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butAdmin.FlatAppearance.BorderSize = 0;
             this.butAdmin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.butAdmin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.butAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.butAdmin.Location = new System.Drawing.Point(647, 35);
+            this.butAdmin.Location = new System.Drawing.Point(656, 36);
             this.butAdmin.Name = "butAdmin";
-            this.butAdmin.Size = new System.Drawing.Size(35, 23);
+            this.butAdmin.Size = new System.Drawing.Size(21, 10);
             this.butAdmin.TabIndex = 4;
             this.butAdmin.UseVisualStyleBackColor = true;
             this.butAdmin.Click += new System.EventHandler(this.button1_Click);
@@ -520,10 +521,11 @@
             // WELCOME
             // 
             this.WELCOME.AutoSize = true;
-            this.WELCOME.Font = new System.Drawing.Font("Courier New", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WELCOME.Font = new System.Drawing.Font("Courier New", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WELCOME.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(114)))), ((int)(((byte)(174)))));
             this.WELCOME.Location = new System.Drawing.Point(19, 9);
             this.WELCOME.Name = "WELCOME";
-            this.WELCOME.Size = new System.Drawing.Size(167, 50);
+            this.WELCOME.Size = new System.Drawing.Size(168, 54);
             this.WELCOME.TabIndex = 3;
             this.WELCOME.Text = "BOARD";
             // 
@@ -531,6 +533,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(629, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 20);
@@ -551,7 +554,7 @@
             // 
             this.pAdmin.Controls.Add(this.button3);
             this.pAdmin.Controls.Add(this.button2);
-            this.pAdmin.Location = new System.Drawing.Point(829, 67);
+            this.pAdmin.Location = new System.Drawing.Point(829, 52);
             this.pAdmin.MinimumSize = new System.Drawing.Size(1, 1);
             this.pAdmin.Name = "pAdmin";
             this.pAdmin.Size = new System.Drawing.Size(97, 92);
@@ -592,16 +595,16 @@
             // 
             this.screen.BackColor = System.Drawing.Color.White;
             this.screen.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.screen.Location = new System.Drawing.Point(200, 77);
+            this.screen.Location = new System.Drawing.Point(200, 83);
             this.screen.Name = "screen";
-            this.screen.Size = new System.Drawing.Size(901, 560);
+            this.screen.Size = new System.Drawing.Size(901, 567);
             this.screen.TabIndex = 4;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1101, 637);
+            this.ClientSize = new System.Drawing.Size(1101, 650);
             this.Controls.Add(this.pAdmin);
             this.Controls.Add(this.screen);
             this.Controls.Add(this.panel1);

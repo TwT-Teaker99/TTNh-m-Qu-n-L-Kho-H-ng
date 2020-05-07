@@ -15,6 +15,7 @@ namespace QuanLyKhoHang
         public NhaCungCap()
         {
             InitializeComponent();
+         
         }
     }
 }
