@@ -91,9 +91,9 @@ VALUES 	( 1,1, '20190110'),( 2,2, '20190513'),( 2,2, '20190525'),
 
 GO
 INSERT INTO chi_tiet_phieu_nhap
-	( phieu_nhap_id,   mat_hang_id,  so_luong,   don_gia)
+	( phieu_nhap_id,   mat_hang_id,  so_luong,   don_gia ,don_vi)
 		VALUES
-		( 1 ,7 ,20 ,100 ),( 1 ,12 ,35 ,230 ),
+		( 1 ,7 ,20 ,100,N'hộp' ),( 1 ,12 ,35 ,230 ),
 		( 2 ,8 ,30 ,270 ),
 		( 3 ,3 ,10 ,380 ),( 3 ,10 ,18 ,390 ),
 		( 4 ,1 ,15 ,870 ),
