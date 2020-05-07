@@ -17,7 +17,7 @@ namespace QuanLyKhoHang
         {
             InitializeComponent();
         }
-       
+
         private bool isExpand1 = true;
         private bool isExpand2 = true;
         private bool isExpand3 = true;
@@ -95,9 +95,9 @@ namespace QuanLyKhoHang
 
                     }
                     break;
-               
+
             }
-          
+
         }
 
 
@@ -131,10 +131,47 @@ namespace QuanLyKhoHang
         {
             if (!pAdmin.Visible)
             {
+               
+                butAdmin.BackgroundImage = Resources.down_press;
                 pAdmin.Visible = true;
+                pAdmin.BringToFront();
             }
             else
-            pAdmin.Visible = false;
+            {
+                butAdmin.BackgroundImage = Resources.down;
+                pAdmin.Visible = false;
+            }
+
+
+        }
+
+        private void but_child_form(object sender, EventArgs e)
+        {
+            Button but = (Button)sender;
+            switch (but.Name)
+            {
+                case "but_ncc":
+                    this.screen.Controls.Clear();
+                    NhaCungCap formNCC = new NhaCungCap();
+                    formNCC.TopLevel = false;
+                     this.screen.Controls.Add(formNCC);
+                    formNCC.Dock = DockStyle.Fill;
+                    formNCC.Show();
+                    break;
+                case "but_phieu_nhap":
+                    break;
+                case "but_mat_hang":
+                    break;
+                case "but_loai_hang":
+                    break;
+                case "but_quay":
+                    break;
+                case "but_phieu_xuat":
+                    break;
+                case "but_nhan_vien":
+                    break;
+
+            }
 
         }
     }
