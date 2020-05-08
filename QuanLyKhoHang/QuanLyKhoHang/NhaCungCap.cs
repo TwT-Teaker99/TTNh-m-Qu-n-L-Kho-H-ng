@@ -146,9 +146,38 @@ namespace QuanLyKhoHang
             database.pushGridview(comman, gridView);
         }
 
+       
         private void but_search_Click(object sender, EventArgs e)
         {
+            if (textbox_search.Text!="")
+            {
+                string inputSearch = textbox_search.Text;
+                string root = query + " WHERE ";
+                string or = " OR ";
+                string searchTen;
+                if (isNumber(inputSearch))
+                {                                       
 
+                    string searchID = "id= " + inputSearch;
+                    searchTen = "ten LIKE N'%" + inputSearch + "%'";
+                    string searchSdt = "sdt LIKE N'%" + inputSearch + "%'";
+
+                    root = root + searchID + or + searchTen + or + searchSdt;
+
+
+                }
+                else
+                {
+                    searchTen = "ten LIKE N'%" + inputSearch + "%'";
+                    string searchPhuong = "phuong LIKE N'%" + inputSearch + "%'";
+                    string searchQuan = "quan LIKE N'%" + inputSearch + "%'";
+                    string searchCity = "city LIKE N'%" + inputSearch + "%'";
+                    root = root + searchTen + or + searchPhuong + or + searchQuan + or + searchCity;
+                }
+              //  MessageBox.Show(root);
+                comman = new SqlCommand(root);
+                database.pushGridview(comman, gridView);
+            }
         }
         private bool isNumber(string pValue)
         {
@@ -191,7 +220,7 @@ namespace QuanLyKhoHang
                 but_error_ten.Visible = true;check=false;
                 
             }
-            if (!isNumber(textbox_sdt.Text) )
+            if (!isNumber(textbox_sdt.Text)|| textbox_sdt.Text.Length>11 || textbox_sdt.Text.Length <6)
             {
                 but_error_sdt.Visible = true; check = false;
 
@@ -227,6 +256,7 @@ namespace QuanLyKhoHang
                 database.editDB(comman);
                 loadGridView();
                 resetRegister();
+                autoID(label_id);
             }
             
         }
