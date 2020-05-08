@@ -31,41 +31,42 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.p1 = new System.Windows.Forms.Panel();
             this.but_phieu_nhap = new System.Windows.Forms.Button();
             this.but_ncc = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.but_nguon_nhap = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.p2 = new System.Windows.Forms.Panel();
             this.but_loai_hang = new System.Windows.Forms.Button();
             this.but_mat_hang = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.but_hang_hoa = new System.Windows.Forms.Button();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.p3 = new System.Windows.Forms.Panel();
             this.but_phieu_xuat = new System.Windows.Forms.Button();
             this.but_quay = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.but_nguon_xuat = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.but_nhan_vien = new System.Windows.Forms.Button();
-            this.but_thong_ke = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.but_resize = new System.Windows.Forms.Button();
-            this.but_exit = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.butAdmin = new System.Windows.Forms.Button();
             this.WELCOME = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.pAdmin = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.screen = new System.Windows.Forms.Panel();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.but_resize = new System.Windows.Forms.Button();
+            this.but_exit = new System.Windows.Forms.Button();
+            this.butAdmin = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.but_nguon_nhap = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.but_hang_hoa = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.but_nguon_xuat = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.but_nhan_vien = new System.Windows.Forms.Button();
+            this.but_thong_ke = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.p1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -76,6 +77,7 @@
             this.panel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.pAdmin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -92,16 +94,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 650);
             this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(8)))), ((int)(((byte)(24)))));
-            this.panel5.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.choice;
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel5.Location = new System.Drawing.Point(3, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 71);
-            this.panel5.TabIndex = 3;
             // 
             // p1
             // 
@@ -164,39 +156,6 @@
             this.panel4.Size = new System.Drawing.Size(200, 60);
             this.panel4.TabIndex = 6;
             // 
-            // but_nguon_nhap
-            // 
-            this.but_nguon_nhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.but_nguon_nhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.but_nguon_nhap.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_nguon_nhap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.but_nguon_nhap.FlatAppearance.BorderSize = 0;
-            this.but_nguon_nhap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_nguon_nhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(71)))), ((int)(((byte)(77)))));
-            this.but_nguon_nhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_nguon_nhap.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_nguon_nhap.ForeColor = System.Drawing.Color.White;
-            this.but_nguon_nhap.Image = global::QuanLyKhoHang.Properties.Resources.down_arrow;
-            this.but_nguon_nhap.Location = new System.Drawing.Point(30, 0);
-            this.but_nguon_nhap.Name = "but_nguon_nhap";
-            this.but_nguon_nhap.Size = new System.Drawing.Size(170, 60);
-            this.but_nguon_nhap.TabIndex = 2;
-            this.but_nguon_nhap.Text = "Quản Lý Nhập";
-            this.but_nguon_nhap.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.but_nguon_nhap.UseVisualStyleBackColor = false;
-            this.but_nguon_nhap.Click += new System.EventHandler(this.but_expand);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.panel3.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.cungcap;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(30, 60);
-            this.panel3.TabIndex = 6;
-            // 
             // p2
             // 
             this.p2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -258,40 +217,6 @@
             this.panel9.Size = new System.Drawing.Size(200, 60);
             this.panel9.TabIndex = 6;
             // 
-            // but_hang_hoa
-            // 
-            this.but_hang_hoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.but_hang_hoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.but_hang_hoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_hang_hoa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.but_hang_hoa.FlatAppearance.BorderSize = 0;
-            this.but_hang_hoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_hang_hoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(71)))), ((int)(((byte)(77)))));
-            this.but_hang_hoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_hang_hoa.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_hang_hoa.ForeColor = System.Drawing.Color.White;
-            this.but_hang_hoa.Image = global::QuanLyKhoHang.Properties.Resources.down_arrow;
-            this.but_hang_hoa.Location = new System.Drawing.Point(30, 0);
-            this.but_hang_hoa.Name = "but_hang_hoa";
-            this.but_hang_hoa.Size = new System.Drawing.Size(170, 60);
-            this.but_hang_hoa.TabIndex = 2;
-            this.but_hang_hoa.Text = "Hàng Hóa";
-            this.but_hang_hoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.but_hang_hoa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.but_hang_hoa.UseVisualStyleBackColor = false;
-            this.but_hang_hoa.Click += new System.EventHandler(this.but_expand);
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this.panel10.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.product;
-            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(30, 60);
-            this.panel10.TabIndex = 6;
-            // 
             // p3
             // 
             this.p3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -352,6 +277,262 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(200, 60);
             this.panel6.TabIndex = 6;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 15;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.flowLayoutPanel2);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.butAdmin);
+            this.panel1.Controls.Add(this.WELCOME);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(200, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(901, 82);
+            this.panel1.TabIndex = 2;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.but_resize);
+            this.flowLayoutPanel2.Controls.Add(this.but_exit);
+            this.flowLayoutPanel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(829, 0);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(72, 30);
+            this.flowLayoutPanel2.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 2.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(114)))), ((int)(((byte)(174)))));
+            this.label2.Location = new System.Drawing.Point(-1, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(906, 4);
+            this.label2.TabIndex = 5;
+            this.label2.Text = resources.GetString("label2.Text");
+            // 
+            // WELCOME
+            // 
+            this.WELCOME.AutoSize = true;
+            this.WELCOME.Font = new System.Drawing.Font("Courier New", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WELCOME.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(114)))), ((int)(((byte)(174)))));
+            this.WELCOME.Location = new System.Drawing.Point(19, 9);
+            this.WELCOME.Name = "WELCOME";
+            this.WELCOME.Size = new System.Drawing.Size(168, 54);
+            this.WELCOME.TabIndex = 3;
+            this.WELCOME.Text = "BOARD";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(629, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 18);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Hi, Admin";
+            // 
+            // pAdmin
+            // 
+            this.pAdmin.Controls.Add(this.button3);
+            this.pAdmin.Controls.Add(this.button2);
+            this.pAdmin.Location = new System.Drawing.Point(829, 52);
+            this.pAdmin.MinimumSize = new System.Drawing.Size(1, 1);
+            this.pAdmin.Name = "pAdmin";
+            this.pAdmin.Size = new System.Drawing.Size(97, 92);
+            this.pAdmin.TabIndex = 3;
+            this.pAdmin.Visible = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(244)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(0, 47);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(97, 47);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Log Out";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(244)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 47);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "About";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // screen
+            // 
+            this.screen.BackColor = System.Drawing.Color.White;
+            this.screen.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.screen.Location = new System.Drawing.Point(200, 83);
+            this.screen.Name = "screen";
+            this.screen.Size = new System.Drawing.Size(901, 567);
+            this.screen.TabIndex = 4;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::QuanLyKhoHang.Properties.Resources.user4;
+            this.pictureBox3.Location = new System.Drawing.Point(559, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(64, 60);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
+            // but_resize
+            // 
+            this.but_resize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("but_resize.BackgroundImage")));
+            this.but_resize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_resize.FlatAppearance.BorderSize = 0;
+            this.but_resize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.but_resize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.but_resize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_resize.Location = new System.Drawing.Point(3, 3);
+            this.but_resize.Name = "but_resize";
+            this.but_resize.Size = new System.Drawing.Size(30, 30);
+            this.but_resize.TabIndex = 1;
+            this.but_resize.UseVisualStyleBackColor = true;
+            this.but_resize.Click += new System.EventHandler(this.but_border);
+            // 
+            // but_exit
+            // 
+            this.but_exit.BackColor = System.Drawing.Color.White;
+            this.but_exit.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.exit;
+            this.but_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_exit.FlatAppearance.BorderSize = 0;
+            this.but_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.but_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.but_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_exit.Location = new System.Drawing.Point(39, 3);
+            this.but_exit.Name = "but_exit";
+            this.but_exit.Size = new System.Drawing.Size(30, 30);
+            this.but_exit.TabIndex = 3;
+            this.but_exit.UseVisualStyleBackColor = false;
+            this.but_exit.Click += new System.EventHandler(this.but_border);
+            // 
+            // butAdmin
+            // 
+            this.butAdmin.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.down;
+            this.butAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.butAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.butAdmin.FlatAppearance.BorderSize = 0;
+            this.butAdmin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.butAdmin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.butAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butAdmin.Location = new System.Drawing.Point(656, 36);
+            this.butAdmin.Name = "butAdmin";
+            this.butAdmin.Size = new System.Drawing.Size(21, 10);
+            this.butAdmin.TabIndex = 4;
+            this.butAdmin.UseVisualStyleBackColor = true;
+            this.butAdmin.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(8)))), ((int)(((byte)(24)))));
+            this.panel5.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.choice;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel5.Location = new System.Drawing.Point(3, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 71);
+            this.panel5.TabIndex = 3;
+            // 
+            // but_nguon_nhap
+            // 
+            this.but_nguon_nhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            this.but_nguon_nhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.but_nguon_nhap.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_nguon_nhap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.but_nguon_nhap.FlatAppearance.BorderSize = 0;
+            this.but_nguon_nhap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_nguon_nhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(71)))), ((int)(((byte)(77)))));
+            this.but_nguon_nhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_nguon_nhap.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_nguon_nhap.ForeColor = System.Drawing.Color.White;
+            this.but_nguon_nhap.Image = global::QuanLyKhoHang.Properties.Resources.down_arrow;
+            this.but_nguon_nhap.Location = new System.Drawing.Point(30, 0);
+            this.but_nguon_nhap.Name = "but_nguon_nhap";
+            this.but_nguon_nhap.Size = new System.Drawing.Size(170, 60);
+            this.but_nguon_nhap.TabIndex = 2;
+            this.but_nguon_nhap.Text = "Quản Lý Nhập";
+            this.but_nguon_nhap.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.but_nguon_nhap.UseVisualStyleBackColor = false;
+            this.but_nguon_nhap.Click += new System.EventHandler(this.but_expand);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            this.panel3.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.cungcap;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(30, 60);
+            this.panel3.TabIndex = 6;
+            // 
+            // but_hang_hoa
+            // 
+            this.but_hang_hoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            this.but_hang_hoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.but_hang_hoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_hang_hoa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.but_hang_hoa.FlatAppearance.BorderSize = 0;
+            this.but_hang_hoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_hang_hoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(71)))), ((int)(((byte)(77)))));
+            this.but_hang_hoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_hang_hoa.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_hang_hoa.ForeColor = System.Drawing.Color.White;
+            this.but_hang_hoa.Image = global::QuanLyKhoHang.Properties.Resources.down_arrow;
+            this.but_hang_hoa.Location = new System.Drawing.Point(30, 0);
+            this.but_hang_hoa.Name = "but_hang_hoa";
+            this.but_hang_hoa.Size = new System.Drawing.Size(170, 60);
+            this.but_hang_hoa.TabIndex = 2;
+            this.but_hang_hoa.Text = "Hàng Hóa";
+            this.but_hang_hoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.but_hang_hoa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.but_hang_hoa.UseVisualStyleBackColor = false;
+            this.but_hang_hoa.Click += new System.EventHandler(this.but_expand);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            this.panel10.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.product;
+            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(30, 60);
+            this.panel10.TabIndex = 6;
             // 
             // but_nguon_xuat
             // 
@@ -427,179 +608,6 @@
             this.but_thong_ke.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.but_thong_ke.UseVisualStyleBackColor = false;
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 15;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.flowLayoutPanel2);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.butAdmin);
-            this.panel1.Controls.Add(this.WELCOME);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(200, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(901, 82);
-            this.panel1.TabIndex = 2;
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
-            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.but_resize);
-            this.flowLayoutPanel2.Controls.Add(this.but_exit);
-            this.flowLayoutPanel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(829, 0);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(72, 30);
-            this.flowLayoutPanel2.TabIndex = 0;
-            // 
-            // but_resize
-            // 
-            this.but_resize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("but_resize.BackgroundImage")));
-            this.but_resize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_resize.FlatAppearance.BorderSize = 0;
-            this.but_resize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.but_resize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.but_resize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_resize.Location = new System.Drawing.Point(3, 3);
-            this.but_resize.Name = "but_resize";
-            this.but_resize.Size = new System.Drawing.Size(30, 30);
-            this.but_resize.TabIndex = 1;
-            this.but_resize.UseVisualStyleBackColor = true;
-            this.but_resize.Click += new System.EventHandler(this.but_border);
-            // 
-            // but_exit
-            // 
-            this.but_exit.BackColor = System.Drawing.Color.White;
-            this.but_exit.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.exit;
-            this.but_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_exit.FlatAppearance.BorderSize = 0;
-            this.but_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            this.but_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            this.but_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_exit.Location = new System.Drawing.Point(39, 3);
-            this.but_exit.Name = "but_exit";
-            this.but_exit.Size = new System.Drawing.Size(30, 30);
-            this.but_exit.TabIndex = 3;
-            this.but_exit.UseVisualStyleBackColor = false;
-            this.but_exit.Click += new System.EventHandler(this.but_border);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 2.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(114)))), ((int)(((byte)(174)))));
-            this.label2.Location = new System.Drawing.Point(-1, 70);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(906, 4);
-            this.label2.TabIndex = 5;
-            this.label2.Text = resources.GetString("label2.Text");
-            // 
-            // butAdmin
-            // 
-            this.butAdmin.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.down;
-            this.butAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.butAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.butAdmin.FlatAppearance.BorderSize = 0;
-            this.butAdmin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.butAdmin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.butAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.butAdmin.Location = new System.Drawing.Point(656, 36);
-            this.butAdmin.Name = "butAdmin";
-            this.butAdmin.Size = new System.Drawing.Size(21, 10);
-            this.butAdmin.TabIndex = 4;
-            this.butAdmin.UseVisualStyleBackColor = true;
-            this.butAdmin.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // WELCOME
-            // 
-            this.WELCOME.AutoSize = true;
-            this.WELCOME.Font = new System.Drawing.Font("Courier New", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WELCOME.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(114)))), ((int)(((byte)(174)))));
-            this.WELCOME.Location = new System.Drawing.Point(19, 9);
-            this.WELCOME.Name = "WELCOME";
-            this.WELCOME.Size = new System.Drawing.Size(168, 54);
-            this.WELCOME.TabIndex = 3;
-            this.WELCOME.Text = "BOARD";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(629, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Hi, Admin";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.user;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel2.Location = new System.Drawing.Point(557, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(66, 58);
-            this.panel2.TabIndex = 3;
-            // 
-            // pAdmin
-            // 
-            this.pAdmin.Controls.Add(this.button3);
-            this.pAdmin.Controls.Add(this.button2);
-            this.pAdmin.Location = new System.Drawing.Point(829, 52);
-            this.pAdmin.MinimumSize = new System.Drawing.Size(1, 1);
-            this.pAdmin.Name = "pAdmin";
-            this.pAdmin.Size = new System.Drawing.Size(97, 92);
-            this.pAdmin.TabIndex = 3;
-            this.pAdmin.Visible = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(244)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(0, 47);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 47);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Log Out";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(244)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 47);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "About";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // screen
-            // 
-            this.screen.BackColor = System.Drawing.Color.White;
-            this.screen.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.screen.Location = new System.Drawing.Point(200, 83);
-            this.screen.Name = "screen";
-            this.screen.Size = new System.Drawing.Size(901, 567);
-            this.screen.TabIndex = 4;
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -624,6 +632,7 @@
             this.panel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.pAdmin.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -653,7 +662,6 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button but_thong_ke;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel pAdmin;
@@ -666,5 +674,7 @@
         private System.Windows.Forms.Button but_resize;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button but_exit;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }

@@ -11,11 +11,11 @@ namespace QuanLyKhoHang
 {
     class dbAccess
     {
-        public static string strConn = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QuanLyKhoHang;Integrated Security=True";
-        
-       
+        public static string strConn = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QuanLyKhoHang;Integrated Security=True";              
         private static string VuSever =
            "Data Source = DESKTOP-VES4POV\\MSSQLSERVER03;Database =QuanLyKhoHang; Integrated Security=SSPI;";
+
+
         public static SqlConnection connection = new SqlConnection(strConn);
 
 
@@ -28,7 +28,9 @@ namespace QuanLyKhoHang
             {
                 connection= new SqlConnection(VuSever);
             }
-        }
+        }//chọn sever cho khớp từng máy riêng
+
+
         //tạo kết nối
         public void createConn()
         {
@@ -132,7 +134,9 @@ namespace QuanLyKhoHang
             else return false;
         }
 
-        public void pushGridview(SqlCommand dbCommand, DataGridView gridview)//đẩy dữ liệu vào gridview = select
+
+
+        public void pushGridview(SqlCommand dbCommand, DataGridView gridview)//đẩy dữ liệu vào gridview 
         {
             try
             {
@@ -163,8 +167,46 @@ namespace QuanLyKhoHang
 
             }
         }
-     
-     
+        public void pushDataTable(SqlCommand dbCommand, DataTable data)//đẩy dữ liệu vào dataTable
+        {
+
+            try
+            {
+                connection.Open();
+                dbCommand.Connection = connection;
+                dbCommand.CommandType = CommandType.Text;
+                SqlDataAdapter adapter = new SqlDataAdapter(dbCommand);
+                adapter.Fill(data);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { connection.Close(); }
+
+        }
+        public int editDB(SqlCommand dbCommand)//chỉnh sửa dữ liệu trong dataBase ( use for insert+delete)
+        {
+            try
+            {
+                connection.Open();
+                dbCommand.Connection = connection;
+                dbCommand.CommandType = CommandType.Text;
+                return dbCommand.ExecuteNonQuery();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { connection.Close(); }
+
+        }
+
+
 
 
     }

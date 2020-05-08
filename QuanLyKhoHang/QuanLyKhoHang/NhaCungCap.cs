@@ -13,21 +13,281 @@ namespace QuanLyKhoHang
 {
     public partial class NhaCungCap : Form
     {
-        dbAccess database = new dbAccess();
-        
+        dbAccess database = new dbAccess();        
+        SqlCommand comman;
+        DataTable dataTable;
+        string query = "SELECT * FROM nha_cung_cap";
+        private bool sort_id;
+        private bool sort_ten;
+        private bool sort_sdt;
+        private bool sort_quan;
+        private bool sort_phuong;
+        private bool sort_city;
         public NhaCungCap()
         {
             InitializeComponent();
             database.pickSever(1);
         }
       
-
-        private void NhaCungCap_Load(object sender, EventArgs e)
+        private void autoID(Label pk)
+        {                       
+            string query1 = "SELECT MAX(id) AS MAX FROM nha_cung_cap";
+            comman = new SqlCommand(query1);
+            dataTable = new DataTable();
+            database.pushDataTable(comman, dataTable);
+            int id = 0;
+            if (dataTable.Rows[0]["MAX"].ToString() == "")
+            {
+                id = 1;
+            }
+            else
+            {
+                id = Convert.ToInt32(dataTable.Rows[0]["MAX"].ToString()) + 1;
+            }
+            pk.Text = id.ToString();
+        }
+        private void loadGridView()
         {
-          
-            string query = "SELECT * FROM nha_cung_cap";
-            SqlCommand comman = new SqlCommand(query);
+            comman = new SqlCommand(query);
             database.pushGridview(comman, gridView);
         }
+        private void NhaCungCap_Load(object sender, EventArgs e)
+        {
+
+            loadGridView();
+            autoID(label_id);
+        }
+       
+        private void but_sort_click(object sender, EventArgs e)
+        {
+            Button but = (Button)sender;
+            string root = query +" ORDER BY ";
+            switch (but.Name)
+            {
+                case "but_sort_id":
+                    if (sort_id)
+                    {
+                        root += " 1 ASC;";
+                        sort_id = false;
+                    }
+                    else
+                    {
+                        root += " 1 DESC;";
+                        sort_id = true;
+                    }                                     
+                    break;
+
+                case "but_sort_ten":
+                    if (sort_ten)
+                    {
+                        root += " 2 ASC;";
+                        sort_ten = false;
+                    }
+                    else
+                    {
+                        root += " 2 DESC;";
+                        sort_ten = true;
+                    }
+
+                   
+                    break;
+                case "but_sort_sdt":
+                    if (sort_sdt)
+                    {
+                        root += " 3 ASC;";
+                        sort_sdt = false;
+                    }
+                    else
+                    { 
+                        root += " 3 DESC;";
+                        sort_sdt = true;
+                    }                  
+                    break;
+                case "but_sort_quan":
+                    if (sort_quan)
+                    {
+                        root += " 4 ASC;";
+                        sort_quan = false;
+                    }
+                    else
+                    {
+                        root += " 4 DESC;";
+                        sort_quan = true;
+                    }
+
+                    break;
+                case "but_sort_phuong":
+                    if (sort_phuong)
+                    {
+                        root += " 5 ASC;";
+                        sort_phuong = false;
+                    }
+                    else
+                    { 
+                        root += " 5 DESC;";
+                        sort_phuong = true;
+                    }
+                    break;
+                case "but_sort_city":
+                    if (sort_city)
+                    {
+                        root += " 6 ASC;";
+                        sort_city = false;
+                    }
+                    else
+                    {   
+                        root += " 6 DESC;";
+                        sort_city = true;
+                    }
+                    break;
+               
+            }
+            comman = new SqlCommand(root);
+            database.pushGridview(comman, gridView);
+        }
+
+        private void but_search_Click(object sender, EventArgs e)
+        {
+
+        }
+        private bool isNumber(string pValue)
+        {
+            if (pValue == "")
+            {
+                return false;
+            }
+            else
+            {
+                foreach (Char c in pValue)
+                {
+                    if (!Char.IsDigit(c))
+                        return false;
+                }
+                return true;
+            }
+        }
+        private void resetRegister()
+        {
+            textbox_ten.Clear();
+            textbox_sdt.Clear();
+            textbox_quan.Clear();
+            textbox_phuong.Clear();
+            textbox_city.Clear();
+        }
+        private void resetError()
+        {
+            but_error_ten.Visible = false;
+            but_error_sdt.Visible = false;
+            but_error_phuong.Visible = false;
+            but_error_quan.Visible = false;
+            but_error_city.Visible = false;
+        }
+        private bool kiemTraInput()
+        {
+            bool check =true;
+            resetError();
+            if (textbox_ten.Text == "")
+            {
+                but_error_ten.Visible = true;check=false;
+                
+            }
+            if (!isNumber(textbox_sdt.Text) )
+            {
+                but_error_sdt.Visible = true; check = false;
+
+            }
+            if (textbox_phuong.Text == ""||isNumber(textbox_phuong.Text))
+            {
+                but_error_phuong.Visible = true; check = false;
+
+            }
+            if (textbox_quan.Text == "" || isNumber(textbox_quan.Text))
+            { 
+                but_error_quan.Visible = true; check = false;
+
+            }
+            if (textbox_city.Text == "" || isNumber(textbox_city.Text))
+            {
+                but_error_city.Visible = true; check = false;
+
+            }
+            return check;
+        
+        }
+        private void but_register_Click(object sender, EventArgs e)
+        {
+            if (kiemTraInput())
+            {
+                string query = "SET IDENTITY_INSERT nha_cung_cap ON;" +
+                 "INSERT INTO nha_cung_cap ( id,ten,sdt, quan, phuong, city) " +
+          "VALUES (" + label_id.Text + ",N'" + textbox_ten.Text + "',N'" + textbox_sdt.Text + "', N'" +
+          textbox_quan.Text + "', N'"+ textbox_phuong.Text + "', N'" + textbox_city.Text + "')  "
+                   + "SET IDENTITY_INSERT nha_cung_cap OFF;";
+                comman = new SqlCommand(query);
+                database.editDB(comman);
+                loadGridView();
+                resetRegister();
+            }
+            
+        }
+
+        private void but_error(object sender, EventArgs e)
+        {
+            Button but = (Button)sender;      
+            switch (but.Name)
+            {
+                case "but_error_ten":
+                    if (label_error_ten.Visible)
+                    {
+                        label_error_ten.Visible = false;
+                    }
+                    else
+                    {
+                        label_error_ten.Visible = true;
+                    }
+                    break;
+                case "but_error_sdt":
+                    if (label_error_sdt.Visible)
+                    {               
+                        label_error_sdt.Visible = false;
+                    }               
+                    else            
+                    {               
+                        label_error_sdt.Visible = true;
+                    }
+                    break;
+                case "but_error_quan":
+                    if (label_error_quan.Visible)
+                    {
+                        label_error_quan.Visible = false;
+                    }
+                    else
+                    {
+                        label_error_quan.Visible = true;
+                    }
+                    break;
+                case "but_error_phuong":
+                    if (label_error_phuong.Visible)
+                    {
+                        label_error_phuong.Visible = false;
+                    }
+                    else
+                    {
+                        label_error_phuong.Visible = true;
+                    }
+                    break;
+                case "but_error_city":
+                    if (label_error_city.Visible)
+                    {
+                        label_error_city.Visible = false;
+                    }
+                    else
+                    {
+                        label_error_city.Visible = true;
+                    }
+                    break;
+            }
+           }
     }
-}
+    }
+
