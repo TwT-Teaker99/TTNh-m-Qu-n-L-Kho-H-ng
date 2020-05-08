@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gridView = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +68,11 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label_error_ten = new System.Windows.Forms.Label();
+            this.label_error_sdt = new System.Windows.Forms.Label();
+            this.label_error_quan = new System.Windows.Forms.Label();
+            this.label_error_phuong = new System.Windows.Forms.Label();
+            this.label_error_city = new System.Windows.Forms.Label();
             this.but_search = new System.Windows.Forms.Button();
             this.but_sort_city = new System.Windows.Forms.Button();
             this.but_sort_phuong = new System.Windows.Forms.Button();
@@ -76,17 +81,12 @@
             this.but_sort_ten = new System.Windows.Forms.Button();
             this.but_sort_id = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.but_error_city = new System.Windows.Forms.Button();
+            this.but_error_phuong = new System.Windows.Forms.Button();
+            this.but_error_quan = new System.Windows.Forms.Button();
+            this.but_error_sdt = new System.Windows.Forms.Button();
             this.but_error_ten = new System.Windows.Forms.Button();
             this.but_register = new System.Windows.Forms.Button();
-            this.but_error_sdt = new System.Windows.Forms.Button();
-            this.but_error_quan = new System.Windows.Forms.Button();
-            this.but_error_phuong = new System.Windows.Forms.Button();
-            this.but_error_city = new System.Windows.Forms.Button();
-            this.label_error_ten = new System.Windows.Forms.Label();
-            this.label_error_sdt = new System.Windows.Forms.Label();
-            this.label_error_quan = new System.Windows.Forms.Label();
-            this.label_error_phuong = new System.Windows.Forms.Label();
-            this.label_error_city = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -102,14 +102,14 @@
             this.gridView.BackgroundColor = System.Drawing.Color.White;
             this.gridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridView.ColumnHeadersHeight = 60;
             this.gridView.ColumnHeadersVisible = false;
             this.gridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -119,26 +119,26 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridView.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridView.GridColor = System.Drawing.Color.White;
             this.gridView.Location = new System.Drawing.Point(9, 105);
             this.gridView.Name = "gridView";
             this.gridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.gridView.RowHeadersVisible = false;
             this.gridView.RowHeadersWidth = 60;
             this.gridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
@@ -465,55 +465,55 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Location = new System.Drawing.Point(60, 21);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(35, 17);
+            this.label20.Size = new System.Drawing.Size(36, 18);
             this.label20.TabIndex = 5;
             this.label20.Text = "Tên";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(480, 21);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(89, 17);
+            this.label16.Size = new System.Drawing.Size(89, 18);
             this.label16.TabIndex = 4;
             this.label16.Text = "Thành Phố";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(360, 21);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(62, 17);
+            this.label15.Size = new System.Drawing.Size(65, 18);
             this.label15.TabIndex = 3;
             this.label15.Text = "Phường";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(257, 21);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(44, 17);
+            this.label14.Size = new System.Drawing.Size(48, 18);
             this.label14.TabIndex = 2;
             this.label14.Text = "Quận";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(149, 21);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(71, 17);
+            this.label13.Size = new System.Drawing.Size(65, 18);
             this.label13.TabIndex = 1;
             this.label13.Text = "Liên Hệ";
             // 
@@ -531,22 +531,22 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Courier New", 12F);
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.label19.Location = new System.Drawing.Point(177, 14);
+            this.label19.Location = new System.Drawing.Point(153, 12);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(128, 18);
+            this.label19.Size = new System.Drawing.Size(107, 20);
             this.label19.TabIndex = 29;
             this.label19.Text = "Nhà cung cấp";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Courier New", 12F);
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            this.label18.Location = new System.Drawing.Point(11, 14);
+            this.label18.Location = new System.Drawing.Point(13, 12);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(128, 18);
+            this.label18.Size = new System.Drawing.Size(102, 20);
             this.label18.TabIndex = 29;
             this.label18.Text = "Quản lý nhập";
             // 
@@ -559,6 +559,66 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(614, 570);
             this.panel5.TabIndex = 32;
+            // 
+            // label_error_ten
+            // 
+            this.label_error_ten.AutoSize = true;
+            this.label_error_ten.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_error_ten.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
+            this.label_error_ten.Location = new System.Drawing.Point(22, 156);
+            this.label_error_ten.Name = "label_error_ten";
+            this.label_error_ten.Size = new System.Drawing.Size(140, 14);
+            this.label_error_ten.TabIndex = 44;
+            this.label_error_ten.Text = "Không được bỏ trống";
+            this.label_error_ten.Visible = false;
+            // 
+            // label_error_sdt
+            // 
+            this.label_error_sdt.AutoSize = true;
+            this.label_error_sdt.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_error_sdt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
+            this.label_error_sdt.Location = new System.Drawing.Point(22, 229);
+            this.label_error_sdt.Name = "label_error_sdt";
+            this.label_error_sdt.Size = new System.Drawing.Size(238, 14);
+            this.label_error_sdt.TabIndex = 45;
+            this.label_error_sdt.Text = "sđt phải gồm 9 số không chứa chữ.";
+            this.label_error_sdt.Visible = false;
+            // 
+            // label_error_quan
+            // 
+            this.label_error_quan.AutoSize = true;
+            this.label_error_quan.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_error_quan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
+            this.label_error_quan.Location = new System.Drawing.Point(22, 305);
+            this.label_error_quan.Name = "label_error_quan";
+            this.label_error_quan.Size = new System.Drawing.Size(217, 14);
+            this.label_error_quan.TabIndex = 46;
+            this.label_error_quan.Text = "Không được bỏ trống hoặc là số";
+            this.label_error_quan.Visible = false;
+            // 
+            // label_error_phuong
+            // 
+            this.label_error_phuong.AutoSize = true;
+            this.label_error_phuong.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_error_phuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
+            this.label_error_phuong.Location = new System.Drawing.Point(22, 378);
+            this.label_error_phuong.Name = "label_error_phuong";
+            this.label_error_phuong.Size = new System.Drawing.Size(217, 14);
+            this.label_error_phuong.TabIndex = 47;
+            this.label_error_phuong.Text = "Không được bỏ trống hoặc là số";
+            this.label_error_phuong.Visible = false;
+            // 
+            // label_error_city
+            // 
+            this.label_error_city.AutoSize = true;
+            this.label_error_city.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_error_city.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
+            this.label_error_city.Location = new System.Drawing.Point(22, 452);
+            this.label_error_city.Name = "label_error_city";
+            this.label_error_city.Size = new System.Drawing.Size(217, 14);
+            this.label_error_city.TabIndex = 48;
+            this.label_error_city.Text = "Không được bỏ trống hoặc là số";
+            this.label_error_city.Visible = false;
             // 
             // but_search
             // 
@@ -674,10 +734,78 @@
             // 
             this.panel4.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.right;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel4.Location = new System.Drawing.Point(145, 12);
+            this.panel4.Location = new System.Drawing.Point(121, 10);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(26, 28);
             this.panel4.TabIndex = 30;
+            // 
+            // but_error_city
+            // 
+            this.but_error_city.BackColor = System.Drawing.Color.White;
+            this.but_error_city.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_error_city.FlatAppearance.BorderSize = 0;
+            this.but_error_city.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_error_city.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.but_error_city.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_error_city.Image = global::QuanLyKhoHang.Properties.Resources.error;
+            this.but_error_city.Location = new System.Drawing.Point(242, 422);
+            this.but_error_city.Name = "but_error_city";
+            this.but_error_city.Size = new System.Drawing.Size(26, 27);
+            this.but_error_city.TabIndex = 43;
+            this.but_error_city.UseVisualStyleBackColor = false;
+            this.but_error_city.Visible = false;
+            this.but_error_city.Click += new System.EventHandler(this.but_error);
+            // 
+            // but_error_phuong
+            // 
+            this.but_error_phuong.BackColor = System.Drawing.Color.White;
+            this.but_error_phuong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_error_phuong.FlatAppearance.BorderSize = 0;
+            this.but_error_phuong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_error_phuong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.but_error_phuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_error_phuong.Image = global::QuanLyKhoHang.Properties.Resources.error;
+            this.but_error_phuong.Location = new System.Drawing.Point(243, 348);
+            this.but_error_phuong.Name = "but_error_phuong";
+            this.but_error_phuong.Size = new System.Drawing.Size(26, 27);
+            this.but_error_phuong.TabIndex = 42;
+            this.but_error_phuong.UseVisualStyleBackColor = false;
+            this.but_error_phuong.Visible = false;
+            this.but_error_phuong.Click += new System.EventHandler(this.but_error);
+            // 
+            // but_error_quan
+            // 
+            this.but_error_quan.BackColor = System.Drawing.Color.White;
+            this.but_error_quan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_error_quan.FlatAppearance.BorderSize = 0;
+            this.but_error_quan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_error_quan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.but_error_quan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_error_quan.Image = global::QuanLyKhoHang.Properties.Resources.error;
+            this.but_error_quan.Location = new System.Drawing.Point(243, 275);
+            this.but_error_quan.Name = "but_error_quan";
+            this.but_error_quan.Size = new System.Drawing.Size(26, 27);
+            this.but_error_quan.TabIndex = 41;
+            this.but_error_quan.UseVisualStyleBackColor = false;
+            this.but_error_quan.Visible = false;
+            this.but_error_quan.Click += new System.EventHandler(this.but_error);
+            // 
+            // but_error_sdt
+            // 
+            this.but_error_sdt.BackColor = System.Drawing.Color.White;
+            this.but_error_sdt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_error_sdt.FlatAppearance.BorderSize = 0;
+            this.but_error_sdt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_error_sdt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.but_error_sdt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_error_sdt.Image = global::QuanLyKhoHang.Properties.Resources.error;
+            this.but_error_sdt.Location = new System.Drawing.Point(242, 199);
+            this.but_error_sdt.Name = "but_error_sdt";
+            this.but_error_sdt.Size = new System.Drawing.Size(26, 27);
+            this.but_error_sdt.TabIndex = 40;
+            this.but_error_sdt.UseVisualStyleBackColor = false;
+            this.but_error_sdt.Visible = false;
+            this.but_error_sdt.Click += new System.EventHandler(this.but_error);
             // 
             // but_error_ten
             // 
@@ -717,134 +845,6 @@
             this.but_register.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.but_register.UseVisualStyleBackColor = false;
             this.but_register.Click += new System.EventHandler(this.but_register_Click);
-            // 
-            // but_error_sdt
-            // 
-            this.but_error_sdt.BackColor = System.Drawing.Color.White;
-            this.but_error_sdt.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_error_sdt.FlatAppearance.BorderSize = 0;
-            this.but_error_sdt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_error_sdt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.but_error_sdt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_error_sdt.Image = global::QuanLyKhoHang.Properties.Resources.error;
-            this.but_error_sdt.Location = new System.Drawing.Point(242, 199);
-            this.but_error_sdt.Name = "but_error_sdt";
-            this.but_error_sdt.Size = new System.Drawing.Size(26, 27);
-            this.but_error_sdt.TabIndex = 40;
-            this.but_error_sdt.UseVisualStyleBackColor = false;
-            this.but_error_sdt.Visible = false;
-            this.but_error_sdt.Click += new System.EventHandler(this.but_error);
-            // 
-            // but_error_quan
-            // 
-            this.but_error_quan.BackColor = System.Drawing.Color.White;
-            this.but_error_quan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_error_quan.FlatAppearance.BorderSize = 0;
-            this.but_error_quan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_error_quan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.but_error_quan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_error_quan.Image = global::QuanLyKhoHang.Properties.Resources.error;
-            this.but_error_quan.Location = new System.Drawing.Point(243, 275);
-            this.but_error_quan.Name = "but_error_quan";
-            this.but_error_quan.Size = new System.Drawing.Size(26, 27);
-            this.but_error_quan.TabIndex = 41;
-            this.but_error_quan.UseVisualStyleBackColor = false;
-            this.but_error_quan.Visible = false;
-            this.but_error_quan.Click += new System.EventHandler(this.but_error);
-            // 
-            // but_error_phuong
-            // 
-            this.but_error_phuong.BackColor = System.Drawing.Color.White;
-            this.but_error_phuong.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_error_phuong.FlatAppearance.BorderSize = 0;
-            this.but_error_phuong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_error_phuong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.but_error_phuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_error_phuong.Image = global::QuanLyKhoHang.Properties.Resources.error;
-            this.but_error_phuong.Location = new System.Drawing.Point(243, 348);
-            this.but_error_phuong.Name = "but_error_phuong";
-            this.but_error_phuong.Size = new System.Drawing.Size(26, 27);
-            this.but_error_phuong.TabIndex = 42;
-            this.but_error_phuong.UseVisualStyleBackColor = false;
-            this.but_error_phuong.Visible = false;
-            this.but_error_phuong.Click += new System.EventHandler(this.but_error);
-            // 
-            // but_error_city
-            // 
-            this.but_error_city.BackColor = System.Drawing.Color.White;
-            this.but_error_city.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_error_city.FlatAppearance.BorderSize = 0;
-            this.but_error_city.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_error_city.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.but_error_city.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_error_city.Image = global::QuanLyKhoHang.Properties.Resources.error;
-            this.but_error_city.Location = new System.Drawing.Point(242, 422);
-            this.but_error_city.Name = "but_error_city";
-            this.but_error_city.Size = new System.Drawing.Size(26, 27);
-            this.but_error_city.TabIndex = 43;
-            this.but_error_city.UseVisualStyleBackColor = false;
-            this.but_error_city.Visible = false;
-            this.but_error_city.Click += new System.EventHandler(this.but_error);
-            // 
-            // label_error_ten
-            // 
-            this.label_error_ten.AutoSize = true;
-            this.label_error_ten.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_error_ten.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.label_error_ten.Location = new System.Drawing.Point(22, 156);
-            this.label_error_ten.Name = "label_error_ten";
-            this.label_error_ten.Size = new System.Drawing.Size(140, 14);
-            this.label_error_ten.TabIndex = 44;
-            this.label_error_ten.Text = "Không được bỏ trống";
-            this.label_error_ten.Visible = false;
-            // 
-            // label_error_sdt
-            // 
-            this.label_error_sdt.AutoSize = true;
-            this.label_error_sdt.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_error_sdt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.label_error_sdt.Location = new System.Drawing.Point(22, 229);
-            this.label_error_sdt.Name = "label_error_sdt";
-            this.label_error_sdt.Size = new System.Drawing.Size(238, 14);
-            this.label_error_sdt.TabIndex = 45;
-            this.label_error_sdt.Text = "sđt phải gồm 9 số không chứa chữ.";
-            this.label_error_sdt.Visible = false;
-            // 
-            // label_error_quan
-            // 
-            this.label_error_quan.AutoSize = true;
-            this.label_error_quan.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_error_quan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.label_error_quan.Location = new System.Drawing.Point(22, 305);
-            this.label_error_quan.Name = "label_error_quan";
-            this.label_error_quan.Size = new System.Drawing.Size(217, 14);
-            this.label_error_quan.TabIndex = 46;
-            this.label_error_quan.Text = "Không được bỏ trống hoặc là số";
-            this.label_error_quan.Visible = false;
-            // 
-            // label_error_phuong
-            // 
-            this.label_error_phuong.AutoSize = true;
-            this.label_error_phuong.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_error_phuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.label_error_phuong.Location = new System.Drawing.Point(22, 378);
-            this.label_error_phuong.Name = "label_error_phuong";
-            this.label_error_phuong.Size = new System.Drawing.Size(217, 14);
-            this.label_error_phuong.TabIndex = 47;
-            this.label_error_phuong.Text = "Không được bỏ trống hoặc là số";
-            this.label_error_phuong.Visible = false;
-            // 
-            // label_error_city
-            // 
-            this.label_error_city.AutoSize = true;
-            this.label_error_city.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_error_city.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.label_error_city.Location = new System.Drawing.Point(22, 452);
-            this.label_error_city.Name = "label_error_city";
-            this.label_error_city.Size = new System.Drawing.Size(217, 14);
-            this.label_error_city.TabIndex = 48;
-            this.label_error_city.Text = "Không được bỏ trống hoặc là số";
-            this.label_error_city.Visible = false;
             // 
             // NhaCungCap
             // 
