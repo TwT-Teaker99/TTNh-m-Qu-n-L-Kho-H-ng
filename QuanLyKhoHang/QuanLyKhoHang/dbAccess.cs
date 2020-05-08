@@ -12,10 +12,23 @@ namespace QuanLyKhoHang
     class dbAccess
     {
         public static string strConn = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QuanLyKhoHang;Integrated Security=True";
+        
+       
+        private static string VuSever =
+           "Data Source = DESKTOP-VES4POV\\MSSQLSERVER03;Database =QuanLyKhoHang; Integrated Security=SSPI;";
         public static SqlConnection connection = new SqlConnection(strConn);
+
+
         private static SqlDataAdapter adapter;
         private static SqlCommand command;
 
+        public void pickSever(int choice)
+        {
+            if (choice ==1)
+            {
+                connection= new SqlConnection(VuSever);
+            }
+        }
         //tạo kết nối
         public void createConn()
         {
@@ -118,5 +131,41 @@ namespace QuanLyKhoHang
                 return true;
             else return false;
         }
+
+        public void pushGridview(SqlCommand dbCommand, DataGridView gridview)//đẩy dữ liệu vào gridview = select
+        {
+            try
+            {
+                connection.Open();
+                dbCommand.Connection = connection;
+                dbCommand.CommandType = CommandType.Text;
+                SqlDataReader dataread = dbCommand.ExecuteReader();
+                if (dataread.HasRows)
+                {
+                    BindingSource source = new BindingSource();
+                    source.DataSource = dataread;
+                    gridview.DataSource = source;
+                    
+                }
+                else
+                {
+                    gridview.Rows.Clear();
+                    gridview.Refresh();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Close();
+
+            }
+        }
+     
+     
+
+
     }
 }
