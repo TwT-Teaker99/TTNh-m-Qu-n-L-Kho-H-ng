@@ -11,10 +11,25 @@ namespace QuanLyKhoHang
 {
     class dbAccess
     {
-        public static string strConn = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QuanLyKhoHang;Integrated Security=True";
+        public static string strConn = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QuanLyKhoHang;Integrated Security=True";              
+        private static string VuSever =
+           "Data Source = DESKTOP-VES4POV\\MSSQLSERVER03;Database =QuanLyKhoHang; Integrated Security=SSPI;";
+
+
         public static SqlConnection connection = new SqlConnection(strConn);
+
+
         private static SqlDataAdapter adapter;
         private static SqlCommand command;
+
+        public void pickSever(int choice)
+        {
+            if (choice ==1)
+            {
+                connection= new SqlConnection(VuSever);
+            }
+        }//chọn sever cho khớp từng máy riêng
+
 
         //tạo kết nối
         public void createConn()
@@ -47,6 +62,8 @@ namespace QuanLyKhoHang
                 adapter = new SqlDataAdapter();
                 adapter = new SqlDataAdapter(command);
                 adapter.Fill(data);
+                //command.Dispose();
+                //adapter.Dispose();
             }
             catch (Exception e)
             {
@@ -116,7 +133,61 @@ namespace QuanLyKhoHang
                 return true;
             else return false;
         }
-        public int executeQuery(SqlCommand dbCommand)//use for insert+delete
+
+
+
+        public void pushGridview(SqlCommand dbCommand, DataGridView gridview)//đẩy dữ liệu vào gridview 
+        {
+            try
+            {
+                connection.Open();
+                dbCommand.Connection = connection;
+                dbCommand.CommandType = CommandType.Text;
+                SqlDataReader dataread = dbCommand.ExecuteReader();
+                if (dataread.HasRows)
+                {
+                    BindingSource source = new BindingSource();
+                    source.DataSource = dataread;
+                    gridview.DataSource = source;
+                    
+                }
+                else
+                {
+                    gridview.Rows.Clear();
+                    gridview.Refresh();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Close();
+
+            }
+        }
+        public void pushDataTable(SqlCommand dbCommand, DataTable data)//đẩy dữ liệu vào dataTable
+        {
+
+            try
+            {
+                connection.Open();
+                dbCommand.Connection = connection;
+                dbCommand.CommandType = CommandType.Text;
+                SqlDataAdapter adapter = new SqlDataAdapter(dbCommand);
+                adapter.Fill(data);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { connection.Close(); }
+
+        }
+        public int editDB(SqlCommand dbCommand)//chỉnh sửa dữ liệu trong dataBase ( use for insert+delete)
         {
             try
             {
@@ -134,5 +205,10 @@ namespace QuanLyKhoHang
             finally { connection.Close(); }
 
         }
+
+
+
+
     }
 }
+
