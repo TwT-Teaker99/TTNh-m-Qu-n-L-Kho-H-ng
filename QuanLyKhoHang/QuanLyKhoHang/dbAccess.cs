@@ -47,8 +47,6 @@ namespace QuanLyKhoHang
                 adapter = new SqlDataAdapter();
                 adapter = new SqlDataAdapter(command);
                 adapter.Fill(data);
-                //command.Dispose();
-                //adapter.Dispose();
             }
             catch (Exception e)
             {
@@ -117,6 +115,24 @@ namespace QuanLyKhoHang
             if (data.Rows.Count > 0)
                 return true;
             else return false;
+        }
+        public int executeQuery(SqlCommand dbCommand)//use for insert+delete
+        {
+            try
+            {
+                connection.Open();
+                dbCommand.Connection = connection;
+                dbCommand.CommandType = CommandType.Text;
+                return dbCommand.ExecuteNonQuery();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { connection.Close(); }
+
         }
     }
 }

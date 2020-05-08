@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietPhieuXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietPhieuXuat.Designer.cs">
+      <DependentUpon>ChiTietPhieuXuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbAccess.cs" />
     <Compile Include="LoaiHang.cs">
       <SubType>Form</SubType>
@@ -103,12 +109,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLXuat.Designer.cs">
+      <DependentUpon>QLXuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuayHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QuayHang.Designer.cs">
       <DependentUpon>QuayHang.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChiTietPhieuXuat.resx">
+      <DependentUpon>ChiTietPhieuXuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoaiHang.resx">
       <DependentUpon>LoaiHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +161,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QLXuat.resx">
+      <DependentUpon>QLXuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuayHang.resx">
       <DependentUpon>QuayHang.cs</DependentUpon>
     </EmbeddedResource>

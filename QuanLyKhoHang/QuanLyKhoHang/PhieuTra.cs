@@ -13,6 +13,7 @@ namespace QuanLyKhoHang
     public partial class PhieuTra : Form
     {
         dbAccess db = new dbAccess();
+        DataTable table = new DataTable("CTPX");
         public PhieuTra()
         {
             InitializeComponent();
@@ -38,6 +39,12 @@ namespace QuanLyKhoHang
             getIDpx();
 
         }
+        private void ConTable()
+        {
+            table.Columns.Add(new DataColumn("MaHang", typeof(int)));
+            table.Columns.Add(new DataColumn("TenHang", typeof(string)));
+            table.Columns.Add(new DataColumn("SoLuong", typeof(int)));
+        }
         //hàm gợi ý nhập comboBox
         private void cbBox_Suggest(ComboBox cb,string s)
         {
@@ -54,14 +61,10 @@ namespace QuanLyKhoHang
             string temp = dbAccess.GetFieldValues(query);
             tbMaPhieu.Text = (Convert.ToInt32(temp) + 1).ToString();
         }
-        private void LoaddataGridView()
-        {
-            string query = "exec proc_CHITIETPXUAT '" + tbMaPhieu.Text + "'";
-            dbAccess.GetData(query, dataGridView1);
-        }
         private void PhieuTra_Load(object sender, EventArgs e)
         {
             loadcomboBox();
+            ConTable();
         }
 
         private void cbMaQuay_SelectedIndexChanged(object sender, EventArgs e)
@@ -94,57 +97,64 @@ namespace QuanLyKhoHang
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            if ((MessageBox.Show("Xác nhận thêm phiếu xuất", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes))
+            {
+                string query = "select * from phieu_xuat where id ='" + tbMaPhieu.Text + "'";
+                if (!dbAccess.CheckKey(query))
+                {
+                    if (cbMaQuay.Text == "")
+                    {
+                        MessageBox.Show("Bạn phải nhập mã quầy", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        cbMaQuay.Focus();
+                        return;
+                    }
+                    else if (cbMaNhanVien.Text == "")
+                    {
+                        MessageBox.Show("Bạn phải nhập mã nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        cbMaNhanVien.Focus();
+                        return;
+                    }
+                    else if (dateTimePicker.Text.Length == 0)
+                    {
+                        MessageBox.Show("Bạn phải nhập ngày bán", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        dateTimePicker.Focus();
+                        return;
+                    }
+                    query = "exec proc_addPX '" + cbMaQuay.Text + "','" + dateTimePicker.Value.Date + "','" + cbMaNhanVien.Text + "'";
+                    dbAccess.GetData(query, dataGridView1);
+                }
+                foreach (DataRow row in table.Rows)
+                {
+                    query = "exec proc_addCTPX '" + tbMaPhieu.Text + "','" + row[0] + "','" + Convert.ToInt32(row[2]) + "'";
+                    dbAccess.GetData(query, dataGridView1);
+                }
+                btnLamMoi_Click(sender,e);
+            }
         }
-
+        
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            string query = "select * from phieu_xuat where id ='" + tbMaPhieu.Text + "'";
-            if (!dbAccess.CheckKey(query))
+            if (cbLoaiHang.Text == "")
             {
-                if (cbMaQuay.Text == "")
-                {
-                    MessageBox.Show("Bạn phải nhập mã quầy", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    cbMaQuay.Focus();
-                    return;
-                }
-                else if (cbMaNhanVien.Text == "")
-                {
-                    MessageBox.Show("Bạn phải nhập mã nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    cbMaNhanVien.Focus();
-                    return;
-                }
-                else if (dateTimePicker.Text.Length == 0)
-                {
-                    MessageBox.Show("Bạn phải nhập ngày bán", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    dateTimePicker.Focus();
-                    return;
-                }
-                query = "exec proc_addPX '" + cbMaQuay.Text + "','" + dateTimePicker.Value.Date + "','" + cbMaNhanVien.Text + "'";
-                dbAccess.GetData(query, dataGridView1);
+                MessageBox.Show("Bạn phải nhập loại hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                cbLoaiHang.Focus();
+                return;
             }
-            if(cbTenHang.Text=="")
+            if (cbTenHang.Text == "")
             {
                 MessageBox.Show("Bạn phải nhập mặt hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 cbTenHang.Focus();
                 return;
             }
-            if(tbSL.Text.Trim().Length==0 || tbSL.Text=="0")
+            if (tbSL.Text.Trim().Length == 0 || tbSL.Text == "0")
             {
                 MessageBox.Show("Bạn phải nhập số lượng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 tbSL.Text = "";
                 tbSL.Focus();
                 return;
             }
-            query = "select * from chi_tiet_phieu_xuat where phieu_xuat_id='" + tbMaPhieu.Text + "'and mat_hang_id='" + cbTenHang.SelectedValue + "'";
-            if(dbAccess.CheckKey(query))
-            {
-                MessageBox.Show("Mặt hàng này đã này đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                cbTenHang.Focus();
-                return;
-            }
-            query = "exec proc_addCTPX '" + tbMaPhieu.Text + "','" + cbTenHang.SelectedValue + "','" + Convert.ToInt32(tbSL.Text) + "'";
-            dbAccess.GetData(query, dataGridView1);
-            LoaddataGridView();
+            table.Rows.Add(cbTenHang.SelectedValue, cbTenHang.Text, Convert.ToInt32(tbSL.Text));
+            dataGridView1.DataSource = table;
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)
@@ -154,6 +164,8 @@ namespace QuanLyKhoHang
             getIDpx();
             cbLoaiHang.Text = "";
             tbSL.Text = "";
+            cbTenHang.Text = "";
+            table.Rows.Clear();
         }
 
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
@@ -166,7 +178,7 @@ namespace QuanLyKhoHang
             }
             if((MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes))
             {
-
+                dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
             }
         }
     }

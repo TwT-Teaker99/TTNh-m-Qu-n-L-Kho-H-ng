@@ -161,7 +161,7 @@ namespace QuanLyKhoHang
 
         }
 
-        private void call_form(Form child_form)
+        public void call_form(Form child_form)
         {
             child_form.TopLevel = false;
             this.screen.Controls.Add(child_form);
@@ -188,8 +188,8 @@ namespace QuanLyKhoHang
                     break;
                 case "but_phieu_xuat":
                     this.screen.Controls.Clear();
-                    //   PhieuTra form_phieu_xuat = new PhieuTra();
-                    //   call_form(form_phieu_xuat);
+                       QLXuat form_phieu_xuat = new QLXuat();
+                       call_form(form_phieu_xuat);
                     break;
                 case "but_nhan_vien":
                     this.screen.Controls.Clear();
