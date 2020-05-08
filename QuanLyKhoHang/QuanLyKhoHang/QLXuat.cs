@@ -72,7 +72,7 @@ namespace QuanLyKhoHang
                 string query = "DELETE FROM phieu_xuat WHERE id = " + s;
                 MessageBox.Show(query);
                 SqlCommand cmd = new SqlCommand(query);
-                db.executeQuery(cmd);
+               // db.executeQuery(cmd);
             }
         }
 
@@ -98,7 +98,7 @@ namespace QuanLyKhoHang
                 {
                     query = "SELECT * FROM dbo.MatHang where TenMatHang like N'%" + keySeach + "%' ";
                 }
-                db.GetData(query, dataGridView1, table);
+               // db.GetData(query, dataGridView1, table);
 
             }
         }
