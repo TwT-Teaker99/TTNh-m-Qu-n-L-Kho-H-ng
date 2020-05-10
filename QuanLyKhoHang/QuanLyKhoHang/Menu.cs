@@ -191,13 +191,8 @@ namespace QuanLyKhoHang
                     break;
                 case "but_phieu_xuat":
                     this.screen.Controls.Clear();
-<<<<<<< HEAD
                     QLXuat form_phieu_xuat = new QLXuat();
                     call_form(form_phieu_xuat);
-=======
-                     //  QLXuat form_phieu_xuat = new QLXuat();
-                   //    call_form(form_phieu_xuat);
->>>>>>> 3dc7f675dd5eba66d31d4903186965b5f02227ee
                     break;
                 case "but_nhan_vien":
                     this.screen.Controls.Clear();
