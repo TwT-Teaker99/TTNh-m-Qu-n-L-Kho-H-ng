@@ -53,6 +53,18 @@ D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\De
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.pdb
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.Menu.resources
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.csprojAssemblyReference.cache
+
+C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.ChiTietPhieuXuat.resources
+C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.Menu.resources
+C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.QLXuat.resources
+=======
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.ChiTietPhieuXuat.resources
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.QLXuat.resources
+<<<<<<< HEAD
+=======
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.NhaCungCap_Alter.resources
+
+<<<<<<< HEAD
+>>>>>>> 0017cce7bc6a03b443b61eb3f485ee1ea27f735d
+=======
+>>>>>>> 0017cce7bc6a03b443b61eb3f485ee1ea27f735d

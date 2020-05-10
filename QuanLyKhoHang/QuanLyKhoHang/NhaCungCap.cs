@@ -182,6 +182,8 @@ namespace QuanLyKhoHang
                 comman = new SqlCommand(root);
                 database.pushGridview(comman, gridView);
             }
+            else
+                loadGridView();
         }
         private bool isNumber(string pValue)
         {
@@ -332,6 +334,7 @@ namespace QuanLyKhoHang
                 but_sua.Visible = true;
                 but_xoa.Visible = true;
                 isFormRegister = false;
+                but_changeToRegis.Visible = true;
             }
 
         }
@@ -345,6 +348,7 @@ namespace QuanLyKhoHang
                 but_register.Visible = true;
                 but_sua.Visible = false;
                 but_xoa.Visible = false;
+                but_changeToRegis.Visible = false;
                 isFormRegister = true;
                 textbox_ten.Clear();
                 textbox_sdt.Clear();
@@ -372,7 +376,7 @@ namespace QuanLyKhoHang
 
         }
 
-        private void but_sua_xoa_Click(object sender, EventArgs e)
+        private void but_alterForm_Click(object sender, EventArgs e)
         {
             Button but = (Button)sender;
             switch (but.Name)
@@ -397,12 +401,17 @@ namespace QuanLyKhoHang
                     loadGridView();
                     changeToFormRegister();
                     break;
+                case "but_changeToRegis":
+                    changeToFormRegister();
+                    break;
             }
             
            
           
             
         }
+
+    
     }
 }
 

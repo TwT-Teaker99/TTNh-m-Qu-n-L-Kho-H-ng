@@ -89,12 +89,6 @@
     <Compile Include="NhaCungCap.Designer.cs">
       <DependentUpon>NhaCungCap.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhaCungCap_Alter.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NhaCungCap_Alter.Designer.cs">
-      <DependentUpon>NhaCungCap_Alter.cs</DependentUpon>
-    </Compile>
     <Compile Include="NhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,9 +141,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NhaCungCap.resx">
       <DependentUpon>NhaCungCap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NhaCungCap_Alter.resx">
-      <DependentUpon>NhaCungCap_Alter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVien.resx">
       <DependentUpon>NhanVien.cs</DependentUpon>
@@ -248,6 +239,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

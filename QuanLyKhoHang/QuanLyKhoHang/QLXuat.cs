@@ -38,23 +38,11 @@ namespace QuanLyKhoHang
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             ChiTietPhieuXuat form = new ChiTietPhieuXuat();
+            form.Id = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            form.Date = this.dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            form.Quay = this.dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            form.NV = this.dataGridView1.CurrentRow.Cells[3].Value.ToString();
             form.Show();
-        }
-        private bool TextBoxisnull(string tb)
-        {
-            if (tb == "")
-                return true;
-            else return false;
-        }
-        private bool IsNumber(string pValue)
-        {
-
-            foreach (Char c in pValue)
-            {
-                if (!Char.IsDigit(c))
-                    return false;
-            }
-            return true;
         }
 
 
@@ -70,9 +58,9 @@ namespace QuanLyKhoHang
                 string s= this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 
                 string query = "DELETE FROM phieu_xuat WHERE id = " + s;
-                MessageBox.Show(query);
                 SqlCommand cmd = new SqlCommand(query);
-               // db.executeQuery(cmd);
+                db.editDB(cmd);
+                QLXuat_Load(sender, e);
             }
         }
 
@@ -91,14 +79,14 @@ namespace QuanLyKhoHang
                 string query;
                 if (check == true)
                 {
-                    query = "SELECT * FROM mat_hang where id = '" + keySeach.ToString() + "'" +
-                    "or quay_id = '" + keySeach.ToString() + "' ";
+                    query = "SELECT * FROM phieu_xuat where id = '" + keySeach.ToString() + "'" +
+                    "or quay_id = '" + keySeach.ToString() + "' or nhan_vien_id='" + keySeach.ToString() + "'";
                 }
                 else
                 {
-                    query = "SELECT * FROM dbo.MatHang where TenMatHang like N'%" + keySeach + "%' ";
+                    query = "SELECT * FROM mat_hang ";
                 }
-               // db.GetData(query, dataGridView1, table);
+                dbAccess.GetData(query, dataGridView1);
 
             }
         }

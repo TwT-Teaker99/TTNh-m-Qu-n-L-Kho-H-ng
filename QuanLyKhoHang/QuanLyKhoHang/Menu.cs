@@ -185,11 +185,14 @@ namespace QuanLyKhoHang
                 case "but_loai_hang":
                     break;
                 case "but_quay":
+                    this.screen.Controls.Clear();
+                    QuayHang formQuayHang = new QuayHang();
+                    call_form(formQuayHang);
                     break;
                 case "but_phieu_xuat":
                     this.screen.Controls.Clear();
-                     //  QLXuat form_phieu_xuat = new QLXuat();
-                   //    call_form(form_phieu_xuat);
+                    QLXuat form_phieu_xuat = new QLXuat();
+                    call_form(form_phieu_xuat);
                     break;
                 case "but_nhan_vien":
                     this.screen.Controls.Clear();
