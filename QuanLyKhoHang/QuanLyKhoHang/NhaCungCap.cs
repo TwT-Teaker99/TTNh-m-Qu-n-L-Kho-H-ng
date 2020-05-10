@@ -332,6 +332,7 @@ namespace QuanLyKhoHang
                 but_sua.Visible = true;
                 but_xoa.Visible = true;
                 isFormRegister = false;
+                but_changeToRegis.Visible = true;
             }
 
         }
@@ -345,6 +346,7 @@ namespace QuanLyKhoHang
                 but_register.Visible = true;
                 but_sua.Visible = false;
                 but_xoa.Visible = false;
+                but_changeToRegis.Visible = false;
                 isFormRegister = true;
                 textbox_ten.Clear();
                 textbox_sdt.Clear();
@@ -397,6 +399,11 @@ namespace QuanLyKhoHang
                     loadGridView();
                     changeToFormRegister();
                     break;
+
+                case "but_changeToRegis":
+                    changeToFormRegister();
+                    break;
+
             }
             
            
