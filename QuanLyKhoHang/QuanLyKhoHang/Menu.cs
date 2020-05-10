@@ -179,6 +179,9 @@ namespace QuanLyKhoHang
                     call_form(formNCC);
                     break;
                 case "but_phieu_nhap":
+                    this.screen.Controls.Clear();
+                    PhieuNhap formPhieuNhap = new PhieuNhap();
+                    call_form(formPhieuNhap);
                     break;
                 case "but_mat_hang":
                     break;
@@ -240,9 +243,24 @@ namespace QuanLyKhoHang
                     break;          
                  
                 case "but_exit":
-                    this.Close();
+                    Application.Exit();
                     break;
             }
            }
+
+        private void but_admin(object sender, EventArgs e)
+        {
+            Button but = (Button)sender;
+            switch (but.Name)
+            {
+                case "but_about":
+                    break;
+                case "but_logOut":
+                    // Login k = new Login();
+                    //k.Show();
+                    this.Close();
+                    break;
+            }
+            }
     }
 }

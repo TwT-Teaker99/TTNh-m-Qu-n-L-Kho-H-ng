@@ -51,7 +51,7 @@
             // 
             this.textBoxUName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxUName.Location = new System.Drawing.Point(179, 46);
-            this.textBoxUName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxUName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxUName.Name = "textBoxUName";
             this.textBoxUName.Size = new System.Drawing.Size(245, 26);
             this.textBoxUName.TabIndex = 1;
@@ -60,7 +60,7 @@
             // 
             this.textBoxPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.textBoxPass.Location = new System.Drawing.Point(179, 107);
-            this.textBoxPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPass.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPass.Name = "textBoxPass";
             this.textBoxPass.PasswordChar = '*';
             this.textBoxPass.Size = new System.Drawing.Size(245, 26);
@@ -81,7 +81,7 @@
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnClear.Location = new System.Drawing.Point(148, 161);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(107, 45);
             this.btnClear.TabIndex = 4;
@@ -93,7 +93,7 @@
             // 
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLogin.Location = new System.Drawing.Point(315, 161);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(108, 45);
             this.btnLogin.TabIndex = 5;
@@ -112,9 +112,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxUName);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.Text = "Login";
+            this.Activated += new System.EventHandler(this.Login_Activated);
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

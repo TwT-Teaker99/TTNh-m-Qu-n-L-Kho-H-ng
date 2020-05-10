@@ -370,7 +370,7 @@ namespace QuanLyKhoHang
             textbox_quan.Text = this.gridView.CurrentRow.Cells[3].Value.ToString();
             textbox_phuong.Text = this.gridView.CurrentRow.Cells[4].Value.ToString();
             textbox_city.Text = this.gridView.CurrentRow.Cells[5].Value.ToString();
-
+            
 
         }
 

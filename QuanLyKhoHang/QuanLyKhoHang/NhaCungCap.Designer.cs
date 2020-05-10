@@ -44,13 +44,21 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.but_changeToRegis = new System.Windows.Forms.Button();
+            this.but_xoa = new System.Windows.Forms.Button();
             this.label_sua = new System.Windows.Forms.Label();
+            this.but_sua = new System.Windows.Forms.Button();
             this.label_error_city = new System.Windows.Forms.Label();
             this.label_error_phuong = new System.Windows.Forms.Label();
             this.label_error_quan = new System.Windows.Forms.Label();
             this.label_error_sdt = new System.Windows.Forms.Label();
             this.label_error_ten = new System.Windows.Forms.Label();
             this.textbox_ten = new System.Windows.Forms.TextBox();
+            this.but_error_city = new System.Windows.Forms.Button();
+            this.but_error_phuong = new System.Windows.Forms.Button();
+            this.but_error_quan = new System.Windows.Forms.Button();
+            this.but_error_sdt = new System.Windows.Forms.Button();
+            this.but_error_ten = new System.Windows.Forms.Button();
             this.label_id = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -59,12 +67,20 @@
             this.textbox_phuong = new System.Windows.Forms.TextBox();
             this.textbox_quan = new System.Windows.Forms.TextBox();
             this.textbox_sdt = new System.Windows.Forms.TextBox();
+            this.but_register = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.textbox_search = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.but_search = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.but_sort_city = new System.Windows.Forms.Button();
+            this.but_sort_phuong = new System.Windows.Forms.Button();
+            this.but_sort_quan = new System.Windows.Forms.Button();
+            this.but_sort_sdt = new System.Windows.Forms.Button();
+            this.but_sort_ten = new System.Windows.Forms.Button();
+            this.but_sort_id = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -74,23 +90,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.but_search = new System.Windows.Forms.Button();
-            this.but_sort_city = new System.Windows.Forms.Button();
-            this.but_sort_phuong = new System.Windows.Forms.Button();
-            this.but_sort_quan = new System.Windows.Forms.Button();
-            this.but_sort_sdt = new System.Windows.Forms.Button();
-            this.but_sort_ten = new System.Windows.Forms.Button();
-            this.but_sort_id = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.but_xoa = new System.Windows.Forms.Button();
-            this.but_sua = new System.Windows.Forms.Button();
-            this.but_error_city = new System.Windows.Forms.Button();
-            this.but_error_phuong = new System.Windows.Forms.Button();
-            this.but_error_quan = new System.Windows.Forms.Button();
-            this.but_error_sdt = new System.Windows.Forms.Button();
-            this.but_error_ten = new System.Windows.Forms.Button();
-            this.but_register = new System.Windows.Forms.Button();
-            this.but_changeToRegis = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -287,6 +287,47 @@
             this.panel1.Size = new System.Drawing.Size(281, 564);
             this.panel1.TabIndex = 8;
             // 
+            // but_changeToRegis
+            // 
+            this.but_changeToRegis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(120)))));
+            this.but_changeToRegis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_changeToRegis.FlatAppearance.BorderSize = 0;
+            this.but_changeToRegis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_changeToRegis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.but_changeToRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_changeToRegis.ForeColor = System.Drawing.Color.White;
+            this.but_changeToRegis.Location = new System.Drawing.Point(252, 3);
+            this.but_changeToRegis.Name = "but_changeToRegis";
+            this.but_changeToRegis.Size = new System.Drawing.Size(26, 27);
+            this.but_changeToRegis.TabIndex = 52;
+            this.but_changeToRegis.Text = "-";
+            this.but_changeToRegis.UseVisualStyleBackColor = false;
+            this.but_changeToRegis.Visible = false;
+            this.but_changeToRegis.Click += new System.EventHandler(this.but_sua_xoa_Click);
+            // 
+            // but_xoa
+            // 
+            this.but_xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
+            this.but_xoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_xoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_xoa.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.but_xoa.FlatAppearance.BorderSize = 0;
+            this.but_xoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            this.but_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_xoa.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_xoa.ForeColor = System.Drawing.Color.White;
+            this.but_xoa.Image = global::QuanLyKhoHang.Properties.Resources.delete;
+            this.but_xoa.Location = new System.Drawing.Point(166, 483);
+            this.but_xoa.Name = "but_xoa";
+            this.but_xoa.Size = new System.Drawing.Size(85, 41);
+            this.but_xoa.TabIndex = 51;
+            this.but_xoa.Text = "Xóa";
+            this.but_xoa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.but_xoa.UseVisualStyleBackColor = false;
+            this.but_xoa.Visible = false;
+            this.but_xoa.Click += new System.EventHandler(this.but_sua_xoa_Click);
+            // 
             // label_sua
             // 
             this.label_sua.AutoSize = true;
@@ -298,6 +339,29 @@
             this.label_sua.TabIndex = 49;
             this.label_sua.Text = "Chỉnh sửa";
             this.label_sua.Visible = false;
+            // 
+            // but_sua
+            // 
+            this.but_sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(120)))));
+            this.but_sua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_sua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_sua.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.but_sua.FlatAppearance.BorderSize = 0;
+            this.but_sua.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_sua.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            this.but_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_sua.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_sua.ForeColor = System.Drawing.Color.White;
+            this.but_sua.Image = global::QuanLyKhoHang.Properties.Resources.repair;
+            this.but_sua.Location = new System.Drawing.Point(35, 483);
+            this.but_sua.Name = "but_sua";
+            this.but_sua.Size = new System.Drawing.Size(127, 41);
+            this.but_sua.TabIndex = 50;
+            this.but_sua.Text = "Sửa";
+            this.but_sua.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.but_sua.UseVisualStyleBackColor = false;
+            this.but_sua.Visible = false;
+            this.but_sua.Click += new System.EventHandler(this.but_sua_xoa_Click);
             // 
             // label_error_city
             // 
@@ -370,6 +434,91 @@
             this.textbox_ten.Size = new System.Drawing.Size(191, 30);
             this.textbox_ten.TabIndex = 8;
             this.textbox_ten.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // but_error_city
+            // 
+            this.but_error_city.BackColor = System.Drawing.Color.White;
+            this.but_error_city.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_error_city.FlatAppearance.BorderSize = 0;
+            this.but_error_city.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_error_city.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.but_error_city.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_error_city.Image = global::QuanLyKhoHang.Properties.Resources.error;
+            this.but_error_city.Location = new System.Drawing.Point(242, 422);
+            this.but_error_city.Name = "but_error_city";
+            this.but_error_city.Size = new System.Drawing.Size(26, 27);
+            this.but_error_city.TabIndex = 43;
+            this.but_error_city.UseVisualStyleBackColor = false;
+            this.but_error_city.Visible = false;
+            this.but_error_city.Click += new System.EventHandler(this.but_error);
+            // 
+            // but_error_phuong
+            // 
+            this.but_error_phuong.BackColor = System.Drawing.Color.White;
+            this.but_error_phuong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_error_phuong.FlatAppearance.BorderSize = 0;
+            this.but_error_phuong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_error_phuong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.but_error_phuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_error_phuong.Image = global::QuanLyKhoHang.Properties.Resources.error;
+            this.but_error_phuong.Location = new System.Drawing.Point(243, 348);
+            this.but_error_phuong.Name = "but_error_phuong";
+            this.but_error_phuong.Size = new System.Drawing.Size(26, 27);
+            this.but_error_phuong.TabIndex = 42;
+            this.but_error_phuong.UseVisualStyleBackColor = false;
+            this.but_error_phuong.Visible = false;
+            this.but_error_phuong.Click += new System.EventHandler(this.but_error);
+            // 
+            // but_error_quan
+            // 
+            this.but_error_quan.BackColor = System.Drawing.Color.White;
+            this.but_error_quan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_error_quan.FlatAppearance.BorderSize = 0;
+            this.but_error_quan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_error_quan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.but_error_quan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_error_quan.Image = global::QuanLyKhoHang.Properties.Resources.error;
+            this.but_error_quan.Location = new System.Drawing.Point(243, 275);
+            this.but_error_quan.Name = "but_error_quan";
+            this.but_error_quan.Size = new System.Drawing.Size(26, 27);
+            this.but_error_quan.TabIndex = 41;
+            this.but_error_quan.UseVisualStyleBackColor = false;
+            this.but_error_quan.Visible = false;
+            this.but_error_quan.Click += new System.EventHandler(this.but_error);
+            // 
+            // but_error_sdt
+            // 
+            this.but_error_sdt.BackColor = System.Drawing.Color.White;
+            this.but_error_sdt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_error_sdt.FlatAppearance.BorderSize = 0;
+            this.but_error_sdt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_error_sdt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.but_error_sdt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_error_sdt.Image = global::QuanLyKhoHang.Properties.Resources.error;
+            this.but_error_sdt.Location = new System.Drawing.Point(242, 199);
+            this.but_error_sdt.Name = "but_error_sdt";
+            this.but_error_sdt.Size = new System.Drawing.Size(26, 27);
+            this.but_error_sdt.TabIndex = 40;
+            this.but_error_sdt.UseVisualStyleBackColor = false;
+            this.but_error_sdt.Visible = false;
+            this.but_error_sdt.Click += new System.EventHandler(this.but_error);
+            // 
+            // but_error_ten
+            // 
+            this.but_error_ten.BackColor = System.Drawing.Color.White;
+            this.but_error_ten.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_error_ten.FlatAppearance.BorderSize = 0;
+            this.but_error_ten.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_error_ten.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.but_error_ten.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_error_ten.Image = global::QuanLyKhoHang.Properties.Resources.error;
+            this.but_error_ten.Location = new System.Drawing.Point(242, 126);
+            this.but_error_ten.Name = "but_error_ten";
+            this.but_error_ten.Size = new System.Drawing.Size(26, 27);
+            this.but_error_ten.TabIndex = 39;
+            this.but_error_ten.UseVisualStyleBackColor = false;
+            this.but_error_ten.Visible = false;
+            this.but_error_ten.Click += new System.EventHandler(this.but_error);
             // 
             // label_id
             // 
@@ -463,6 +612,28 @@
             this.textbox_sdt.TabIndex = 9;
             this.textbox_sdt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // but_register
+            // 
+            this.but_register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(120)))));
+            this.but_register.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_register.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_register.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.but_register.FlatAppearance.BorderSize = 0;
+            this.but_register.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_register.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            this.but_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_register.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_register.ForeColor = System.Drawing.Color.White;
+            this.but_register.Image = global::QuanLyKhoHang.Properties.Resources.add;
+            this.but_register.Location = new System.Drawing.Point(64, 483);
+            this.but_register.Name = "but_register";
+            this.but_register.Size = new System.Drawing.Size(161, 41);
+            this.but_register.TabIndex = 3;
+            this.but_register.Text = "Thêm";
+            this.but_register.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.but_register.UseVisualStyleBackColor = false;
+            this.but_register.Click += new System.EventHandler(this.but_register_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
@@ -510,11 +681,31 @@
             this.label11.TabIndex = 31;
             this.label11.Text = "Tìm kiếm";
             // 
+            // but_search
+            // 
+            this.but_search.BackColor = System.Drawing.Color.White;
+            this.but_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_search.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_search.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            this.but_search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            this.but_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_search.Font = new System.Drawing.Font("Courier New", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            this.but_search.Image = global::QuanLyKhoHang.Properties.Resources.search;
+            this.but_search.Location = new System.Drawing.Point(280, 15);
+            this.but_search.Name = "but_search";
+            this.but_search.Size = new System.Drawing.Size(45, 38);
+            this.but_search.TabIndex = 17;
+            this.but_search.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.but_search.UseVisualStyleBackColor = false;
+            this.but_search.Click += new System.EventHandler(this.but_search_Click);
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel4);
+            this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.label19);
             this.panel3.Controls.Add(this.label18);
             this.panel3.Controls.Add(this.gridView);
@@ -542,6 +733,96 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(598, 51);
             this.panel6.TabIndex = 32;
+            // 
+            // but_sort_city
+            // 
+            this.but_sort_city.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            this.but_sort_city.FlatAppearance.BorderSize = 0;
+            this.but_sort_city.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_sort_city.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
+            this.but_sort_city.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_sort_city.Image = global::QuanLyKhoHang.Properties.Resources._switch;
+            this.but_sort_city.Location = new System.Drawing.Point(575, 10);
+            this.but_sort_city.Name = "but_sort_city";
+            this.but_sort_city.Size = new System.Drawing.Size(20, 27);
+            this.but_sort_city.TabIndex = 38;
+            this.but_sort_city.UseVisualStyleBackColor = false;
+            this.but_sort_city.Click += new System.EventHandler(this.but_sort_click);
+            // 
+            // but_sort_phuong
+            // 
+            this.but_sort_phuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            this.but_sort_phuong.FlatAppearance.BorderSize = 0;
+            this.but_sort_phuong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_sort_phuong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
+            this.but_sort_phuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_sort_phuong.Image = global::QuanLyKhoHang.Properties.Resources._switch;
+            this.but_sort_phuong.Location = new System.Drawing.Point(456, 10);
+            this.but_sort_phuong.Name = "but_sort_phuong";
+            this.but_sort_phuong.Size = new System.Drawing.Size(20, 27);
+            this.but_sort_phuong.TabIndex = 37;
+            this.but_sort_phuong.UseVisualStyleBackColor = false;
+            this.but_sort_phuong.Click += new System.EventHandler(this.but_sort_click);
+            // 
+            // but_sort_quan
+            // 
+            this.but_sort_quan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            this.but_sort_quan.FlatAppearance.BorderSize = 0;
+            this.but_sort_quan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_sort_quan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
+            this.but_sort_quan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_sort_quan.Image = global::QuanLyKhoHang.Properties.Resources._switch;
+            this.but_sort_quan.Location = new System.Drawing.Point(334, 10);
+            this.but_sort_quan.Name = "but_sort_quan";
+            this.but_sort_quan.Size = new System.Drawing.Size(20, 27);
+            this.but_sort_quan.TabIndex = 36;
+            this.but_sort_quan.UseVisualStyleBackColor = false;
+            this.but_sort_quan.Click += new System.EventHandler(this.but_sort_click);
+            // 
+            // but_sort_sdt
+            // 
+            this.but_sort_sdt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            this.but_sort_sdt.FlatAppearance.BorderSize = 0;
+            this.but_sort_sdt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_sort_sdt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
+            this.but_sort_sdt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_sort_sdt.Image = global::QuanLyKhoHang.Properties.Resources._switch;
+            this.but_sort_sdt.Location = new System.Drawing.Point(231, 10);
+            this.but_sort_sdt.Name = "but_sort_sdt";
+            this.but_sort_sdt.Size = new System.Drawing.Size(20, 27);
+            this.but_sort_sdt.TabIndex = 35;
+            this.but_sort_sdt.UseVisualStyleBackColor = false;
+            this.but_sort_sdt.Click += new System.EventHandler(this.but_sort_click);
+            // 
+            // but_sort_ten
+            // 
+            this.but_sort_ten.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            this.but_sort_ten.FlatAppearance.BorderSize = 0;
+            this.but_sort_ten.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_sort_ten.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
+            this.but_sort_ten.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_sort_ten.Image = global::QuanLyKhoHang.Properties.Resources._switch;
+            this.but_sort_ten.Location = new System.Drawing.Point(123, 10);
+            this.but_sort_ten.Name = "but_sort_ten";
+            this.but_sort_ten.Size = new System.Drawing.Size(20, 27);
+            this.but_sort_ten.TabIndex = 34;
+            this.but_sort_ten.UseVisualStyleBackColor = false;
+            this.but_sort_ten.Click += new System.EventHandler(this.but_sort_click);
+            // 
+            // but_sort_id
+            // 
+            this.but_sort_id.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            this.but_sort_id.FlatAppearance.BorderSize = 0;
+            this.but_sort_id.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_sort_id.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
+            this.but_sort_id.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_sort_id.Image = global::QuanLyKhoHang.Properties.Resources._switch;
+            this.but_sort_id.Location = new System.Drawing.Point(21, 10);
+            this.but_sort_id.Name = "but_sort_id";
+            this.but_sort_id.Size = new System.Drawing.Size(20, 27);
+            this.but_sort_id.TabIndex = 33;
+            this.but_sort_id.UseVisualStyleBackColor = false;
+            this.but_sort_id.Click += new System.EventHandler(this.but_sort_click);
             // 
             // label20
             // 
@@ -641,295 +922,14 @@
             this.panel5.Size = new System.Drawing.Size(614, 570);
             this.panel5.TabIndex = 32;
             // 
-            // but_search
-            // 
-            this.but_search.BackColor = System.Drawing.Color.White;
-            this.but_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_search.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_search.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            this.but_search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            this.but_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_search.Font = new System.Drawing.Font("Courier New", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            this.but_search.Image = global::QuanLyKhoHang.Properties.Resources.search;
-            this.but_search.Location = new System.Drawing.Point(280, 15);
-            this.but_search.Name = "but_search";
-            this.but_search.Size = new System.Drawing.Size(45, 38);
-            this.but_search.TabIndex = 17;
-            this.but_search.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.but_search.UseVisualStyleBackColor = false;
-            this.but_search.Click += new System.EventHandler(this.but_search_Click);
-            // 
-            // but_sort_city
-            // 
-            this.but_sort_city.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.but_sort_city.FlatAppearance.BorderSize = 0;
-            this.but_sort_city.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_sort_city.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            this.but_sort_city.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_sort_city.Image = global::QuanLyKhoHang.Properties.Resources._switch;
-            this.but_sort_city.Location = new System.Drawing.Point(575, 10);
-            this.but_sort_city.Name = "but_sort_city";
-            this.but_sort_city.Size = new System.Drawing.Size(20, 27);
-            this.but_sort_city.TabIndex = 38;
-            this.but_sort_city.UseVisualStyleBackColor = false;
-            this.but_sort_city.Click += new System.EventHandler(this.but_sort_click);
-            // 
-            // but_sort_phuong
-            // 
-            this.but_sort_phuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.but_sort_phuong.FlatAppearance.BorderSize = 0;
-            this.but_sort_phuong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_sort_phuong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            this.but_sort_phuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_sort_phuong.Image = global::QuanLyKhoHang.Properties.Resources._switch;
-            this.but_sort_phuong.Location = new System.Drawing.Point(456, 10);
-            this.but_sort_phuong.Name = "but_sort_phuong";
-            this.but_sort_phuong.Size = new System.Drawing.Size(20, 27);
-            this.but_sort_phuong.TabIndex = 37;
-            this.but_sort_phuong.UseVisualStyleBackColor = false;
-            this.but_sort_phuong.Click += new System.EventHandler(this.but_sort_click);
-            // 
-            // but_sort_quan
-            // 
-            this.but_sort_quan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.but_sort_quan.FlatAppearance.BorderSize = 0;
-            this.but_sort_quan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_sort_quan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            this.but_sort_quan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_sort_quan.Image = global::QuanLyKhoHang.Properties.Resources._switch;
-            this.but_sort_quan.Location = new System.Drawing.Point(334, 10);
-            this.but_sort_quan.Name = "but_sort_quan";
-            this.but_sort_quan.Size = new System.Drawing.Size(20, 27);
-            this.but_sort_quan.TabIndex = 36;
-            this.but_sort_quan.UseVisualStyleBackColor = false;
-            this.but_sort_quan.Click += new System.EventHandler(this.but_sort_click);
-            // 
-            // but_sort_sdt
-            // 
-            this.but_sort_sdt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.but_sort_sdt.FlatAppearance.BorderSize = 0;
-            this.but_sort_sdt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_sort_sdt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            this.but_sort_sdt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_sort_sdt.Image = global::QuanLyKhoHang.Properties.Resources._switch;
-            this.but_sort_sdt.Location = new System.Drawing.Point(231, 10);
-            this.but_sort_sdt.Name = "but_sort_sdt";
-            this.but_sort_sdt.Size = new System.Drawing.Size(20, 27);
-            this.but_sort_sdt.TabIndex = 35;
-            this.but_sort_sdt.UseVisualStyleBackColor = false;
-            this.but_sort_sdt.Click += new System.EventHandler(this.but_sort_click);
-            // 
-            // but_sort_ten
-            // 
-            this.but_sort_ten.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.but_sort_ten.FlatAppearance.BorderSize = 0;
-            this.but_sort_ten.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_sort_ten.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            this.but_sort_ten.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_sort_ten.Image = global::QuanLyKhoHang.Properties.Resources._switch;
-            this.but_sort_ten.Location = new System.Drawing.Point(123, 10);
-            this.but_sort_ten.Name = "but_sort_ten";
-            this.but_sort_ten.Size = new System.Drawing.Size(20, 27);
-            this.but_sort_ten.TabIndex = 34;
-            this.but_sort_ten.UseVisualStyleBackColor = false;
-            this.but_sort_ten.Click += new System.EventHandler(this.but_sort_click);
-            // 
-            // but_sort_id
-            // 
-            this.but_sort_id.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.but_sort_id.FlatAppearance.BorderSize = 0;
-            this.but_sort_id.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_sort_id.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            this.but_sort_id.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_sort_id.Image = global::QuanLyKhoHang.Properties.Resources._switch;
-            this.but_sort_id.Location = new System.Drawing.Point(21, 10);
-            this.but_sort_id.Name = "but_sort_id";
-            this.but_sort_id.Size = new System.Drawing.Size(20, 27);
-            this.but_sort_id.TabIndex = 33;
-            this.but_sort_id.UseVisualStyleBackColor = false;
-            this.but_sort_id.Click += new System.EventHandler(this.but_sort_click);
-            // 
             // panel4
             // 
             this.panel4.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.right;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel4.Location = new System.Drawing.Point(121, 10);
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Location = new System.Drawing.Point(121, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(26, 28);
-            this.panel4.TabIndex = 30;
-            // 
-            // but_xoa
-            // 
-            this.but_xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.but_xoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_xoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_xoa.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.but_xoa.FlatAppearance.BorderSize = 0;
-            this.but_xoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            this.but_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_xoa.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_xoa.ForeColor = System.Drawing.Color.White;
-            this.but_xoa.Image = global::QuanLyKhoHang.Properties.Resources.delete;
-            this.but_xoa.Location = new System.Drawing.Point(166, 483);
-            this.but_xoa.Name = "but_xoa";
-            this.but_xoa.Size = new System.Drawing.Size(85, 41);
-            this.but_xoa.TabIndex = 51;
-            this.but_xoa.Text = "Xóa";
-            this.but_xoa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.but_xoa.UseVisualStyleBackColor = false;
-            this.but_xoa.Visible = false;
-            this.but_xoa.Click += new System.EventHandler(this.but_sua_xoa_Click);
-            // 
-            // but_sua
-            // 
-            this.but_sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(120)))));
-            this.but_sua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_sua.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_sua.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.but_sua.FlatAppearance.BorderSize = 0;
-            this.but_sua.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_sua.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            this.but_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_sua.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_sua.ForeColor = System.Drawing.Color.White;
-            this.but_sua.Image = global::QuanLyKhoHang.Properties.Resources.repair;
-            this.but_sua.Location = new System.Drawing.Point(35, 483);
-            this.but_sua.Name = "but_sua";
-            this.but_sua.Size = new System.Drawing.Size(127, 41);
-            this.but_sua.TabIndex = 50;
-            this.but_sua.Text = "Sửa";
-            this.but_sua.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.but_sua.UseVisualStyleBackColor = false;
-            this.but_sua.Visible = false;
-            this.but_sua.Click += new System.EventHandler(this.but_sua_xoa_Click);
-            // 
-            // but_error_city
-            // 
-            this.but_error_city.BackColor = System.Drawing.Color.White;
-            this.but_error_city.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_error_city.FlatAppearance.BorderSize = 0;
-            this.but_error_city.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_error_city.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.but_error_city.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_error_city.Image = global::QuanLyKhoHang.Properties.Resources.error;
-            this.but_error_city.Location = new System.Drawing.Point(242, 422);
-            this.but_error_city.Name = "but_error_city";
-            this.but_error_city.Size = new System.Drawing.Size(26, 27);
-            this.but_error_city.TabIndex = 43;
-            this.but_error_city.UseVisualStyleBackColor = false;
-            this.but_error_city.Visible = false;
-            this.but_error_city.Click += new System.EventHandler(this.but_error);
-            // 
-            // but_error_phuong
-            // 
-            this.but_error_phuong.BackColor = System.Drawing.Color.White;
-            this.but_error_phuong.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_error_phuong.FlatAppearance.BorderSize = 0;
-            this.but_error_phuong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_error_phuong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.but_error_phuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_error_phuong.Image = global::QuanLyKhoHang.Properties.Resources.error;
-            this.but_error_phuong.Location = new System.Drawing.Point(243, 348);
-            this.but_error_phuong.Name = "but_error_phuong";
-            this.but_error_phuong.Size = new System.Drawing.Size(26, 27);
-            this.but_error_phuong.TabIndex = 42;
-            this.but_error_phuong.UseVisualStyleBackColor = false;
-            this.but_error_phuong.Visible = false;
-            this.but_error_phuong.Click += new System.EventHandler(this.but_error);
-            // 
-            // but_error_quan
-            // 
-            this.but_error_quan.BackColor = System.Drawing.Color.White;
-            this.but_error_quan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_error_quan.FlatAppearance.BorderSize = 0;
-            this.but_error_quan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_error_quan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.but_error_quan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_error_quan.Image = global::QuanLyKhoHang.Properties.Resources.error;
-            this.but_error_quan.Location = new System.Drawing.Point(243, 275);
-            this.but_error_quan.Name = "but_error_quan";
-            this.but_error_quan.Size = new System.Drawing.Size(26, 27);
-            this.but_error_quan.TabIndex = 41;
-            this.but_error_quan.UseVisualStyleBackColor = false;
-            this.but_error_quan.Visible = false;
-            this.but_error_quan.Click += new System.EventHandler(this.but_error);
-            // 
-            // but_error_sdt
-            // 
-            this.but_error_sdt.BackColor = System.Drawing.Color.White;
-            this.but_error_sdt.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_error_sdt.FlatAppearance.BorderSize = 0;
-            this.but_error_sdt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_error_sdt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.but_error_sdt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_error_sdt.Image = global::QuanLyKhoHang.Properties.Resources.error;
-            this.but_error_sdt.Location = new System.Drawing.Point(242, 199);
-            this.but_error_sdt.Name = "but_error_sdt";
-            this.but_error_sdt.Size = new System.Drawing.Size(26, 27);
-            this.but_error_sdt.TabIndex = 40;
-            this.but_error_sdt.UseVisualStyleBackColor = false;
-            this.but_error_sdt.Visible = false;
-            this.but_error_sdt.Click += new System.EventHandler(this.but_error);
-            // 
-            // but_error_ten
-            // 
-            this.but_error_ten.BackColor = System.Drawing.Color.White;
-            this.but_error_ten.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_error_ten.FlatAppearance.BorderSize = 0;
-            this.but_error_ten.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_error_ten.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.but_error_ten.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_error_ten.Image = global::QuanLyKhoHang.Properties.Resources.error;
-            this.but_error_ten.Location = new System.Drawing.Point(242, 126);
-            this.but_error_ten.Name = "but_error_ten";
-            this.but_error_ten.Size = new System.Drawing.Size(26, 27);
-            this.but_error_ten.TabIndex = 39;
-            this.but_error_ten.UseVisualStyleBackColor = false;
-            this.but_error_ten.Visible = false;
-            this.but_error_ten.Click += new System.EventHandler(this.but_error);
-            // 
-            // but_register
-            // 
-            this.but_register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(120)))));
-            this.but_register.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_register.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_register.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.but_register.FlatAppearance.BorderSize = 0;
-            this.but_register.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_register.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            this.but_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_register.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_register.ForeColor = System.Drawing.Color.White;
-            this.but_register.Image = global::QuanLyKhoHang.Properties.Resources.add;
-            this.but_register.Location = new System.Drawing.Point(64, 483);
-            this.but_register.Name = "but_register";
-            this.but_register.Size = new System.Drawing.Size(161, 41);
-            this.but_register.TabIndex = 3;
-            this.but_register.Text = "Thêm";
-            this.but_register.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.but_register.UseVisualStyleBackColor = false;
-            this.but_register.Click += new System.EventHandler(this.but_register_Click);
-            // 
-            // but_changeToRegis
-            // 
-            this.but_changeToRegis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(120)))));
-            this.but_changeToRegis.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_changeToRegis.FlatAppearance.BorderSize = 0;
-            this.but_changeToRegis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_changeToRegis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.but_changeToRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_changeToRegis.ForeColor = System.Drawing.Color.White;
-            this.but_changeToRegis.Location = new System.Drawing.Point(252, 3);
-            this.but_changeToRegis.Name = "but_changeToRegis";
-            this.but_changeToRegis.Size = new System.Drawing.Size(26, 27);
-            this.but_changeToRegis.TabIndex = 52;
-            this.but_changeToRegis.Text = "-";
-            this.but_changeToRegis.UseVisualStyleBackColor = false;
-            this.but_changeToRegis.Visible = false;
-            this.but_changeToRegis.Click += new System.EventHandler(this.but_sua_xoa_Click);
+            this.panel4.Size = new System.Drawing.Size(26, 22);
+            this.panel4.TabIndex = 33;
             // 
             // NhaCungCap
             // 
@@ -984,7 +984,6 @@
         private System.Windows.Forms.TextBox textbox_search;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
@@ -1020,5 +1019,6 @@
         private System.Windows.Forms.Button but_sua;
         private System.Windows.Forms.Button but_xoa;
         private System.Windows.Forms.Button but_changeToRegis;
+        private System.Windows.Forms.Panel panel4;
     }
 }

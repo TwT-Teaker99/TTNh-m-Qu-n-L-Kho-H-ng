@@ -14,6 +14,7 @@ namespace QuanLyKhoHang
     {
         dbAccess db = new dbAccess();
         DataTable table = new DataTable();
+        private int count = 0;
         public Login()
         {
             InitializeComponent();
@@ -32,15 +33,26 @@ namespace QuanLyKhoHang
             //db.readDataToAdapter("SELECT [MaNhanVien],[TaiKhoan],[MatKhau] FROM[dbo].[NhanVien] WHERE TaiKhoan = '" + textBoxUName.Text + "' and MatKhau = '" + textBoxPass.Text + "'", table);
             if(textBoxUName.Text=="" && textBoxPass.Text=="")
             {
+               
+                Menu menu = new Menu();
+                menu.Show();
                 this.Hide();
-                Main main = new Main();
-                main.Show();
             }
             else
             {
                 MessageBox.Show("Kiểm tra lại tên đăng nhập và mật khẩu..!", "Sai Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+        }
+       
+        private void Login_Activated(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+           
         }
     }
 }
