@@ -82,7 +82,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
@@ -169,7 +169,7 @@
             this.panel2.Controls.Add(this.btnSearch);
             this.panel2.Location = new System.Drawing.Point(3, 556);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(859, 129);
+            this.panel2.Size = new System.Drawing.Size(859, 133);
             this.panel2.TabIndex = 1;
             // 
             // label11
@@ -292,7 +292,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 690);
+            this.ClientSize = new System.Drawing.Size(1195, 690);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
