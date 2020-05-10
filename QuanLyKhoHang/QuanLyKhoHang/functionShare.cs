@@ -70,5 +70,19 @@ namespace QuanLyKhoHang
                 tb.ForeColor = Color.Black;
             }
         }
+
+        /*
+         * 24
+           DataGridViewRow row = (DataGridViewRow)gridView2.Rows[0].Clone();
+            row.Cells[0].Value = 1;
+            row.Cells[1].Value = 1;
+            row.Cells[2].Value = 1;
+            row.Cells[3].Value = "gói";
+            gridView2.Rows.Add(row);    (put data into gridview
+            this.dataGridView1.Rows.Add("five", "six", "seven","eight");
+            this.dataGridView1.Rows.Insert(0, "one", "two", "three", "four");
+            gridView2.Rows.Count  //đếm tổng row ( bắt đầu từ 1 not 0)
+            gridView.Rows[2].Cells[2].Value.ToString(); //get data from gridview
+         */
     }
 }
