@@ -59,8 +59,12 @@ namespace QuanLyKhoHang
                 
                 string query = "DELETE FROM phieu_xuat WHERE id = " + s;
                 SqlCommand cmd = new SqlCommand(query);
+<<<<<<< HEAD
                 db.editDB(cmd);
                 QLXuat_Load(sender, e);
+=======
+               // db.executeQuery(cmd);
+>>>>>>> 3dc7f675dd5eba66d31d4903186965b5f02227ee
             }
         }
 
@@ -86,7 +90,12 @@ namespace QuanLyKhoHang
                 {
                     query = "SELECT * FROM mat_hang ";
                 }
+<<<<<<< HEAD
                 dbAccess.GetData(query, dataGridView1);
+=======
+               // db.GetData(query, dataGridView1, table);
+
+>>>>>>> 3dc7f675dd5eba66d31d4903186965b5f02227ee
             }
         }
     }

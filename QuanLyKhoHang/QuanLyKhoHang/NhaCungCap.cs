@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,7 +14,7 @@ namespace QuanLyKhoHang
 {
     public partial class NhaCungCap : Form
     {
-        dbAccess database = new dbAccess();        
+        dbAccess database = new dbAccess();
         SqlCommand comman;
         DataTable dataTable;
         string query = "SELECT * FROM nha_cung_cap";
@@ -23,14 +24,17 @@ namespace QuanLyKhoHang
         private bool sort_quan;
         private bool sort_phuong;
         private bool sort_city;
+        private bool isFormRegister=true;
+
+
         public NhaCungCap()
         {
             InitializeComponent();
             database.pickSever(1);
         }
-      
+
         private void autoID(Label pk)
-        {                       
+        {
             string query1 = "SELECT MAX(id) AS MAX FROM nha_cung_cap";
             comman = new SqlCommand(query1);
             dataTable = new DataTable();
@@ -57,11 +61,11 @@ namespace QuanLyKhoHang
             loadGridView();
             autoID(label_id);
         }
-       
+
         private void but_sort_click(object sender, EventArgs e)
         {
             Button but = (Button)sender;
-            string root = query +" ORDER BY ";
+            string root = query + " ORDER BY ";
             switch (but.Name)
             {
                 case "but_sort_id":
@@ -74,7 +78,7 @@ namespace QuanLyKhoHang
                     {
                         root += " 1 DESC;";
                         sort_id = true;
-                    }                                     
+                    }
                     break;
 
                 case "but_sort_ten":
@@ -89,7 +93,7 @@ namespace QuanLyKhoHang
                         sort_ten = true;
                     }
 
-                   
+
                     break;
                 case "but_sort_sdt":
                     if (sort_sdt)
@@ -98,10 +102,10 @@ namespace QuanLyKhoHang
                         sort_sdt = false;
                     }
                     else
-                    { 
+                    {
                         root += " 3 DESC;";
                         sort_sdt = true;
-                    }                  
+                    }
                     break;
                 case "but_sort_quan":
                     if (sort_quan)
@@ -123,7 +127,7 @@ namespace QuanLyKhoHang
                         sort_phuong = false;
                     }
                     else
-                    { 
+                    {
                         root += " 5 DESC;";
                         sort_phuong = true;
                     }
@@ -135,20 +139,49 @@ namespace QuanLyKhoHang
                         sort_city = false;
                     }
                     else
-                    {   
+                    {
                         root += " 6 DESC;";
                         sort_city = true;
                     }
                     break;
-               
+
             }
             comman = new SqlCommand(root);
             database.pushGridview(comman, gridView);
         }
 
+
         private void but_search_Click(object sender, EventArgs e)
         {
+            if (textbox_search.Text != "")
+            {
+                string inputSearch = textbox_search.Text;
+                string root = query + " WHERE ";
+                string or = " OR ";
+                string searchTen;
+                if (isNumber(inputSearch))
+                {
 
+                    string searchID = "id= " + inputSearch;
+                    searchTen = "ten LIKE N'%" + inputSearch + "%'";
+                    string searchSdt = "sdt LIKE N'%" + inputSearch + "%'";
+
+                    root = root + searchID + or + searchTen + or + searchSdt;
+
+
+                }
+                else
+                {
+                    searchTen = "ten LIKE N'%" + inputSearch + "%'";
+                    string searchPhuong = "phuong LIKE N'%" + inputSearch + "%'";
+                    string searchQuan = "quan LIKE N'%" + inputSearch + "%'";
+                    string searchCity = "city LIKE N'%" + inputSearch + "%'";
+                    root = root + searchTen + or + searchPhuong + or + searchQuan + or + searchCity;
+                }
+                //  MessageBox.Show(root);
+                comman = new SqlCommand(root);
+                database.pushGridview(comman, gridView);
+            }
         }
         private bool isNumber(string pValue)
         {
@@ -184,25 +217,25 @@ namespace QuanLyKhoHang
         }
         private bool kiemTraInput()
         {
-            bool check =true;
+            bool check = true;
             resetError();
             if (textbox_ten.Text == "")
             {
-                but_error_ten.Visible = true;check=false;
-                
+                but_error_ten.Visible = true; check = false;
+
             }
-            if (!isNumber(textbox_sdt.Text) )
+            if (!isNumber(textbox_sdt.Text) || textbox_sdt.Text.Length > 11 || textbox_sdt.Text.Length < 6)
             {
                 but_error_sdt.Visible = true; check = false;
 
             }
-            if (textbox_phuong.Text == ""||isNumber(textbox_phuong.Text))
+            if (textbox_phuong.Text == "" || isNumber(textbox_phuong.Text))
             {
                 but_error_phuong.Visible = true; check = false;
 
             }
             if (textbox_quan.Text == "" || isNumber(textbox_quan.Text))
-            { 
+            {
                 but_error_quan.Visible = true; check = false;
 
             }
@@ -212,7 +245,7 @@ namespace QuanLyKhoHang
 
             }
             return check;
-        
+
         }
         private void but_register_Click(object sender, EventArgs e)
         {
@@ -221,19 +254,20 @@ namespace QuanLyKhoHang
                 string query = "SET IDENTITY_INSERT nha_cung_cap ON;" +
                  "INSERT INTO nha_cung_cap ( id,ten,sdt, quan, phuong, city) " +
           "VALUES (" + label_id.Text + ",N'" + textbox_ten.Text + "',N'" + textbox_sdt.Text + "', N'" +
-          textbox_quan.Text + "', N'"+ textbox_phuong.Text + "', N'" + textbox_city.Text + "')  "
+          textbox_quan.Text + "', N'" + textbox_phuong.Text + "', N'" + textbox_city.Text + "')  "
                    + "SET IDENTITY_INSERT nha_cung_cap OFF;";
                 comman = new SqlCommand(query);
                 database.editDB(comman);
                 loadGridView();
                 resetRegister();
+                autoID(label_id);
             }
-            
+
         }
 
         private void but_error(object sender, EventArgs e)
         {
-            Button but = (Button)sender;      
+            Button but = (Button)sender;
             switch (but.Name)
             {
                 case "but_error_ten":
@@ -248,11 +282,11 @@ namespace QuanLyKhoHang
                     break;
                 case "but_error_sdt":
                     if (label_error_sdt.Visible)
-                    {               
+                    {
                         label_error_sdt.Visible = false;
-                    }               
-                    else            
-                    {               
+                    }
+                    else
+                    {
                         label_error_sdt.Visible = true;
                     }
                     break;
@@ -287,7 +321,88 @@ namespace QuanLyKhoHang
                     }
                     break;
             }
-           }
+        }
+        private void changeToFormAlter()
+        {
+            if (isFormRegister)
+            {
+                label_sua.Visible = true;
+                label_dk.Visible = false;
+                but_register.Visible = false;
+                but_sua.Visible = true;
+                but_xoa.Visible = true;
+                isFormRegister = false;
+            }
+
+        }
+        private void changeToFormRegister()
+        {
+            if (!isFormRegister)
+            {
+                autoID(label_id);
+                label_sua.Visible = false;
+                label_dk.Visible = true;
+                but_register.Visible = true;
+                but_sua.Visible = false;
+                but_xoa.Visible = false;
+                isFormRegister = true;
+                textbox_ten.Clear();
+                textbox_sdt.Clear();
+                textbox_quan.Clear();
+                textbox_phuong.Clear();
+                textbox_city.Clear();
+            }
+
+        }
+        private void gridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // NhaCungCap_Alter sua_xoa = new NhaCungCap_Alter();
+            // sua_xoa.ShowDialog(this);          
+            if (isFormRegister)
+            {
+                changeToFormAlter();
+            }
+            label_id.Text = this.gridView.CurrentRow.Cells[0].Value.ToString();
+            textbox_ten.Text = this.gridView.CurrentRow.Cells[1].Value.ToString();
+            textbox_sdt.Text = this.gridView.CurrentRow.Cells[2].Value.ToString();
+            textbox_quan.Text = this.gridView.CurrentRow.Cells[3].Value.ToString();
+            textbox_phuong.Text = this.gridView.CurrentRow.Cells[4].Value.ToString();
+            textbox_city.Text = this.gridView.CurrentRow.Cells[5].Value.ToString();
+
+
+        }
+
+        private void but_sua_xoa_Click(object sender, EventArgs e)
+        {
+            Button but = (Button)sender;
+            switch (but.Name)
+            {
+                case "but_sua":
+                    if (kiemTraInput())
+                    {
+                        string update = "UPDATE nha_cung_cap SET ten=N'" + textbox_ten.Text +
+                   "' ,sdt= '" + textbox_sdt.Text + "' ,quan= N'" + textbox_quan.Text + 
+                    "' ,phuong= N'" + 
+                   textbox_phuong.Text + "' ,city= N'" + textbox_city.Text + "' WHERE id=" + label_id.Text;                     
+                        comman = new SqlCommand(update);
+                        database.editDB(comman);
+                        loadGridView();
+                        changeToFormRegister();
+                    }
+                    break;
+                case "but_xoa":
+                    string delete = "DELETE FROM nha_cung_cap WHERE id =" +label_id.Text;
+                    comman = new SqlCommand(delete);
+                    database.editDB(comman);
+                    loadGridView();
+                    changeToFormRegister();
+                    break;
+            }
+            
+           
+          
+            
+        }
     }
-    }
+}
 
