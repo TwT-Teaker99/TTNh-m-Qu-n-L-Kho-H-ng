@@ -15,9 +15,9 @@ namespace QuanLyKhoHang
     public partial class NhaCungCap : Form
     {
         dbAccess database = new dbAccess();
-        SqlCommand comman;
-        DataTable dataTable;
+        SqlCommand comman;     
         string query = "SELECT * FROM nha_cung_cap";
+        functionShare funcShare;
         private bool sort_id;
         private bool sort_ten;
         private bool sort_sdt;
@@ -30,36 +30,17 @@ namespace QuanLyKhoHang
         public NhaCungCap()
         {
             InitializeComponent();
-            database.pickSever(1);
+          int sever = 1;
+            database.pickSever(sever);
+            funcShare = new functionShare(sever);
         }
-
-        private void autoID(Label pk)
-        {
-            string query1 = "SELECT MAX(id) AS MAX FROM nha_cung_cap";
-            comman = new SqlCommand(query1);
-            dataTable = new DataTable();
-            database.pushDataTable(comman, dataTable);
-            int id = 0;
-            if (dataTable.Rows[0]["MAX"].ToString() == "")
-            {
-                id = 1;
-            }
-            else
-            {
-                id = Convert.ToInt32(dataTable.Rows[0]["MAX"].ToString()) + 1;
-            }
-            pk.Text = id.ToString();
-        }
-        private void loadGridView()
-        {
-            comman = new SqlCommand(query);
-            database.pushGridview(comman, gridView);
-        }
+      
+    
         private void NhaCungCap_Load(object sender, EventArgs e)
         {
 
-            loadGridView();
-            autoID(label_id);
+            funcShare.loadGridView("nha_cung_cap", gridView);
+            funcShare.autoID(label_id,"nha_cung_cap");
         }
 
         private void but_sort_click(object sender, EventArgs e)
@@ -159,7 +140,7 @@ namespace QuanLyKhoHang
                 string root = query + " WHERE ";
                 string or = " OR ";
                 string searchTen;
-                if (isNumber(inputSearch))
+                if (funcShare.isNumber(inputSearch))
                 {
 
                     string searchID = "id= " + inputSearch;
@@ -182,23 +163,7 @@ namespace QuanLyKhoHang
                 comman = new SqlCommand(root);
                 database.pushGridview(comman, gridView);
             }
-        }
-        private bool isNumber(string pValue)
-        {
-            if (pValue == "")
-            {
-                return false;
-            }
-            else
-            {
-                foreach (Char c in pValue)
-                {
-                    if (!Char.IsDigit(c))
-                        return false;
-                }
-                return true;
-            }
-        }
+        }        
         private void resetRegister()
         {
             textbox_ten.Clear();
@@ -224,22 +189,22 @@ namespace QuanLyKhoHang
                 but_error_ten.Visible = true; check = false;
 
             }
-            if (!isNumber(textbox_sdt.Text) || textbox_sdt.Text.Length > 11 || textbox_sdt.Text.Length < 6)
+            if (!funcShare.isNumber(textbox_sdt.Text) || textbox_sdt.Text.Length > 11 || textbox_sdt.Text.Length < 6)
             {
                 but_error_sdt.Visible = true; check = false;
 
             }
-            if (textbox_phuong.Text == "" || isNumber(textbox_phuong.Text))
+            if (textbox_phuong.Text == "" || funcShare.isNumber(textbox_phuong.Text))
             {
                 but_error_phuong.Visible = true; check = false;
 
             }
-            if (textbox_quan.Text == "" || isNumber(textbox_quan.Text))
+            if (textbox_quan.Text == "" || funcShare.isNumber(textbox_quan.Text))
             {
                 but_error_quan.Visible = true; check = false;
 
             }
-            if (textbox_city.Text == "" || isNumber(textbox_city.Text))
+            if (textbox_city.Text == "" || funcShare.isNumber(textbox_city.Text))
             {
                 but_error_city.Visible = true; check = false;
 
@@ -258,9 +223,9 @@ namespace QuanLyKhoHang
                    + "SET IDENTITY_INSERT nha_cung_cap OFF;";
                 comman = new SqlCommand(query);
                 database.editDB(comman);
-                loadGridView();
+                funcShare.loadGridView("nha_cung_cap", gridView);
                 resetRegister();
-                autoID(label_id);
+                funcShare.autoID(label_id, "nha_cung_cap");
             }
 
         }
@@ -340,7 +305,7 @@ namespace QuanLyKhoHang
         {
             if (!isFormRegister)
             {
-                autoID(label_id);
+                funcShare.autoID(label_id, "nha_cung_cap");
                 label_sua.Visible = false;
                 label_dk.Visible = true;
                 but_register.Visible = true;
@@ -388,7 +353,7 @@ namespace QuanLyKhoHang
                    textbox_phuong.Text + "' ,city= N'" + textbox_city.Text + "' WHERE id=" + label_id.Text;                     
                         comman = new SqlCommand(update);
                         database.editDB(comman);
-                        loadGridView();
+                        funcShare.loadGridView("nha_cung_cap", gridView);
                         changeToFormRegister();
                     }
                     break;
@@ -396,7 +361,7 @@ namespace QuanLyKhoHang
                     string delete = "DELETE FROM nha_cung_cap WHERE id =" +label_id.Text;
                     comman = new SqlCommand(delete);
                     database.editDB(comman);
-                    loadGridView();
+                    funcShare.loadGridView("nha_cung_cap", gridView);
                     changeToFormRegister();
                     break;
 

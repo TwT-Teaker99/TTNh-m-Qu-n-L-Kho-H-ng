@@ -39,7 +39,6 @@ D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\bin\De
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\bin\Debug\QuanLyKhoHang.pdb
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.LoaiHang.resources
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.Login.resources
-D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.Main.resources
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.MatHang.resources
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.NhaCungCap.resources
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.NhanVien.resources

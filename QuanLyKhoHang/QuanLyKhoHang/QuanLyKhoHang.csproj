@@ -53,6 +53,7 @@
       <DependentUpon>ChiTietPhieuXuat.cs</DependentUpon>
     </Compile>
     <Compile Include="dbAccess.cs" />
+    <Compile Include="functionShare.cs" />
     <Compile Include="LoaiHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,12 +65,6 @@
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Main.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="MatHang.cs">
       <SubType>Form</SubType>
@@ -129,9 +124,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MatHang.resx">
       <DependentUpon>MatHang.cs</DependentUpon>
