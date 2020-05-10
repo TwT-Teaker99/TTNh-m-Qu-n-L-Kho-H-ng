@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,6 +52,22 @@ namespace QuanLyKhoHang
                         return false;
                 }
                 return true;
+            }
+        }
+        public void textboxLeave(TextBox tb, string text)
+        {
+            if (tb.Text == "")
+            {
+                tb.Text = text;
+                tb.ForeColor = Color.Silver;
+            }
+        }
+        public void textboxEnter(TextBox tb, string text)
+        {
+            if (tb.Text == text)
+            {
+                tb.Clear();
+                tb.ForeColor = Color.Black;
             }
         }
     }

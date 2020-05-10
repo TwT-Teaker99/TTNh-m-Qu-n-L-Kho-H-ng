@@ -292,7 +292,7 @@ namespace QuanLyKhoHang
             if (isFormRegister)
             {
                 label_sua.Visible = true;
-                label_dk.Visible = false;
+                label_dk.Visible = false;                
                 but_register.Visible = false;
                 but_sua.Visible = true;
                 but_xoa.Visible = true;

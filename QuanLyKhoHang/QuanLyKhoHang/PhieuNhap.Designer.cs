@@ -28,20 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.textbox_search = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.but_search = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.textbox_cost = new System.Windows.Forms.TextBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.textbox_soluong = new System.Windows.Forms.TextBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.textbox_donvi = new System.Windows.Forms.TextBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.textbox_item = new System.Windows.Forms.TextBox();
+            this.butDel = new System.Windows.Forms.Button();
+            this.butAdd = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.textbox_thang = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textbox_ngay = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textbox_nam = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.label_error_ten = new System.Windows.Forms.Label();
-            this.textbox_ten = new System.Windows.Forms.TextBox();
+            this.textbox_nv = new System.Windows.Forms.TextBox();
             this.but_error_quan = new System.Windows.Forms.Button();
             this.but_error_sdt = new System.Windows.Forms.Button();
             this.but_error_ten = new System.Windows.Forms.Button();
@@ -49,65 +79,35 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label_dk = new System.Windows.Forms.Label();
-            this.textbox_sdt = new System.Windows.Forms.TextBox();
+            this.textbox_ncc = new System.Windows.Forms.TextBox();
             this.but_register = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.textBoxItem = new System.Windows.Forms.TextBox();
-            this.butDel = new System.Windows.Forms.Button();
-            this.butAdd = new System.Windows.Forms.Button();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.gridView = new System.Windows.Forms.DataGridView();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.but_sort_id = new System.Windows.Forms.Button();
-            this.but_sort_ten = new System.Windows.Forms.Button();
-            this.but_sort_sdt = new System.Windows.Forms.Button();
             this.but_sort_quan = new System.Windows.Forms.Button();
+            this.but_sort_sdt = new System.Windows.Forms.Button();
+            this.but_sort_ten = new System.Windows.Forms.Button();
+            this.but_sort_id = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -187,13 +187,13 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.panel13);
-            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.textbox_cost);
             this.panel1.Controls.Add(this.panel12);
-            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.textbox_soluong);
             this.panel1.Controls.Add(this.panel11);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.textbox_donvi);
             this.panel1.Controls.Add(this.panel10);
-            this.panel1.Controls.Add(this.textBoxItem);
+            this.panel1.Controls.Add(this.textbox_item);
             this.panel1.Controls.Add(this.butDel);
             this.panel1.Controls.Add(this.butAdd);
             this.panel1.Controls.Add(this.panel9);
@@ -204,7 +204,7 @@
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.label_error_ten);
-            this.panel1.Controls.Add(this.textbox_ten);
+            this.panel1.Controls.Add(this.textbox_nv);
             this.panel1.Controls.Add(this.but_error_quan);
             this.panel1.Controls.Add(this.but_error_sdt);
             this.panel1.Controls.Add(this.but_error_ten);
@@ -212,7 +212,7 @@
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label_dk);
-            this.panel1.Controls.Add(this.textbox_sdt);
+            this.panel1.Controls.Add(this.textbox_ncc);
             this.panel1.Controls.Add(this.but_register);
             this.panel1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -220,6 +220,417 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(423, 564);
             this.panel1.TabIndex = 13;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(130, 273);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(19, 19);
+            this.button4.TabIndex = 60;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Visible = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(130, 230);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(19, 19);
+            this.button3.TabIndex = 59;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(280, 270);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(20, 20);
+            this.button2.TabIndex = 58;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(280, 230);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(20, 20);
+            this.button1.TabIndex = 57;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Visible = false;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Gray;
+            this.panel13.Location = new System.Drawing.Point(171, 289);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(100, 1);
+            this.panel13.TabIndex = 52;
+            // 
+            // textbox_cost
+            // 
+            this.textbox_cost.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_cost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_cost.ForeColor = System.Drawing.Color.Silver;
+            this.textbox_cost.Location = new System.Drawing.Point(177, 270);
+            this.textbox_cost.Multiline = true;
+            this.textbox_cost.Name = "textbox_cost";
+            this.textbox_cost.Size = new System.Drawing.Size(88, 20);
+            this.textbox_cost.TabIndex = 53;
+            this.textbox_cost.Text = "đơn giá";
+            this.textbox_cost.Enter += new System.EventHandler(this.textbox_Enter);
+            this.textbox_cost.Leave += new System.EventHandler(this.textbox_Leave);
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.Gray;
+            this.panel12.Location = new System.Drawing.Point(172, 248);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(100, 1);
+            this.panel12.TabIndex = 50;
+            // 
+            // textbox_soluong
+            // 
+            this.textbox_soluong.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_soluong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_soluong.ForeColor = System.Drawing.Color.Silver;
+            this.textbox_soluong.Location = new System.Drawing.Point(178, 229);
+            this.textbox_soluong.Multiline = true;
+            this.textbox_soluong.Name = "textbox_soluong";
+            this.textbox_soluong.Size = new System.Drawing.Size(88, 20);
+            this.textbox_soluong.TabIndex = 51;
+            this.textbox_soluong.Text = "số lượng";
+            this.textbox_soluong.Enter += new System.EventHandler(this.textbox_Enter);
+            this.textbox_soluong.Leave += new System.EventHandler(this.textbox_Leave);
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.Gray;
+            this.panel11.Location = new System.Drawing.Point(24, 289);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(100, 1);
+            this.panel11.TabIndex = 50;
+            // 
+            // textbox_donvi
+            // 
+            this.textbox_donvi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_donvi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_donvi.ForeColor = System.Drawing.Color.Silver;
+            this.textbox_donvi.Location = new System.Drawing.Point(30, 270);
+            this.textbox_donvi.Multiline = true;
+            this.textbox_donvi.Name = "textbox_donvi";
+            this.textbox_donvi.Size = new System.Drawing.Size(88, 20);
+            this.textbox_donvi.TabIndex = 51;
+            this.textbox_donvi.Text = "đơn vị";
+            this.textbox_donvi.Enter += new System.EventHandler(this.textbox_Enter);
+            this.textbox_donvi.Leave += new System.EventHandler(this.textbox_Leave);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Gray;
+            this.panel10.Location = new System.Drawing.Point(24, 248);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(100, 1);
+            this.panel10.TabIndex = 49;
+            // 
+            // textbox_item
+            // 
+            this.textbox_item.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_item.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_item.ForeColor = System.Drawing.Color.Silver;
+            this.textbox_item.Location = new System.Drawing.Point(30, 229);
+            this.textbox_item.Multiline = true;
+            this.textbox_item.Name = "textbox_item";
+            this.textbox_item.Size = new System.Drawing.Size(88, 20);
+            this.textbox_item.TabIndex = 49;
+            this.textbox_item.Text = "mã mặt hàng";
+            this.textbox_item.Enter += new System.EventHandler(this.textbox_Enter);
+            this.textbox_item.Leave += new System.EventHandler(this.textbox_Leave);
+            // 
+            // butDel
+            // 
+            this.butDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
+            this.butDel.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.delete;
+            this.butDel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.butDel.FlatAppearance.BorderSize = 0;
+            this.butDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butDel.Location = new System.Drawing.Point(331, 263);
+            this.butDel.Name = "butDel";
+            this.butDel.Size = new System.Drawing.Size(52, 34);
+            this.butDel.TabIndex = 56;
+            this.butDel.UseVisualStyleBackColor = false;
+            // 
+            // butAdd
+            // 
+            this.butAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.butAdd.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.add;
+            this.butAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.butAdd.FlatAppearance.BorderSize = 0;
+            this.butAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butAdd.Location = new System.Drawing.Point(331, 214);
+            this.butAdd.Name = "butAdd";
+            this.butAdd.Size = new System.Drawing.Size(52, 36);
+            this.butAdd.TabIndex = 50;
+            this.butAdd.UseVisualStyleBackColor = false;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Gray;
+            this.panel9.Location = new System.Drawing.Point(30, 148);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(200, 1);
+            this.panel9.TabIndex = 48;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.textbox_thang);
+            this.panel8.Controls.Add(this.label3);
+            this.panel8.Controls.Add(this.textbox_ngay);
+            this.panel8.Controls.Add(this.label1);
+            this.panel8.Controls.Add(this.textbox_nam);
+            this.panel8.Location = new System.Drawing.Point(24, 170);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(219, 32);
+            this.panel8.TabIndex = 48;
+            // 
+            // textbox_thang
+            // 
+            this.textbox_thang.BackColor = System.Drawing.Color.White;
+            this.textbox_thang.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_thang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_thang.ForeColor = System.Drawing.Color.Silver;
+            this.textbox_thang.Location = new System.Drawing.Point(81, 7);
+            this.textbox_thang.Multiline = true;
+            this.textbox_thang.Name = "textbox_thang";
+            this.textbox_thang.Size = new System.Drawing.Size(56, 19);
+            this.textbox_thang.TabIndex = 49;
+            this.textbox_thang.Text = "Tháng";
+            this.textbox_thang.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textbox_thang.Enter += new System.EventHandler(this.textbox_Enter);
+            this.textbox_thang.Leave += new System.EventHandler(this.textbox_Leave);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.label3.Location = new System.Drawing.Point(143, 7);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(13, 20);
+            this.label3.TabIndex = 51;
+            this.label3.Text = "/";
+            // 
+            // textbox_ngay
+            // 
+            this.textbox_ngay.BackColor = System.Drawing.Color.White;
+            this.textbox_ngay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_ngay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_ngay.ForeColor = System.Drawing.Color.Silver;
+            this.textbox_ngay.Location = new System.Drawing.Point(19, 7);
+            this.textbox_ngay.Multiline = true;
+            this.textbox_ngay.Name = "textbox_ngay";
+            this.textbox_ngay.Size = new System.Drawing.Size(43, 19);
+            this.textbox_ngay.TabIndex = 48;
+            this.textbox_ngay.Text = "Ngày";
+            this.textbox_ngay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textbox_ngay.Enter += new System.EventHandler(this.textbox_Enter);
+            this.textbox_ngay.Leave += new System.EventHandler(this.textbox_Leave);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.label1.Location = new System.Drawing.Point(68, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 20);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "/";
+            // 
+            // textbox_nam
+            // 
+            this.textbox_nam.BackColor = System.Drawing.Color.White;
+            this.textbox_nam.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_nam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_nam.ForeColor = System.Drawing.Color.Silver;
+            this.textbox_nam.Location = new System.Drawing.Point(157, 7);
+            this.textbox_nam.Multiline = true;
+            this.textbox_nam.Name = "textbox_nam";
+            this.textbox_nam.Size = new System.Drawing.Size(59, 19);
+            this.textbox_nam.TabIndex = 50;
+            this.textbox_nam.Text = "Năm";
+            this.textbox_nam.Enter += new System.EventHandler(this.textbox_Enter);
+            this.textbox_nam.Leave += new System.EventHandler(this.textbox_Leave);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Gray;
+            this.panel7.Location = new System.Drawing.Point(30, 101);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(200, 1);
+            this.panel7.TabIndex = 47;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
+            this.label15.Location = new System.Drawing.Point(10, 153);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(140, 14);
+            this.label15.TabIndex = 46;
+            this.label15.Text = "Không được bỏ trống";
+            this.label15.Visible = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
+            this.label10.Location = new System.Drawing.Point(10, 205);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(140, 14);
+            this.label10.TabIndex = 45;
+            this.label10.Text = "Không được bỏ trống";
+            this.label10.Visible = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridView1.ColumnHeadersHeight = 60;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridView1.GridColor = System.Drawing.Color.White;
+            this.dataGridView1.Location = new System.Drawing.Point(24, 342);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 60;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridView1.RowTemplate.Height = 40;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(359, 147);
+            this.dataGridView1.TabIndex = 33;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(120)))));
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.label9);
+            this.panel5.Location = new System.Drawing.Point(24, 303);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(359, 39);
+            this.panel5.TabIndex = 37;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(67, 8);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Số lượng";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(276, 8);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 20);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Đơn vị";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(175, 8);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(71, 20);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Đơn giá";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(3, 8);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(19, 20);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "#";
             // 
             // label_error_ten
             // 
@@ -233,21 +644,21 @@
             this.label_error_ten.Text = "Không được bỏ trống";
             this.label_error_ten.Visible = false;
             // 
-            // textbox_ten
+            // textbox_nv
             // 
-            this.textbox_ten.BackColor = System.Drawing.Color.White;
-            this.textbox_ten.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textbox_ten.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_ten.ForeColor = System.Drawing.Color.Gray;
-            this.textbox_ten.Location = new System.Drawing.Point(31, 78);
-            this.textbox_ten.Multiline = true;
-            this.textbox_ten.Name = "textbox_ten";
-            this.textbox_ten.Size = new System.Drawing.Size(191, 17);
-            this.textbox_ten.TabIndex = 8;
-            this.textbox_ten.Text = "Nhập mã nhân viên";
-            this.textbox_ten.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textbox_ten.Enter += new System.EventHandler(this.textbox_Enter);
-            this.textbox_ten.Leave += new System.EventHandler(this.textbox_Leave);
+            this.textbox_nv.BackColor = System.Drawing.Color.White;
+            this.textbox_nv.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_nv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_nv.ForeColor = System.Drawing.Color.Silver;
+            this.textbox_nv.Location = new System.Drawing.Point(31, 78);
+            this.textbox_nv.Multiline = true;
+            this.textbox_nv.Name = "textbox_nv";
+            this.textbox_nv.Size = new System.Drawing.Size(191, 17);
+            this.textbox_nv.TabIndex = 8;
+            this.textbox_nv.Text = "Nhập mã nhân viên";
+            this.textbox_nv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textbox_nv.Enter += new System.EventHandler(this.textbox_Enter);
+            this.textbox_nv.Leave += new System.EventHandler(this.textbox_Leave);
             // 
             // but_error_quan
             // 
@@ -341,21 +752,21 @@
             this.label_dk.TabIndex = 13;
             this.label_dk.Text = "Lập đơn hàng";
             // 
-            // textbox_sdt
+            // textbox_ncc
             // 
-            this.textbox_sdt.BackColor = System.Drawing.Color.White;
-            this.textbox_sdt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textbox_sdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_sdt.ForeColor = System.Drawing.Color.Gray;
-            this.textbox_sdt.Location = new System.Drawing.Point(25, 123);
-            this.textbox_sdt.Multiline = true;
-            this.textbox_sdt.Name = "textbox_sdt";
-            this.textbox_sdt.Size = new System.Drawing.Size(197, 19);
-            this.textbox_sdt.TabIndex = 9;
-            this.textbox_sdt.Text = "Nhập mã nhà cung cấp";
-            this.textbox_sdt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textbox_sdt.Enter += new System.EventHandler(this.textbox_Enter);
-            this.textbox_sdt.Leave += new System.EventHandler(this.textbox_Leave);
+            this.textbox_ncc.BackColor = System.Drawing.Color.White;
+            this.textbox_ncc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textbox_ncc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_ncc.ForeColor = System.Drawing.Color.Silver;
+            this.textbox_ncc.Location = new System.Drawing.Point(25, 123);
+            this.textbox_ncc.Multiline = true;
+            this.textbox_ncc.Name = "textbox_ncc";
+            this.textbox_ncc.Size = new System.Drawing.Size(197, 19);
+            this.textbox_ncc.TabIndex = 9;
+            this.textbox_ncc.Text = "Nhập mã nhà cung cấp";
+            this.textbox_ncc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textbox_ncc.Enter += new System.EventHandler(this.textbox_Enter);
+            this.textbox_ncc.Leave += new System.EventHandler(this.textbox_Leave);
             // 
             // but_register
             // 
@@ -378,367 +789,6 @@
             this.but_register.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.but_register.UseVisualStyleBackColor = false;
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(120)))));
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label2);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Controls.Add(this.label6);
-            this.panel5.Controls.Add(this.label9);
-            this.panel5.Location = new System.Drawing.Point(68, 310);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(270, 32);
-            this.panel5.TabIndex = 37;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(36, 8);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Số lượng";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(194, 8);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Đơn vị";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(115, 8);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Đơn giá";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(6, 8);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(15, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "#";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Courier New", 8F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeight = 60;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(68, 342);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Courier New", 8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 60;
-            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView1.RowTemplate.Height = 40;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(270, 147);
-            this.dataGridView1.TabIndex = 33;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 35;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "ten";
-            this.dataGridViewTextBoxColumn2.HeaderText = "sl";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 60;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "sdt";
-            this.dataGridViewTextBoxColumn3.HeaderText = "đơn giá";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "quan";
-            this.dataGridViewTextBoxColumn4.HeaderText = "đvị";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 57;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.label10.Location = new System.Drawing.Point(10, 205);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(140, 14);
-            this.label10.TabIndex = 45;
-            this.label10.Text = "Không được bỏ trống";
-            this.label10.Visible = false;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.label15.Location = new System.Drawing.Point(10, 153);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(140, 14);
-            this.label15.TabIndex = 46;
-            this.label15.Text = "Không được bỏ trống";
-            this.label15.Visible = false;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Gray;
-            this.panel7.Location = new System.Drawing.Point(30, 101);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 1);
-            this.panel7.TabIndex = 47;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(19, 7);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(43, 19);
-            this.textBox1.TabIndex = 48;
-            this.textBox1.Text = "Ngày";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox1.Enter += new System.EventHandler(this.textbox_Enter);
-            this.textBox1.Leave += new System.EventHandler(this.textbox_Leave);
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Gray;
-            this.textBox2.Location = new System.Drawing.Point(81, 7);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(56, 19);
-            this.textBox2.TabIndex = 49;
-            this.textBox2.Text = "Tháng";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.Enter += new System.EventHandler(this.textbox_Enter);
-            this.textBox2.Leave += new System.EventHandler(this.textbox_Leave);
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Gray;
-            this.textBox3.Location = new System.Drawing.Point(154, 7);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(62, 19);
-            this.textBox3.TabIndex = 50;
-            this.textBox3.Text = "Năm";
-            this.textBox3.Enter += new System.EventHandler(this.textbox_Enter);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.label1.Location = new System.Drawing.Point(68, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(13, 20);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "/";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.label3.Location = new System.Drawing.Point(143, 7);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 20);
-            this.label3.TabIndex = 51;
-            this.label3.Text = "/";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.textBox2);
-            this.panel8.Controls.Add(this.label3);
-            this.panel8.Controls.Add(this.textBox1);
-            this.panel8.Controls.Add(this.label1);
-            this.panel8.Controls.Add(this.textBox3);
-            this.panel8.Location = new System.Drawing.Point(24, 170);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(219, 32);
-            this.panel8.TabIndex = 48;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Gray;
-            this.panel9.Location = new System.Drawing.Point(30, 148);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(200, 1);
-            this.panel9.TabIndex = 48;
-            // 
-            // textBoxItem
-            // 
-            this.textBoxItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxItem.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxItem.Location = new System.Drawing.Point(30, 229);
-            this.textBoxItem.Multiline = true;
-            this.textBoxItem.Name = "textBoxItem";
-            this.textBoxItem.Size = new System.Drawing.Size(88, 20);
-            this.textBoxItem.TabIndex = 49;
-            this.textBoxItem.Text = "mã mặt hàng";
-            // 
-            // butDel
-            // 
-            this.butDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.butDel.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.delete;
-            this.butDel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.butDel.FlatAppearance.BorderSize = 0;
-            this.butDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.butDel.Location = new System.Drawing.Point(334, 262);
-            this.butDel.Name = "butDel";
-            this.butDel.Size = new System.Drawing.Size(62, 42);
-            this.butDel.TabIndex = 56;
-            this.butDel.UseVisualStyleBackColor = false;
-            // 
-            // butAdd
-            // 
-            this.butAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.butAdd.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.add;
-            this.butAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.butAdd.FlatAppearance.BorderSize = 0;
-            this.butAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.butAdd.Location = new System.Drawing.Point(334, 213);
-            this.butAdd.Name = "butAdd";
-            this.butAdd.Size = new System.Drawing.Size(62, 44);
-            this.butAdd.TabIndex = 50;
-            this.butAdd.UseVisualStyleBackColor = false;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Gray;
-            this.panel10.Location = new System.Drawing.Point(24, 248);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(100, 1);
-            this.panel10.TabIndex = 49;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.Gray;
-            this.panel11.Location = new System.Drawing.Point(24, 289);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(100, 1);
-            this.panel11.TabIndex = 50;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.Gray;
-            this.textBox5.Location = new System.Drawing.Point(30, 270);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(88, 20);
-            this.textBox5.TabIndex = 51;
-            this.textBox5.Text = "đơn vị";
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.Gray;
-            this.panel12.Location = new System.Drawing.Point(172, 248);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(100, 1);
-            this.panel12.TabIndex = 50;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.Gray;
-            this.textBox6.Location = new System.Drawing.Point(178, 229);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(88, 20);
-            this.textBox6.TabIndex = 51;
-            this.textBox6.Text = "số lượng";
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Gray;
-            this.panel13.Location = new System.Drawing.Point(176, 289);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(100, 1);
-            this.panel13.TabIndex = 52;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.Gray;
-            this.textBox7.Location = new System.Drawing.Point(182, 270);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(88, 20);
-            this.textBox7.TabIndex = 53;
-            this.textBox7.Text = "đơn giá";
-            // 
             // gridView
             // 
             this.gridView.AllowUserToResizeColumns = false;
@@ -746,40 +796,41 @@
             this.gridView.BackgroundColor = System.Drawing.Color.White;
             this.gridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.gridView.ColumnHeadersHeight = 60;
+            this.gridView.ColumnHeadersVisible = false;
             this.gridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridView.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridView.DefaultCellStyle = dataGridViewCellStyle11;
             this.gridView.GridColor = System.Drawing.Color.White;
             this.gridView.Location = new System.Drawing.Point(12, 93);
             this.gridView.Name = "gridView";
             this.gridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.gridView.RowHeadersVisible = false;
             this.gridView.RowHeadersWidth = 60;
             this.gridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
@@ -787,34 +838,6 @@
             this.gridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridView.Size = new System.Drawing.Size(450, 384);
             this.gridView.TabIndex = 1;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "quan";
-            this.Column4.HeaderText = "Mã nhân viên";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "sdt";
-            this.Column3.HeaderText = "Ngày nhập";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 140;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "ten";
-            this.Column2.HeaderText = "Mã nhà cung cấp";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 113;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "id";
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 50;
             // 
             // label18
             // 
@@ -863,77 +886,19 @@
             this.panel6.Size = new System.Drawing.Size(450, 51);
             this.panel6.TabIndex = 32;
             // 
-            // label12
+            // but_sort_quan
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(3, 16);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(17, 18);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "#";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(173, 16);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(87, 18);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Ngày nhập";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(308, 16);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(107, 18);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Mã nhân viên";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(59, 10);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(76, 36);
-            this.label20.TabIndex = 5;
-            this.label20.Text = "Mã nhà \r\ncung cấp";
-            // 
-            // but_sort_id
-            // 
-            this.but_sort_id.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.but_sort_id.FlatAppearance.BorderSize = 0;
-            this.but_sort_id.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_sort_id.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            this.but_sort_id.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_sort_id.Image = global::QuanLyKhoHang.Properties.Resources._switch;
-            this.but_sort_id.Location = new System.Drawing.Point(33, 13);
-            this.but_sort_id.Name = "but_sort_id";
-            this.but_sort_id.Size = new System.Drawing.Size(20, 27);
-            this.but_sort_id.TabIndex = 33;
-            this.but_sort_id.UseVisualStyleBackColor = false;
-            // 
-            // but_sort_ten
-            // 
-            this.but_sort_ten.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.but_sort_ten.FlatAppearance.BorderSize = 0;
-            this.but_sort_ten.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_sort_ten.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            this.but_sort_ten.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_sort_ten.Image = global::QuanLyKhoHang.Properties.Resources._switch;
-            this.but_sort_ten.Location = new System.Drawing.Point(145, 13);
-            this.but_sort_ten.Name = "but_sort_ten";
-            this.but_sort_ten.Size = new System.Drawing.Size(20, 27);
-            this.but_sort_ten.TabIndex = 34;
-            this.but_sort_ten.UseVisualStyleBackColor = false;
+            this.but_sort_quan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            this.but_sort_quan.FlatAppearance.BorderSize = 0;
+            this.but_sort_quan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_sort_quan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
+            this.but_sort_quan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_sort_quan.Image = global::QuanLyKhoHang.Properties.Resources._switch;
+            this.but_sort_quan.Location = new System.Drawing.Point(421, 10);
+            this.but_sort_quan.Name = "but_sort_quan";
+            this.but_sort_quan.Size = new System.Drawing.Size(20, 27);
+            this.but_sort_quan.TabIndex = 36;
+            this.but_sort_quan.UseVisualStyleBackColor = false;
             // 
             // but_sort_sdt
             // 
@@ -949,19 +914,77 @@
             this.but_sort_sdt.TabIndex = 35;
             this.but_sort_sdt.UseVisualStyleBackColor = false;
             // 
-            // but_sort_quan
+            // but_sort_ten
             // 
-            this.but_sort_quan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.but_sort_quan.FlatAppearance.BorderSize = 0;
-            this.but_sort_quan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_sort_quan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            this.but_sort_quan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_sort_quan.Image = global::QuanLyKhoHang.Properties.Resources._switch;
-            this.but_sort_quan.Location = new System.Drawing.Point(421, 10);
-            this.but_sort_quan.Name = "but_sort_quan";
-            this.but_sort_quan.Size = new System.Drawing.Size(20, 27);
-            this.but_sort_quan.TabIndex = 36;
-            this.but_sort_quan.UseVisualStyleBackColor = false;
+            this.but_sort_ten.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            this.but_sort_ten.FlatAppearance.BorderSize = 0;
+            this.but_sort_ten.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_sort_ten.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
+            this.but_sort_ten.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_sort_ten.Image = global::QuanLyKhoHang.Properties.Resources._switch;
+            this.but_sort_ten.Location = new System.Drawing.Point(145, 13);
+            this.but_sort_ten.Name = "but_sort_ten";
+            this.but_sort_ten.Size = new System.Drawing.Size(20, 27);
+            this.but_sort_ten.TabIndex = 34;
+            this.but_sort_ten.UseVisualStyleBackColor = false;
+            // 
+            // but_sort_id
+            // 
+            this.but_sort_id.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            this.but_sort_id.FlatAppearance.BorderSize = 0;
+            this.but_sort_id.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_sort_id.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
+            this.but_sort_id.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_sort_id.Image = global::QuanLyKhoHang.Properties.Resources._switch;
+            this.but_sort_id.Location = new System.Drawing.Point(33, 13);
+            this.but_sort_id.Name = "but_sort_id";
+            this.but_sort_id.Size = new System.Drawing.Size(20, 27);
+            this.but_sort_id.TabIndex = 33;
+            this.but_sort_id.UseVisualStyleBackColor = false;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(59, 10);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(76, 36);
+            this.label20.TabIndex = 5;
+            this.label20.Text = "Mã nhà \r\ncung cấp";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(308, 16);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(107, 18);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Mã nhân viên";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(173, 16);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(87, 18);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "Ngày nhập";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(3, 16);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(17, 18);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "#";
             // 
             // panel3
             // 
@@ -976,73 +999,58 @@
             this.panel3.Size = new System.Drawing.Size(471, 489);
             this.panel3.TabIndex = 11;
             // 
-            // button1
+            // Column1
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(280, 230);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(20, 20);
-            this.button1.TabIndex = 57;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Visible = false;
+            this.Column1.DataPropertyName = "id";
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 70;
             // 
-            // button2
+            // Column2
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(280, 270);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(20, 20);
-            this.button2.TabIndex = 58;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Visible = false;
+            this.Column2.DataPropertyName = "ncc_id";
+            this.Column2.HeaderText = "Mã nhà cung cấp";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 103;
             // 
-            // button3
+            // Column3
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(130, 230);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(20, 20);
-            this.button3.TabIndex = 59;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Visible = false;
+            this.Column3.DataPropertyName = "ngay_nhap";
+            this.Column3.HeaderText = "Ngày nhập";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 170;
             // 
-            // button4
+            // Column4
             // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(130, 273);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(20, 20);
-            this.button4.TabIndex = 60;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Visible = false;
+            this.Column4.DataPropertyName = "nhan_vien_id";
+            this.Column4.HeaderText = "Mã nhân viên";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 85;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 35;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "ten";
+            this.dataGridViewTextBoxColumn2.HeaderText = "sl";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "sdt";
+            this.dataGridViewTextBoxColumn3.HeaderText = "đơn giá";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "quan";
+            this.dataGridViewTextBoxColumn4.HeaderText = "đvị";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // PhieuNhap
             // 
@@ -1057,15 +1065,16 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PhieuNhap";
             this.Text = "PhieuNhap";
+            this.Load += new System.EventHandler(this.PhieuNhap_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -1083,7 +1092,7 @@
         private System.Windows.Forms.Button but_search;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label_error_ten;
-        private System.Windows.Forms.TextBox textbox_ten;
+        private System.Windows.Forms.TextBox textbox_nv;
         private System.Windows.Forms.Button but_error_quan;
         private System.Windows.Forms.Button but_error_sdt;
         private System.Windows.Forms.Button but_error_ten;
@@ -1091,7 +1100,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label_dk;
-        private System.Windows.Forms.TextBox textbox_sdt;
+        private System.Windows.Forms.TextBox textbox_ncc;
         private System.Windows.Forms.Button but_register;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label2;
@@ -1101,19 +1110,15 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textbox_thang;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textbox_ngay;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBoxItem;
+        private System.Windows.Forms.TextBox textbox_nam;
+        private System.Windows.Forms.TextBox textbox_item;
         private System.Windows.Forms.Button butDel;
         private System.Windows.Forms.Button butAdd;
         private System.Windows.Forms.Button button4;
@@ -1121,17 +1126,13 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textbox_cost;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textbox_soluong;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textbox_donvi;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.DataGridView gridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel panel4;
@@ -1145,5 +1146,13 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }
