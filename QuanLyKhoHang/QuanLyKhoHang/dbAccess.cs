@@ -28,6 +28,10 @@ namespace QuanLyKhoHang
             {
                 connection= new SqlConnection(VuSever);
             }
+            if (choice==2)
+            {
+                connection = new SqlConnection(strConn);
+            }
         }//chọn sever cho khớp từng máy riêng
 
 
@@ -135,27 +139,18 @@ namespace QuanLyKhoHang
         }
 
 
-
-        public void pushGridview(SqlCommand dbCommand, DataGridView gridview)//đẩy dữ liệu vào gridview 
+        public void pushGridview(string query, DataGridView gridview)//đẩy dữ liệu vào gridview 
         {
+            
             try
             {
                 connection.Open();
-                dbCommand.Connection = connection;
-                dbCommand.CommandType = CommandType.Text;
-                SqlDataReader dataread = dbCommand.ExecuteReader();
-                if (dataread.HasRows)
-                {
-                    BindingSource source = new BindingSource();
-                    source.DataSource = dataread;
-                    gridview.DataSource = source;
-                    
-                }
-                else
-                {
-                    gridview.Rows.Clear();
-                    gridview.Refresh();
-                }
+              
+                DataTable data = new DataTable();
+                adapter = new SqlDataAdapter(query, connection);
+                adapter.Fill(data);
+                gridview.DataSource = data;
+               
             }
             catch (Exception)
             {
@@ -167,6 +162,7 @@ namespace QuanLyKhoHang
 
             }
         }
+     
         public void pushDataTable(SqlCommand dbCommand, DataTable data)//đẩy dữ liệu vào dataTable
         {
 
@@ -204,6 +200,33 @@ namespace QuanLyKhoHang
             }
             finally { connection.Close(); }
 
+        }
+        public bool SelectHasRow(string query)
+        {
+            command = new SqlCommand(query);
+            try
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandType = CommandType.Text;
+                SqlDataReader dataread = command.ExecuteReader();
+                if (dataread.HasRows)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { connection.Close(); }
         }
 
 

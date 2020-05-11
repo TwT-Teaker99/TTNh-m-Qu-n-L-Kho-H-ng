@@ -36,9 +36,8 @@ namespace QuanLyKhoHang
         }
         public void loadGridView(string name_table, DataGridView gridView)
         {
-            query = "SELECT * FROM " + name_table;
-            comman = new SqlCommand(query);
-            database.pushGridview(comman, gridView);
+            query = "SELECT * FROM " + name_table;        
+          database.pushGridview(query, gridView);
         }
         public bool isNumber(string pValue)
         {
@@ -143,6 +142,42 @@ namespace QuanLyKhoHang
             " ," + arr1[1] + "= " + c1 + " ," + arr1[2] + "= " + c2 + where;
             comman = new SqlCommand(update);
             database.editDB(comman);
+        }
+        public bool checkDate(string day, string month, string year)
+        {
+            int ngay = Convert.ToInt32(day),
+                thang = Convert.ToInt32(month),
+                nam = Convert.ToInt32(year);
+            int ngaymax = 0;
+            if (nam < 0 || thang <= 0 || thang > 12 || ngay <= 0 || ngay > 31 || nam > 2019)
+            { return false; }
+            else
+            {
+                switch (thang)
+                {
+                    case 1: case 3: case 5: case 7: case 8: case 10: case 12: ngaymax = 31; break;
+                    case 2:
+                        if ((nam % 4 == 0 && nam % 100 != 0) || (nam % 400 == 0)) ngaymax = 29;
+                        else ngaymax = 28; break;
+                    case 4: case 6: case 9: case 11: ngaymax = 30; break;
+                }
+                if (ngay <= ngaymax) return true;
+                else { return false; }
+            }
+
+        }
+        public bool checkPK(string pk,string name_table)
+        {
+            if (!isNumber(pk) )
+            {
+                return false;
+            }
+            query = "SELECT *FROM "+name_table+" WHERE id=" + pk;
+            if ( !database.SelectHasRow(query))
+            {
+                return false;
+            }
+            return true;
         }
         /*
          * làm việc với gridview

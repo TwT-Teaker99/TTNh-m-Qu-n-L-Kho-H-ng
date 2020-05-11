@@ -45,97 +45,12 @@ namespace QuanLyKhoHang
         {
 
             funcShare.loadGridView("nha_cung_cap", gridView);
+        
             funcShare.autoID(label_id, "nha_cung_cap");
+          
 
         }
 
-        private void but_sort_click(object sender, EventArgs e)
-        {
-            Button but = (Button)sender;
-            string root = query + " ORDER BY ";
-            switch (but.Name)
-            {
-                case "but_sort_id":
-                    if (sort_id)
-                    {
-                        root += " 1 ASC;";
-                        sort_id = false;
-                    }
-                    else
-                    {
-                        root += " 1 DESC;";
-                        sort_id = true;
-                    }
-                    break;
-
-                case "but_sort_ten":
-                    if (sort_ten)
-                    {
-                        root += " 2 ASC;";
-                        sort_ten = false;
-                    }
-                    else
-                    {
-                        root += " 2 DESC;";
-                        sort_ten = true;
-                    }
-
-
-                    break;
-                case "but_sort_sdt":
-                    if (sort_sdt)
-                    {
-                        root += " 3 ASC;";
-                        sort_sdt = false;
-                    }
-                    else
-                    {
-                        root += " 3 DESC;";
-                        sort_sdt = true;
-                    }
-                    break;
-                case "but_sort_quan":
-                    if (sort_quan)
-                    {
-                        root += " 4 ASC;";
-                        sort_quan = false;
-                    }
-                    else
-                    {
-                        root += " 4 DESC;";
-                        sort_quan = true;
-                    }
-
-                    break;
-                case "but_sort_phuong":
-                    if (sort_phuong)
-                    {
-                        root += " 5 ASC;";
-                        sort_phuong = false;
-                    }
-                    else
-                    {
-                        root += " 5 DESC;";
-                        sort_phuong = true;
-                    }
-                    break;
-                case "but_sort_city":
-                    if (sort_city)
-                    {
-                        root += " 6 ASC;";
-                        sort_city = false;
-                    }
-                    else
-                    {
-                        root += " 6 DESC;";
-                        sort_city = true;
-                    }
-                    break;
-
-            }
-            comman = new SqlCommand(root);
-            database.pushGridview(comman, gridView);
-        }
 
 
         private void but_search_Click(object sender, EventArgs e)
@@ -165,9 +80,8 @@ namespace QuanLyKhoHang
                     string searchCity = "city LIKE N'%" + inputSearch + "%'";
                     root = root + searchTen + or + searchPhuong + or + searchQuan + or + searchCity;
                 }
-                //  MessageBox.Show(root);
-                comman = new SqlCommand(root);
-                database.pushGridview(comman, gridView);
+                
+                database.pushGridview(root, gridView);
             }
         }
         private void resetRegister()
@@ -333,18 +247,20 @@ namespace QuanLyKhoHang
         }
         private void gridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            // NhaCungCap_Alter sua_xoa = new NhaCungCap_Alter();
-            // sua_xoa.ShowDialog(this);          
-            if (isFormRegister)
+            if (e.RowIndex != -1)//not header           
             {
-                changeToFormAlter();
-            }
-            label_id.Text = this.gridView.CurrentRow.Cells[0].Value.ToString();
-            textbox_ten.Text = this.gridView.CurrentRow.Cells[1].Value.ToString();
-            textbox_sdt.Text = this.gridView.CurrentRow.Cells[2].Value.ToString();
-            textbox_quan.Text = this.gridView.CurrentRow.Cells[3].Value.ToString();
-            textbox_phuong.Text = this.gridView.CurrentRow.Cells[4].Value.ToString();
-            textbox_city.Text = this.gridView.CurrentRow.Cells[5].Value.ToString();
+                if (isFormRegister)
+                {
+                    changeToFormAlter();
+                }
+                label_id.Text = this.gridView.CurrentRow.Cells[0].Value.ToString();
+                textbox_ten.Text = this.gridView.CurrentRow.Cells[1].Value.ToString();
+                textbox_sdt.Text = this.gridView.CurrentRow.Cells[2].Value.ToString();
+                textbox_quan.Text = this.gridView.CurrentRow.Cells[3].Value.ToString();
+                textbox_phuong.Text = this.gridView.CurrentRow.Cells[4].Value.ToString();
+                textbox_city.Text = this.gridView.CurrentRow.Cells[5].Value.ToString();
+            }    
+           
 
 
         }

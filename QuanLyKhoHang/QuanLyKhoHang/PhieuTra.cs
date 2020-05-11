@@ -15,7 +15,7 @@ namespace QuanLyKhoHang
         dbAccess db = new dbAccess();
         DataTable table = new DataTable("CTPX");
         public PhieuTra()
-        {
+        {            
             InitializeComponent();
         }
         private void loadcomboBox()
@@ -48,6 +48,7 @@ namespace QuanLyKhoHang
         //hàm gợi ý nhập comboBox
         private void cbBox_Suggest(ComboBox cb,string s)
         {
+
             cb.AutoCompleteMode = AutoCompleteMode.Suggest;
             cb.AutoCompleteSource = AutoCompleteSource.CustomSource;
             AutoCompleteStringCollection cbData = new AutoCompleteStringCollection();
