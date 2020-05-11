@@ -97,20 +97,36 @@ namespace QuanLyKhoHang
         private void PhieuNhap_Load(object sender, EventArgs e)
         {
             funcShare.loadGridView("phieu_nhap", gridView);
-            funcShare.autoID(label_id, "phieu_nhap");
-            //DataGridViewRow row = (DataGridViewRow)gridView2.Rows[0].Clone();
-            //row.Cells[0].Value = 126;
-            //row.Cells[1].Value = 7000;
-            //row.Cells[2].Value = 600000;
-            //row.Cells[3].Value = "bánh";
+            funcShare.autoID(label_id, "phieu_nhap");  
             gridView2.Rows.Add(126, 7000, 6000000, "bánh");
             gridView2.Rows.Add(126, 7000, 6000000, "bánh");
             gridView2.Rows.Add(126, 7000, 6000000, "bánh");
             gridView2.Rows.Add(126, 7000, 6000000, "bánh");
             gridView2.Rows.Add(126, 7000, 6000000, "bánh");
             gridView2.Rows.Add(126, 7000, 6000000, "bánh");
+            
 
 
+        }     
+
+        private void but_register_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+        private void but_child_regis(object sender, EventArgs e)
+        {
+            Button but = (Button)sender;
+            switch (but.Name)
+            {
+               case "but_add":
+
+                   
+                    gridView2.Rows.Add(126, 7000, 6000000, "bánh");
+                    break;
+                case "but_del":
+                    break;
+            }
         }
     }
 }

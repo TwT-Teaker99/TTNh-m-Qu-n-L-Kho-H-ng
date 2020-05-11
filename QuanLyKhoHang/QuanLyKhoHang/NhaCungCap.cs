@@ -15,7 +15,7 @@ namespace QuanLyKhoHang
     public partial class NhaCungCap : Form
     {
         dbAccess database = new dbAccess();
-        SqlCommand comman;     
+        SqlCommand comman;
         string query = "SELECT * FROM nha_cung_cap";
         functionShare funcShare;
         private bool sort_id;
@@ -24,23 +24,29 @@ namespace QuanLyKhoHang
         private bool sort_quan;
         private bool sort_phuong;
         private bool sort_city;
-        private bool isFormRegister=true;
-
+        private bool isFormRegister = true;
+        private string c1;
+        private string c2;
+        private string c3;
+        private string c4;
+        private string c5;
+        private string c6;
 
         public NhaCungCap()
         {
             InitializeComponent();
-          int sever = 1;
+            int sever = 1;
             database.pickSever(sever);
             funcShare = new functionShare(sever);
         }
-      
-    
+
+
         private void NhaCungCap_Load(object sender, EventArgs e)
         {
 
             funcShare.loadGridView("nha_cung_cap", gridView);
-            funcShare.autoID(label_id,"nha_cung_cap");
+            funcShare.autoID(label_id, "nha_cung_cap");
+
         }
 
         private void but_sort_click(object sender, EventArgs e)
@@ -163,7 +169,7 @@ namespace QuanLyKhoHang
                 comman = new SqlCommand(root);
                 database.pushGridview(comman, gridView);
             }
-        }        
+        }
         private void resetRegister()
         {
             textbox_ten.Clear();
@@ -212,20 +218,24 @@ namespace QuanLyKhoHang
             return check;
 
         }
+
+
         private void but_register_Click(object sender, EventArgs e)
         {
             if (kiemTraInput())
             {
-                string query = "SET IDENTITY_INSERT nha_cung_cap ON;" +
-                 "INSERT INTO nha_cung_cap ( id,ten,sdt, quan, phuong, city) " +
-          "VALUES (" + label_id.Text + ",N'" + textbox_ten.Text + "',N'" + textbox_sdt.Text + "', N'" +
-          textbox_quan.Text + "', N'" + textbox_phuong.Text + "', N'" + textbox_city.Text + "')  "
-                   + "SET IDENTITY_INSERT nha_cung_cap OFF;";
-                comman = new SqlCommand(query);
-                database.editDB(comman);
+                c1 = label_id.Text;
+                c2 = funcShare.Nvarchar(textbox_ten.Text);
+                c3 = funcShare.Nvarchar(textbox_sdt.Text);
+                c4 = funcShare.Nvarchar(textbox_quan.Text);
+                c5 = funcShare.Nvarchar(textbox_phuong.Text);
+                c6 = funcShare.Nvarchar(textbox_city.Text);
+
+                funcShare.insert("nha_cung_cap", "id, ten, sdt, quan, phuong, city", c1, c2, c3, c4, c5, c6);
                 funcShare.loadGridView("nha_cung_cap", gridView);
-                resetRegister();
                 funcShare.autoID(label_id, "nha_cung_cap");
+                resetRegister();
+
             }
 
         }
@@ -292,7 +302,7 @@ namespace QuanLyKhoHang
             if (isFormRegister)
             {
                 label_sua.Visible = true;
-                label_dk.Visible = false;                
+                label_dk.Visible = false;
                 but_register.Visible = false;
                 but_sua.Visible = true;
                 but_xoa.Visible = true;
@@ -335,7 +345,7 @@ namespace QuanLyKhoHang
             textbox_quan.Text = this.gridView.CurrentRow.Cells[3].Value.ToString();
             textbox_phuong.Text = this.gridView.CurrentRow.Cells[4].Value.ToString();
             textbox_city.Text = this.gridView.CurrentRow.Cells[5].Value.ToString();
-            
+
 
         }
 
@@ -347,18 +357,20 @@ namespace QuanLyKhoHang
                 case "but_sua":
                     if (kiemTraInput())
                     {
-                        string update = "UPDATE nha_cung_cap SET ten=N'" + textbox_ten.Text +
-                   "' ,sdt= '" + textbox_sdt.Text + "' ,quan= N'" + textbox_quan.Text + 
-                    "' ,phuong= N'" + 
-                   textbox_phuong.Text + "' ,city= N'" + textbox_city.Text + "' WHERE id=" + label_id.Text;                     
-                        comman = new SqlCommand(update);
-                        database.editDB(comman);
+
+                        c1 = funcShare.Nvarchar(textbox_ten.Text);
+                        c2 = funcShare.Nvarchar(textbox_sdt.Text);
+                        c3 = funcShare.Nvarchar(textbox_quan.Text);
+                        c4 = funcShare.Nvarchar(textbox_phuong.Text);
+                        c5 = funcShare.Nvarchar(textbox_city.Text);
+                        c6 = label_id.Text; 
+                        funcShare.update("nha_cung_cap", "ten,sdt,quan,phuong,city", c1, c2, c3, c4, c5,funcShare.where("id",c6) );
                         funcShare.loadGridView("nha_cung_cap", gridView);
                         changeToFormRegister();
                     }
                     break;
                 case "but_xoa":
-                    string delete = "DELETE FROM nha_cung_cap WHERE id =" +label_id.Text;
+                    string delete = "DELETE FROM nha_cung_cap WHERE id =" + label_id.Text;
                     comman = new SqlCommand(delete);
                     database.editDB(comman);
                     funcShare.loadGridView("nha_cung_cap", gridView);
@@ -370,10 +382,10 @@ namespace QuanLyKhoHang
                     break;
 
             }
-            
-           
-          
-            
+
+
+
+
         }
     }
 }
