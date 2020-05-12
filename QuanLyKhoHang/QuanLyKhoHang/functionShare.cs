@@ -39,6 +39,11 @@ namespace QuanLyKhoHang
             query = "SELECT * FROM " + name_table;        
           database.pushGridview(query, gridView);
         }
+        public void loadGridView(string name_table, string colum_type, DataGridView gridView,string where)
+        {
+            query = "SELECT "+colum_type+" FROM " + name_table+where;
+            database.pushGridview(query, gridView);
+        }
         public bool isNumber(string pValue)
         {
             if (pValue == "")           
@@ -74,8 +79,30 @@ namespace QuanLyKhoHang
             input = "N'" + input + "'";
             return input;
         }
-     
-        public void insert(string name_table,string colum_type,string c1,string c2,string c3,string c4,string c5,string c6)
+        public string date(string ngay,string thang,string nam)
+        {
+            string x;
+            if (thang.Length == 1)
+            {
+                thang = "0" + thang;
+            }
+            if (ngay.Length == 1)
+            {
+                ngay = "0" + ngay;
+            }
+            x ="'"+ nam + thang + ngay+ "'";
+            return x;
+        }
+        public void getDate(string date,TextBox ngay, TextBox thang, TextBox nam)
+        {
+            string[] arr1 = date.Split(' ');
+            string[] arr2 = arr1[0].Split('/');
+
+            ngay.Text = arr2[1];
+            thang.Text = arr2[0];
+            nam.Text = arr2[2];
+        }
+        public void insert(string name_table, string colum_type,string c1,string c2,string c3,string c4,string c5,string c6)
         {
            
             string query = "SET IDENTITY_INSERT "+ name_table +" ON;" +
@@ -115,6 +142,15 @@ namespace QuanLyKhoHang
             comman = new SqlCommand(query);
             database.editDB(comman);
         }
+        public void insertNoIdentity(string name_table, string colum_type, string c1, string c2, string c3, string c4, string c5)
+        {
+
+            string query = 
+           "INSERT INTO " + name_table + " ( " + colum_type + ") " +
+    "VALUES (" + c1 + "," + c2 + "," + c3 + ", " + c4 + ", " + c5 + ")   ";
+            comman = new SqlCommand(query);
+            database.editDB(comman);
+        }
 
         public string where(string name_id,string id)
         {
@@ -145,6 +181,10 @@ namespace QuanLyKhoHang
         }
         public bool checkDate(string day, string month, string year)
         {
+            if (!isNumber(day)|| !isNumber(month)|| !isNumber(year))
+            {
+                return false;
+            }
             int ngay = Convert.ToInt32(day),
                 thang = Convert.ToInt32(month),
                 nam = Convert.ToInt32(year);
