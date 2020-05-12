@@ -81,3 +81,24 @@ as begin
 	where id in (select mat_hang_id from inserted)
 end
 
+
+---------------------------------
+--trigger xóa phiếu nhập + ncc
+CREATE TRIGGER XOA ON nha_cung_cap
+INSTEAD OF DELETE AS
+BEGIN 
+DELETE FROM chi_tiet_phieu_nhap WHERE phieu_nhap_id IN (SELECT phieu_nhap.id
+FROM phieu_nhap WHERE phieu_nhap.ncc_id IN (SELECT deleted.id FROM deleted));
+DELETE FROM phieu_nhap WHERE phieu_nhap.ncc_id IN(SELECT deleted.id FROM deleted);
+DELETE FROM nha_cung_cap WHERE nha_cung_cap.id IN (SELECT deleted.id FROM deleted);
+END
+----------
+GO
+CREATE TRIGGER XOA1 ON phieu_nhap
+INSTEAD OF DELETE AS
+BEGIN
+DELETE FROM chi_tiet_phieu_nhap WHERE phieu_nhap_id IN (SELECT id
+FROM deleted );
+DELETE FROM phieu_nhap WHERE phieu_nhap.id IN(SELECT id FROM deleted);
+END
+

@@ -593,8 +593,6 @@
             this.but_register.Cursor = System.Windows.Forms.Cursors.Hand;
             this.but_register.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.but_register.FlatAppearance.BorderSize = 0;
-            this.but_register.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_register.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
             this.but_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.but_register.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.but_register.ForeColor = System.Drawing.Color.White;
@@ -858,8 +856,6 @@
             this.but_xoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.but_xoa.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.but_xoa.FlatAppearance.BorderSize = 0;
-            this.but_xoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
             this.but_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.but_xoa.Font = new System.Drawing.Font("Courier New", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.but_xoa.ForeColor = System.Drawing.Color.White;
@@ -881,8 +877,6 @@
             this.but_sua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.but_sua.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.but_sua.FlatAppearance.BorderSize = 0;
-            this.but_sua.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_sua.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
             this.but_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.but_sua.Font = new System.Drawing.Font("Courier New", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.but_sua.ForeColor = System.Drawing.Color.White;
@@ -902,8 +896,6 @@
             this.but_changeToRegis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.but_changeToRegis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.but_changeToRegis.FlatAppearance.BorderSize = 0;
-            this.but_changeToRegis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_changeToRegis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.but_changeToRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.but_changeToRegis.ForeColor = System.Drawing.Color.White;
             this.but_changeToRegis.Location = new System.Drawing.Point(388, 12);

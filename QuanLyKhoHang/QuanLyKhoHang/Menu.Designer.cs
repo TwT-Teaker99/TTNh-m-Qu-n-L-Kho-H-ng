@@ -277,7 +277,7 @@
             this.but_hang_hoa.Name = "but_hang_hoa";
             this.but_hang_hoa.Size = new System.Drawing.Size(170, 60);
             this.but_hang_hoa.TabIndex = 2;
-            this.but_hang_hoa.Text = "Hàng Hóa";
+            this.but_hang_hoa.Text = " Tồn kho";
             this.but_hang_hoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.but_hang_hoa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.but_hang_hoa.UseVisualStyleBackColor = false;
