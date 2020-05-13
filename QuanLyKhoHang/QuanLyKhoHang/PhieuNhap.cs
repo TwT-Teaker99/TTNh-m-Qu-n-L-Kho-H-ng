@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,11 @@ namespace QuanLyKhoHang
 {
     public partial class PhieuNhap : Form
     {
+        DataTable dt ;
         string query = "SELECT * FROM phieu_nhap";
         functionShare funcShare;
-        dbAccess database = new dbAccess();
+        dbAccess database= new dbAccess();
+        SqlCommand cmd;
         private string c1;
         private string c2;
         private string c3;
@@ -28,14 +31,27 @@ namespace QuanLyKhoHang
             int sever = 1;
             database.pickSever(sever);
             funcShare = new functionShare(sever);
+            createDataTable(out dt);
+          
         }
 
+        public void createDataTable(out DataTable datatable)
+        {
+            datatable= new DataTable();
+            datatable.Columns.Add(new DataColumn("mat_hang_id", typeof(string)));
+            datatable.Columns.Add(new DataColumn("so_luong", typeof(string)));           
+            datatable.Columns.Add(new DataColumn("don_gia", typeof(string)));
+            datatable.Columns.Add(new DataColumn("don_vi", typeof(string)));
+        }
 
         private void textbox_Leave(object sender, EventArgs e)
         {
             TextBox textBox = (TextBox)sender;
             switch (textBox.Name)
             {
+                case "textbox_search":
+                    funcShare.textboxLeave(textbox_search, "Tìm kiếm");
+                    break;
                 case "textbox_nv":
                     funcShare.textboxLeave(textbox_nv, "Nhập mã nhân viên");
                     break;
@@ -72,6 +88,9 @@ namespace QuanLyKhoHang
             TextBox textBox = (TextBox)sender;
             switch (textBox.Name)
             {
+                case "textbox_search":
+                    funcShare.textboxEnter(textbox_search, "Tìm kiếm");
+                    break;
                 case "textbox_nv":
                     funcShare.textboxEnter(textbox_nv, "Nhập mã nhân viên");
                     break;
@@ -105,11 +124,10 @@ namespace QuanLyKhoHang
 
         private void PhieuNhap_Load(object sender, EventArgs e)
         {
+            this.gridView.Columns[2].DefaultCellStyle.Format = "dd'/'MM'/'yyyy";
             funcShare.loadGridView("phieu_nhap", gridView);
             funcShare.autoID(label_id, "phieu_nhap");
-            // MessageBox.Show(Convert.ToString(gridView2.Rows.Count));
-
-
+         
 
         }
 
@@ -129,6 +147,7 @@ namespace QuanLyKhoHang
             e_cost.Visible = false;
             e_item.Visible = false;
             e_sl.Visible = false;
+            e_dvi.Visible = false;
         }
         private bool checkInput()
         {
@@ -182,6 +201,11 @@ namespace QuanLyKhoHang
                 e_cost.Visible = true;
                 check = false;
             }
+            if (textbox_donvi.Text== "đơn vị")
+            {
+                e_dvi.Visible = true;
+                check = false;
+            }
             return check;
         }
         private bool checkInput2_1()
@@ -208,80 +232,6 @@ namespace QuanLyKhoHang
 
             }
         }
-
-        private void but_register_Click(object sender, EventArgs e)
-        {
-            if (checkInput())
-            {
-                c1 = label_id.Text;
-                c2 = textbox_ncc.Text;
-                c3 = funcShare.date(textbox_ngay.Text, textbox_thang.Text, textbox_nam.Text);
-                c4 = textbox_nv.Text;
-                funcShare.insert("phieu_nhap", "id,ncc_id,ngay_nhap,nhan_vien_id", c1, c2, c3, c4);
-                for (int i = 0; i < gridView2.Rows.Count; i++)
-                {
-                    c2 = gridView2.Rows[i].Cells[0].Value.ToString();
-                    c3 = gridView2.Rows[i].Cells[1].Value.ToString();
-                    c4 = gridView2.Rows[i].Cells[2].Value.ToString();
-                    c5 = funcShare.Nvarchar(gridView2.Rows[i].Cells[3].Value.ToString());
-                    funcShare.insertNoIdentity("chi_tiet_phieu_nhap", "phieu_nhap_id,mat_hang_id,so_luong,don_gia,don_vi", c1, c2, c3, c4, c5);
-                }
-                funcShare.loadGridView("phieu_nhap", gridView);
-            }
-        }
-        private void but_add_Click(object sender, EventArgs e)
-        {
-            if (checkInput2())
-            {
-                if (checkInput2_1())
-                {
-                    c1 = textbox_item.Text;
-                    c2 = textbox_soluong.Text;
-                    c3 = textbox_cost.Text;
-                    c4 = textbox_donvi.Text;
-                    gridView2.Rows.Add(c1, c2, c3, c4);
-                }
-
-            }
-        }
-        private void changeToFormAlter()
-        {
-            if (isFormRegister)
-            {
-                label_dk.Location = new System.Drawing.Point(34, 9);
-                label_dk.Text = "Chi tiết đơn hàng";
-                but_register.Visible = false;
-                but_sua.Visible = true;
-                but_xoa.Visible = true;
-                isFormRegister = false;
-                but_changeToRegis.Visible = true;
-            }
-
-        }
-        private void changeToFormRegister()
-        {
-            if (!isFormRegister)
-            {
-                label_dk.Location = new System.Drawing.Point(91, 9);
-                label_dk.Text = "Lập đơn hàng";
-                funcShare.autoID(label_id, "phieu_nhap");
-                but_register.Visible = true;
-                but_sua.Visible = false;
-                but_xoa.Visible = false;
-                but_changeToRegis.Visible = false;
-                isFormRegister = true;
-                textbox_nv.Clear(); funcShare.textboxLeave(textbox_nv, "Nhập mã nhân viên");
-                textbox_ncc.Clear(); funcShare.textboxLeave(textbox_ncc, "Nhập mã nhà cung cấp");
-                textbox_ngay.Clear(); funcShare.textboxLeave(textbox_ngay, "Ngày");
-                textbox_thang.Clear(); funcShare.textboxLeave(textbox_thang, "Tháng");
-                textbox_nam.Clear(); funcShare.textboxLeave(textbox_nam, "Năm");
-                textbox_item.Clear(); funcShare.textboxLeave(textbox_item, "mã mặt hàng");
-                textbox_donvi.Clear(); funcShare.textboxLeave(textbox_donvi, "đơn vị");
-                textbox_cost.Clear(); funcShare.textboxLeave(textbox_cost, "đơn giá");
-                textbox_soluong.Clear(); funcShare.textboxLeave(textbox_soluong, "số lượng");
-            }
-
-        }
         private void gridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex != -1)//not header           
@@ -299,14 +249,128 @@ namespace QuanLyKhoHang
                 textbox_nv.Text = this.gridView.CurrentRow.Cells[3].Value.ToString();
                 textbox_ncc.Text = this.gridView.CurrentRow.Cells[1].Value.ToString();
                 funcShare.getDate(this.gridView.CurrentRow.Cells[2].Value.ToString(), textbox_ngay, textbox_thang, textbox_nam);
-                funcShare.loadGridView("chi_tiet_phieu_nhap","mat_hang_id,so_luong,don_gia,don_vi", 
+                funcShare.loadGridView("chi_tiet_phieu_nhap", "mat_hang_id,so_luong,don_gia,don_vi",
                     gridView2, funcShare.where("phieu_nhap_id", label_id.Text));
-             
+
 
             }
         }
+        private void but_register_Click(object sender, EventArgs e)
+        {
+            if (checkInput())
+            {
+                c1 = label_id.Text;
+                c2 = textbox_ncc.Text;
+                c3 = funcShare.date(textbox_ngay.Text, textbox_thang.Text, textbox_nam.Text);
+                c4 = textbox_nv.Text;
+                funcShare.insert("phieu_nhap", "id,ncc_id,ngay_nhap,nhan_vien_id", c1, c2, c3, c4);
+                for (int i = 0; i < gridView2.Rows.Count; i++)
+                {
+                    c2 = gridView2.Rows[i].Cells[0].Value.ToString();
+                    c3 = gridView2.Rows[i].Cells[1].Value.ToString();
+                    c4 = gridView2.Rows[i].Cells[2].Value.ToString();
+                    c5 = funcShare.Nvarchar(gridView2.Rows[i].Cells[3].Value.ToString());
+            funcShare.insertNoIdentity("chi_tiet_phieu_nhap", "phieu_nhap_id,mat_hang_id,so_luong,don_gia,don_vi", c1, c2, c3, c4, c5);
+                }
+                funcShare.loadGridView("phieu_nhap", gridView);
+                clear();
+                funcShare.autoID(label_id, "phieu_nhap");
 
-        private void but_form_alter(object sender, EventArgs e)
+            }
+        }
+        private void clear()
+        {
+            textbox_nv.Clear(); funcShare.textboxLeave(textbox_nv, "Nhập mã nhân viên");
+            textbox_ncc.Clear(); funcShare.textboxLeave(textbox_ncc, "Nhập mã nhà cung cấp");
+            textbox_ngay.Clear(); funcShare.textboxLeave(textbox_ngay, "Ngày");
+            textbox_thang.Clear(); funcShare.textboxLeave(textbox_thang, "Tháng");
+            textbox_nam.Clear(); funcShare.textboxLeave(textbox_nam, "Năm");
+            textbox_item.Clear(); funcShare.textboxLeave(textbox_item, "mã mặt hàng");
+            textbox_donvi.Clear(); funcShare.textboxLeave(textbox_donvi, "đơn vị");
+            textbox_cost.Clear(); funcShare.textboxLeave(textbox_cost, "đơn giá");
+            textbox_soluong.Clear(); funcShare.textboxLeave(textbox_soluong, "số lượng");
+            while (gridView2.Rows.Count > 0)
+            {
+                gridView2.Rows.RemoveAt(0);
+            }
+        }
+        private void but_add_Click(object sender, EventArgs e)
+        {
+            if (checkInput2())
+            {
+                if (checkInput2_1())
+                {
+                    if (isFormRegister)
+                    {
+                        c1 = textbox_item.Text;
+                        c2 = textbox_soluong.Text;
+                        c3 = textbox_cost.Text;
+                        c4 = textbox_donvi.Text;
+
+                        dt.Rows.Add(c1, c2, c3, c4);
+                       
+                        gridView2.DataSource = dt;
+                    }
+                    else
+                    {
+                        c1 = textbox_item.Text;
+                        c2 = textbox_soluong.Text;
+                        c3 = textbox_cost.Text;
+                        c4 = textbox_donvi.Text;
+                        dt = new DataTable();
+                        dt = (DataTable)gridView2.DataSource;
+                        dt.Rows.Add(c1, c2, c3, c4);                     
+                        gridView2.DataSource = dt;
+                    }    
+                 
+                }
+
+            }
+        }
+        private void changeToFormAlter()
+        {
+            if (isFormRegister)
+            {
+                label_dk.Location = new System.Drawing.Point(34, 9);
+                label_dk.Text = "Chi tiết đơn hàng";
+                but_register.Visible = false;
+                but_sua.Visible = true;
+                but_xoa.Visible = true;
+                isFormRegister = false;
+                but_changeToRegis.Visible = true;
+                resetError();
+                textbox_item.Clear(); funcShare.textboxLeave(textbox_item, "mã mặt hàng");
+                textbox_donvi.Clear(); funcShare.textboxLeave(textbox_donvi, "đơn vị");
+                textbox_cost.Clear(); funcShare.textboxLeave(textbox_cost, "đơn giá");
+                textbox_soluong.Clear(); funcShare.textboxLeave(textbox_soluong, "số lượng");
+
+            }
+
+        }
+        private void changeToFormRegister()
+        {
+            if (!isFormRegister)
+            {
+                createDataTable(out dt);
+                label_dk.Location = new System.Drawing.Point(91, 9);
+                label_dk.Text = "Lập đơn hàng";
+                funcShare.autoID(label_id, "phieu_nhap");
+                but_register.Visible = true;
+                but_sua.Visible = false;
+                but_xoa.Visible = false;
+                but_changeToRegis.Visible = false;
+                isFormRegister = true;
+                resetError();
+                clear();
+                
+              
+            
+            }
+
+        }
+     
+
+        private void but_form_alter(object sender, EventArgs e)//but sua chua lam
         {
             Button but = (Button)sender;
             switch (but.Name)
@@ -317,16 +381,23 @@ namespace QuanLyKhoHang
                 case "but_sua":
                     break;
                 case "but_xoa":
+                    string xoa = "DELETE FROM phieu_nhap WHERE id=" + label_id.Text;
+                     cmd = new SqlCommand(xoa);                
+                    database.editDB(cmd);
+                    changeToFormRegister();
+                    funcShare.loadGridView("phieu_nhap", gridView);
+                    funcShare.autoID(label_id, "phieu_nhap");
                     break;
             }
         }
-        /*
-* MessageBox.Show(Convert.ToString(gridView2.Rows.Count));
-*  INSERT INTO phieu_nhap
-(   ncc_id,   nhan_vien_id,   ngay_nhap)
-VALUES 	( 1,1, '20190110')
-*/
 
+        
+        /*
+      nút thêm item  trong trường hợp alter
+      nút sửa
+      sự kiện click đúp vào gridview2 trong trường hợp alter
+
+         */
 
 
 

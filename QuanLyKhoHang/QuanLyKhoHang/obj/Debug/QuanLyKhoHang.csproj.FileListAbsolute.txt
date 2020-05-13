@@ -59,3 +59,5 @@ C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoH
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.ChiTietPhieuXuat.resources
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.QLXuat.resources
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.ThongBao.resources
+D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.SuaPhieuNhap.resources
+D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.ThemPhieuNhap.resources

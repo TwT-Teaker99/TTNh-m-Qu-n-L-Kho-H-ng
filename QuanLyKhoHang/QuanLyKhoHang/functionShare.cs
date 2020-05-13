@@ -189,7 +189,7 @@ namespace QuanLyKhoHang
                 thang = Convert.ToInt32(month),
                 nam = Convert.ToInt32(year);
             int ngaymax = 0;
-            if (nam < 0 || thang <= 0 || thang > 12 || ngay <= 0 || ngay > 31 || nam > 2019)
+            if (nam < 0 || thang <= 0 || thang > 12 || ngay <= 0 || ngay > 31 || nam <1900 || nam >2050)
             { return false; }
             else
             {
@@ -219,6 +219,7 @@ namespace QuanLyKhoHang
             }
             return true;
         }
+        
         /*
          * làm việc với gridview
          * 24
