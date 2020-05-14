@@ -12,8 +12,8 @@ namespace QuanLyKhoHang
     class dbAccess
     {
         public static string strConn = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QuanLyKhoHang;Integrated Security=True";              
-        private static string VuSever =
-           "Data Source = DESKTOP-VES4POV\\MSSQLSERVER03;Database =QuanLyKhoHang; Integrated Security=SSPI;";
+        //private static string strConn =
+        //   "Data Source = DESKTOP-VES4POV\\MSSQLSERVER03;Database =QuanLyKhoHang; Integrated Security=SSPI;";
 
 
         public static SqlConnection connection = new SqlConnection(strConn);
@@ -26,7 +26,7 @@ namespace QuanLyKhoHang
         {
             if (choice ==1)
             {
-                connection= new SqlConnection(VuSever);
+                connection= new SqlConnection(strConn);
             }
             if (choice==2)
             {
