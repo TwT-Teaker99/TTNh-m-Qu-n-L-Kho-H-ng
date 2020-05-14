@@ -36,9 +36,38 @@ namespace QuanLyKhoHang
         }
         public void loadGridView(string name_table, DataGridView gridView)
         {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
             query = "SELECT * FROM " + name_table;
-            comman = new SqlCommand(query);
-            database.pushGridview(comman, gridView);
+            //comman = new SqlCommand(query);
+            //database.pushGridview(comman, gridView);
+            dbAccess.GetData(query, gridView);
+=======
+=======
+>>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
+=======
+>>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
+=======
+>>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
+            query = "SELECT * FROM " + name_table;        
+          database.pushGridview(query, gridView);
+        }
+        public void loadGridView(string name_table, string colum_type, DataGridView gridView,string where)
+        {
+            query = "SELECT "+colum_type+" FROM " + name_table+where;
+            database.pushGridview(query, gridView);
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
+=======
+>>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
+=======
+>>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
+=======
+>>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
         }
         public bool isNumber(string pValue)
         {
@@ -75,8 +104,30 @@ namespace QuanLyKhoHang
             input = "N'" + input + "'";
             return input;
         }
-     
-        public void insert(string name_table,string colum_type,string c1,string c2,string c3,string c4,string c5,string c6)
+        public string date(string ngay,string thang,string nam)
+        {
+            string x;
+            if (thang.Length == 1)
+            {
+                thang = "0" + thang;
+            }
+            if (ngay.Length == 1)
+            {
+                ngay = "0" + ngay;
+            }
+            x ="'"+ nam + thang + ngay+ "'";
+            return x;
+        }
+        public void getDate(string date,TextBox ngay, TextBox thang, TextBox nam)
+        {
+            string[] arr1 = date.Split(' ');
+            string[] arr2 = arr1[0].Split('/');
+
+            ngay.Text = arr2[1];
+            thang.Text = arr2[0];
+            nam.Text = arr2[2];
+        }
+        public void insert(string name_table, string colum_type,string c1,string c2,string c3,string c4,string c5,string c6)
         {
            
             string query = "SET IDENTITY_INSERT "+ name_table +" ON;" +
@@ -116,6 +167,15 @@ namespace QuanLyKhoHang
             comman = new SqlCommand(query);
             database.editDB(comman);
         }
+        public void insertNoIdentity(string name_table, string colum_type, string c1, string c2, string c3, string c4, string c5)
+        {
+
+            string query = 
+           "INSERT INTO " + name_table + " ( " + colum_type + ") " +
+    "VALUES (" + c1 + "," + c2 + "," + c3 + ", " + c4 + ", " + c5 + ")   ";
+            comman = new SqlCommand(query);
+            database.editDB(comman);
+        }
 
         public string where(string name_id,string id)
         {
@@ -144,6 +204,47 @@ namespace QuanLyKhoHang
             comman = new SqlCommand(update);
             database.editDB(comman);
         }
+        public bool checkDate(string day, string month, string year)
+        {
+            if (!isNumber(day)|| !isNumber(month)|| !isNumber(year))
+            {
+                return false;
+            }
+            int ngay = Convert.ToInt32(day),
+                thang = Convert.ToInt32(month),
+                nam = Convert.ToInt32(year);
+            int ngaymax = 0;
+            if (nam < 0 || thang <= 0 || thang > 12 || ngay <= 0 || ngay > 31 || nam <1900 || nam >2050)
+            { return false; }
+            else
+            {
+                switch (thang)
+                {
+                    case 1: case 3: case 5: case 7: case 8: case 10: case 12: ngaymax = 31; break;
+                    case 2:
+                        if ((nam % 4 == 0 && nam % 100 != 0) || (nam % 400 == 0)) ngaymax = 29;
+                        else ngaymax = 28; break;
+                    case 4: case 6: case 9: case 11: ngaymax = 30; break;
+                }
+                if (ngay <= ngaymax) return true;
+                else { return false; }
+            }
+
+        }
+        public bool checkPK(string pk,string name_table)
+        {
+            if (!isNumber(pk) )
+            {
+                return false;
+            }
+            query = "SELECT *FROM "+name_table+" WHERE id=" + pk;
+            if ( !database.SelectHasRow(query))
+            {
+                return false;
+            }
+            return true;
+        }
+        
         /*
          * làm việc với gridview
          * 24

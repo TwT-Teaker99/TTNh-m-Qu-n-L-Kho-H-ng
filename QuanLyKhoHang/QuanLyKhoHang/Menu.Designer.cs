@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.but_home = new System.Windows.Forms.Button();
             this.p1 = new System.Windows.Forms.Panel();
             this.but_phieu_nhap = new System.Windows.Forms.Button();
             this.but_ncc = new System.Windows.Forms.Button();
@@ -84,6 +85,7 @@
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             this.flowLayoutPanel1.Controls.Add(this.panel5);
+            this.flowLayoutPanel1.Controls.Add(this.but_home);
             this.flowLayoutPanel1.Controls.Add(this.p1);
             this.flowLayoutPanel1.Controls.Add(this.p2);
             this.flowLayoutPanel1.Controls.Add(this.p3);
@@ -105,13 +107,34 @@
             this.panel5.Size = new System.Drawing.Size(200, 71);
             this.panel5.TabIndex = 3;
             // 
+            // but_home
+            // 
+            this.but_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            this.but_home.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_home.FlatAppearance.BorderSize = 0;
+            this.but_home.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_home.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(71)))), ((int)(((byte)(77)))));
+            this.but_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_home.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_home.ForeColor = System.Drawing.Color.White;
+            this.but_home.Image = global::QuanLyKhoHang.Properties.Resources.home;
+            this.but_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.but_home.Location = new System.Drawing.Point(3, 80);
+            this.but_home.Name = "but_home";
+            this.but_home.Size = new System.Drawing.Size(200, 60);
+            this.but_home.TabIndex = 10;
+            this.but_home.Text = " Trang chủ";
+            this.but_home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.but_home.UseVisualStyleBackColor = false;
+            this.but_home.Click += new System.EventHandler(this.but_child_form);
+            // 
             // p1
             // 
             this.p1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.p1.Controls.Add(this.but_phieu_nhap);
             this.p1.Controls.Add(this.but_ncc);
             this.p1.Controls.Add(this.panel4);
-            this.p1.Location = new System.Drawing.Point(3, 80);
+            this.p1.Location = new System.Drawing.Point(3, 146);
             this.p1.MaximumSize = new System.Drawing.Size(200, 140);
             this.p1.MinimumSize = new System.Drawing.Size(200, 60);
             this.p1.Name = "p1";
@@ -205,7 +228,7 @@
             this.p2.Controls.Add(this.but_loai_hang);
             this.p2.Controls.Add(this.but_mat_hang);
             this.p2.Controls.Add(this.panel9);
-            this.p2.Location = new System.Drawing.Point(3, 146);
+            this.p2.Location = new System.Drawing.Point(3, 212);
             this.p2.MaximumSize = new System.Drawing.Size(200, 140);
             this.p2.MinimumSize = new System.Drawing.Size(200, 60);
             this.p2.Name = "p2";
@@ -277,7 +300,7 @@
             this.but_hang_hoa.Name = "but_hang_hoa";
             this.but_hang_hoa.Size = new System.Drawing.Size(170, 60);
             this.but_hang_hoa.TabIndex = 2;
-            this.but_hang_hoa.Text = "Hàng Hóa";
+            this.but_hang_hoa.Text = " Tồn kho";
             this.but_hang_hoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.but_hang_hoa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.but_hang_hoa.UseVisualStyleBackColor = false;
@@ -300,7 +323,7 @@
             this.p3.Controls.Add(this.but_phieu_xuat);
             this.p3.Controls.Add(this.but_quay);
             this.p3.Controls.Add(this.panel6);
-            this.p3.Location = new System.Drawing.Point(3, 212);
+            this.p3.Location = new System.Drawing.Point(3, 278);
             this.p3.MaximumSize = new System.Drawing.Size(200, 140);
             this.p3.MinimumSize = new System.Drawing.Size(200, 60);
             this.p3.Name = "p3";
@@ -400,7 +423,7 @@
             this.but_nhan_vien.ForeColor = System.Drawing.Color.White;
             this.but_nhan_vien.Image = global::QuanLyKhoHang.Properties.Resources.nv;
             this.but_nhan_vien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.but_nhan_vien.Location = new System.Drawing.Point(3, 278);
+            this.but_nhan_vien.Location = new System.Drawing.Point(3, 344);
             this.but_nhan_vien.Name = "but_nhan_vien";
             this.but_nhan_vien.Size = new System.Drawing.Size(200, 60);
             this.but_nhan_vien.TabIndex = 8;
@@ -421,7 +444,7 @@
             this.but_thong_ke.ForeColor = System.Drawing.Color.White;
             this.but_thong_ke.Image = global::QuanLyKhoHang.Properties.Resources.thongke;
             this.but_thong_ke.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.but_thong_ke.Location = new System.Drawing.Point(3, 344);
+            this.but_thong_ke.Location = new System.Drawing.Point(3, 410);
             this.but_thong_ke.Name = "but_thong_ke";
             this.but_thong_ke.Size = new System.Drawing.Size(200, 60);
             this.but_thong_ke.TabIndex = 9;
@@ -678,5 +701,6 @@
         private System.Windows.Forms.Button but_exit;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button but_home;
     }
 }

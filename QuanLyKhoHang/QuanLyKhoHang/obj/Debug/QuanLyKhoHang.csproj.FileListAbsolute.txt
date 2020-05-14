@@ -22,12 +22,10 @@ C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoH
 C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.csprojAssemblyReference.cache
 C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.LoaiHang.resources
 C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.Login.resources
-C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.Main.resources
 C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.MatHang.resources
 C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.NhaCungCap.resources
 C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.NhanVien.resources
 C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.PhieuNhap.resources
-C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.PhieuTra.resources
 C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.Properties.Resources.resources
 C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.QuayHang.resources
 C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.csproj.GenerateResource.cache
@@ -52,9 +50,11 @@ D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\De
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.pdb
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.Menu.resources
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.csprojAssemblyReference.cache
-C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.ChiTietPhieuXuat.resources
 C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.Menu.resources
 C:\Users\Admin\Documents\GitHub\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.QLXuat.resources
 =======
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.ChiTietPhieuXuat.resources
 D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.QLXuat.resources
+D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.ThongBao.resources
+D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.SuaPhieuNhap.resources
+D:\IT\Ki2-nam3\ttnhom\TTNhom-Quan-Ly-Kho-Hang\QuanLyKhoHang\QuanLyKhoHang\obj\Debug\QuanLyKhoHang.ThemPhieuNhap.resources

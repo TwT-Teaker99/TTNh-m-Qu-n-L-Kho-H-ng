@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChiTietPhieuXuat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChiTietPhieuXuat.Designer.cs">
-      <DependentUpon>ChiTietPhieuXuat.cs</DependentUpon>
-    </Compile>
     <Compile Include="dbAccess.cs" />
     <Compile Include="functionShare.cs" />
     <Compile Include="LoaiHang.cs">
@@ -96,12 +90,6 @@
     <Compile Include="PhieuNhap.Designer.cs">
       <DependentUpon>PhieuNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="PhieuTra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PhieuTra.Designer.cs">
-      <DependentUpon>PhieuTra.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLXuat.cs">
@@ -116,9 +104,39 @@
     <Compile Include="QuayHang.Designer.cs">
       <DependentUpon>QuayHang.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
+=======
+>>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
+=======
+>>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
+    <Compile Include="SuaPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaPhieuNhap.Designer.cs">
+      <DependentUpon>SuaPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemPhieuNhap.Designer.cs">
+      <DependentUpon>ThemPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongBao.Designer.cs">
+      <DependentUpon>ThongBao.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ChiTietPhieuXuat.resx">
       <DependentUpon>ChiTietPhieuXuat.cs</DependentUpon>
     </EmbeddedResource>
+>>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
     <EmbeddedResource Include="LoaiHang.resx">
       <DependentUpon>LoaiHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,9 +158,6 @@
     <EmbeddedResource Include="PhieuNhap.resx">
       <DependentUpon>PhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PhieuTra.resx">
-      <DependentUpon>PhieuTra.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -158,6 +173,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuayHang.resx">
       <DependentUpon>QuayHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaPhieuNhap.resx">
+      <DependentUpon>SuaPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemPhieuNhap.resx">
+      <DependentUpon>ThemPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongBao.resx">
+      <DependentUpon>ThongBao.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -237,6 +261,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\repair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

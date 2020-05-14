@@ -31,6 +31,8 @@ namespace QuanLyKhoHang
 
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            ThongBao formAnnounce = new ThongBao();
+            call_form(formAnnounce);
 
         }
 
@@ -173,6 +175,11 @@ namespace QuanLyKhoHang
             Button but = (Button)sender;
             switch (but.Name)
             {
+                case "but_home":
+                    this.screen.Controls.Clear();
+                    ThongBao formAnnounce = new ThongBao();
+                    call_form(formAnnounce);
+                    break;
                 case "but_ncc":
                     this.screen.Controls.Clear();
                     NhaCungCap formNCC = new NhaCungCap();
