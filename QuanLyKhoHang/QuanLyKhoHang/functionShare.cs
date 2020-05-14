@@ -36,24 +36,10 @@ namespace QuanLyKhoHang
         }
         public void loadGridView(string name_table, DataGridView gridView)
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             query = "SELECT * FROM " + name_table;
             //comman = new SqlCommand(query);
             //database.pushGridview(comman, gridView);
             dbAccess.GetData(query, gridView);
-=======
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
             query = "SELECT * FROM " + name_table;        
           database.pushGridview(query, gridView);
         }
@@ -61,19 +47,6 @@ namespace QuanLyKhoHang
         {
             query = "SELECT "+colum_type+" FROM " + name_table+where;
             database.pushGridview(query, gridView);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
         }
         public bool isNumber(string pValue)
         {
