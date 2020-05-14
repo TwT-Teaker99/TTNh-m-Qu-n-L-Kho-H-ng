@@ -104,20 +104,6 @@
     <Compile Include="QuayHang.Designer.cs">
       <DependentUpon>QuayHang.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
     <Compile Include="SuaPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,7 +125,6 @@
     <EmbeddedResource Include="ChiTietPhieuXuat.resx">
       <DependentUpon>ChiTietPhieuXuat.cs</DependentUpon>
     </EmbeddedResource>
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
     <EmbeddedResource Include="LoaiHang.resx">
       <DependentUpon>LoaiHang.cs</DependentUpon>
     </EmbeddedResource>
