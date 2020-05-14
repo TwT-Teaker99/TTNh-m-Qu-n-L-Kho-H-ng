@@ -40,11 +40,14 @@ namespace QuanLyKhoHang
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             query = "SELECT * FROM " + name_table;
             //comman = new SqlCommand(query);
             //database.pushGridview(comman, gridView);
             dbAccess.GetData(query, gridView);
 =======
+=======
+>>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
 =======
 >>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
 =======
@@ -61,6 +64,9 @@ namespace QuanLyKhoHang
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
+=======
 >>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
 =======
 >>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e

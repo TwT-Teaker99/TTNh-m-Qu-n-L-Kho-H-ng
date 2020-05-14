@@ -149,6 +149,7 @@ namespace QuanLyKhoHang
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 dbCommand.Connection = connection;
                 dbCommand.CommandType = CommandType.Text;
                 SqlDataReader dataread = dbCommand.ExecuteReader();
@@ -170,6 +171,8 @@ namespace QuanLyKhoHang
 >>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
 =======
 >>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
+=======
+>>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
               
                 DataTable data = new DataTable();
                 adapter = new SqlDataAdapter(query, connection);
@@ -179,6 +182,9 @@ namespace QuanLyKhoHang
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
+=======
 >>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
 =======
 >>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
