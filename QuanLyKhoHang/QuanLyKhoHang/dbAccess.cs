@@ -175,26 +175,66 @@ namespace QuanLyKhoHang
             }
         }
      
-        public void pushDataTable(SqlCommand dbCommand, DataTable data)//đẩy dữ liệu vào dataTable
+        public void pushGridview(string query, DataGridView gridview)//đẩy dữ liệu vào gridview 
         {
 
             try
             {
                 connection.Open();
-                dbCommand.Connection = connection;
-                dbCommand.CommandType = CommandType.Text;
-                SqlDataAdapter adapter = new SqlDataAdapter(dbCommand);
+
+                DataTable data = new DataTable();
+                adapter = new SqlDataAdapter(query, connection);
                 adapter.Fill(data);
+                gridview.DataSource = data;
 
             }
             catch (Exception)
             {
-
                 throw;
             }
-            finally { connection.Close(); }
+            finally
+            {
+                connection.Close();
 
+            }
         }
+        //public void pushGridview(string query, DataGridView gridview)//đẩy dữ liệu vào gridview 
+        //{
+            
+        //    try
+        //    {
+        //        connection.Open();
+        //        SqlCommand dbCommand = new SqlCommand(query);
+        //        dbCommand.Connection = connection;
+        //        dbCommand.CommandType = CommandType.Text;
+        //        SqlDataReader dataread = dbCommand.ExecuteReader();
+        //        if (dataread.HasRows)
+        //        {
+        //            BindingSource source = new BindingSource();
+        //            source.DataSource = dataread;
+        //            gridview.DataSource = source;                 
+        //        }
+        //        else
+        //        {
+        //            gridview.Rows.Clear();
+        //            gridview.Refresh();
+        //        }
+              
+        //        DataTable data = new DataTable();
+        //        adapter = new SqlDataAdapter(query, connection);
+        //        adapter.Fill(data);
+        //        gridview.DataSource = data;
+             
+        //    }
+        //    catch (Exception)
+        //    {
+        //        throw;
+        //    }
+        //    finally
+        //    {
+        //        connection.Close();
+        //    }
+        //}
         public int editDB(SqlCommand dbCommand)//chỉnh sửa dữ liệu trong dataBase ( use for insert+delete)
         {
             try
