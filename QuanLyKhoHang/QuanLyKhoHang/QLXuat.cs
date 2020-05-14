@@ -351,6 +351,7 @@ namespace QuanLyKhoHang
                     break;
 
                 case "but_changeToRegis":
+                    table.Rows.Clear();
                     changeToFormRegister();
                     break;
             }
