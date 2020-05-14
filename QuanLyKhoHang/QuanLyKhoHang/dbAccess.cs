@@ -145,11 +145,6 @@ namespace QuanLyKhoHang
             try
             {
                 connection.Open();
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                 dbCommand.Connection = connection;
                 dbCommand.CommandType = CommandType.Text;
                 SqlDataReader dataread = dbCommand.ExecuteReader();
@@ -164,34 +159,11 @@ namespace QuanLyKhoHang
                     gridview.Rows.Clear();
                     gridview.Refresh();
                 }
-=======
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
               
                 DataTable data = new DataTable();
                 adapter = new SqlDataAdapter(query, connection);
                 adapter.Fill(data);
                 gridview.DataSource = data;
-               
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
-=======
->>>>>>> 9d44cb23e5b7ca3571579a1bab79c355160bf87e
             }
             catch (Exception)
             {
