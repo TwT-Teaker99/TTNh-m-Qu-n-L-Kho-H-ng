@@ -12,8 +12,8 @@ namespace QuanLyKhoHang
     class dbAccess
     {
         public static string strConn = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QuanLyKhoHang;Integrated Security=True";              
-        //private static string strConn =
-        //   "Data Source = DESKTOP-VES4POV\\MSSQLSERVER03;Database =QuanLyKhoHang; Integrated Security=SSPI;";
+        private static string connVu =
+           "Data Source = DESKTOP-VES4POV\\MSSQLSERVER03;Database =QuanLyKhoHang; Integrated Security=SSPI;";
 
 
         public static SqlConnection connection = new SqlConnection(strConn);
@@ -26,7 +26,7 @@ namespace QuanLyKhoHang
         {
             if (choice ==1)
             {
-                connection= new SqlConnection(strConn);
+                connection= new SqlConnection(connVu);
             }
             if (choice==2)
             {
@@ -229,7 +229,31 @@ namespace QuanLyKhoHang
             finally { connection.Close(); }
         }
 
+        public static void FillColl1(AutoCompleteStringCollection dataColl, string query)
+        {
+            try
+            {
+                connection.Open();
+                DataSet ds = new DataSet();
+                command = new SqlCommand(query, connection);
+                adapter = new SqlDataAdapter();
+                adapter.SelectCommand = command;
+                adapter.Fill(ds);
+                //adapter.Dispose();
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    dataColl.Add(row[0].ToString());
+                }
+              
+            }
+            catch (Exception)
+            {
 
+                throw;
+            }
+            finally { connection.Close(); }
+           
+        }
 
 
     }

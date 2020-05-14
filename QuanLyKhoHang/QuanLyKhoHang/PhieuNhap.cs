@@ -32,10 +32,18 @@ namespace QuanLyKhoHang
             database.pickSever(sever);
             funcShare = new functionShare(sever);
             createDataTable(out dt);
-          
+            goiY(textbox_nv, "select id from nhan_vien");
+            goiY(textbox_ncc, "select id from nha_cung_cap");
+            goiY(textbox_item, "select id from mat_hang");
+            goiY(textbox_donvi, "select distinct don_vi from chi_tiet_phieu_nhap");
         }
-
-        public void createDataTable(out DataTable datatable)
+        private void goiY(TextBox tb,string s)
+        {
+            AutoCompleteStringCollection cbData = new AutoCompleteStringCollection();
+            dbAccess.FillColl(cbData, s);
+            tb.AutoCompleteCustomSource = cbData;
+        }
+        private void createDataTable(out DataTable datatable)
         {
             datatable= new DataTable();
             datatable.Columns.Add(new DataColumn("mat_hang_id", typeof(string)));
