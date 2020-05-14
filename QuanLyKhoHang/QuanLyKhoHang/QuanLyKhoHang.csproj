@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietPhieuNhap.Designer.cs">
+      <DependentUpon>ChiTietPhieuNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbAccess.cs" />
     <Compile Include="functionShare.cs" />
     <Compile Include="LoaiHang.cs">
@@ -104,24 +110,15 @@
     <Compile Include="QuayHang.Designer.cs">
       <DependentUpon>QuayHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="SuaPhieuNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SuaPhieuNhap.Designer.cs">
-      <DependentUpon>SuaPhieuNhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ThemPhieuNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThemPhieuNhap.Designer.cs">
-      <DependentUpon>ThemPhieuNhap.cs</DependentUpon>
-    </Compile>
     <Compile Include="ThongBao.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ThongBao.Designer.cs">
       <DependentUpon>ThongBao.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChiTietPhieuNhap.resx">
+      <DependentUpon>ChiTietPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoaiHang.resx">
       <DependentUpon>LoaiHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,12 +155,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuayHang.resx">
       <DependentUpon>QuayHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SuaPhieuNhap.resx">
-      <DependentUpon>SuaPhieuNhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ThemPhieuNhap.resx">
-      <DependentUpon>ThemPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThongBao.resx">
       <DependentUpon>ThongBao.cs</DependentUpon>

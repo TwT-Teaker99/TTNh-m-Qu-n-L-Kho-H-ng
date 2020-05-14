@@ -233,12 +233,21 @@ namespace QuanLyKhoHang
         }
         private void gridView2_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex != -1)//not header           
+            if (isFormRegister)
             {
+                if (e.RowIndex != -1)//not header           
+                {
 
-                gridView2.Rows.RemoveAt(gridView2.CurrentCell.RowIndex);
+                    gridView2.Rows.RemoveAt(gridView2.CurrentCell.RowIndex);
 
+                }
             }
+            if (!isFormRegister)
+            {
+                ChiTietPhieuNhap sua_item = new ChiTietPhieuNhap();
+                sua_item.ShowDialog();
+            }
+          
         }
         private void gridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -319,7 +328,7 @@ namespace QuanLyKhoHang
                        
                         gridView2.DataSource = dt;
                     }
-                    else
+                    if(!isFormRegister)
                     {
                         c1 = textbox_item.Text;
                         c2 = textbox_soluong.Text;
@@ -329,6 +338,8 @@ namespace QuanLyKhoHang
                         dt = (DataTable)gridView2.DataSource;
                         dt.Rows.Add(c1, c2, c3, c4);                     
                         gridView2.DataSource = dt;
+                        c4 = funcShare.Nvarchar(textbox_donvi.Text);
+                        funcShare.insertNoIdentity("chi_tiet_phieu_nhap", "phieu_nhap_id,mat_hang_id,so_luong,don_gia,don_vi", label_id.Text, c1, c2, c3, c4);
                     }    
                  
                 }
@@ -387,6 +398,13 @@ namespace QuanLyKhoHang
                     changeToFormRegister();
                     break;
                 case "but_sua":
+                    c1 = label_id.Text;
+                    c2 = textbox_ncc.Text;
+                    c3 = funcShare.date(textbox_ngay.Text, textbox_thang.Text, textbox_nam.Text);
+                    c4 = textbox_nv.Text;
+                    funcShare.update("phieu_nhap", "ncc_id,ngay_nhap,nhan_vien_id", c2, c3, c4, funcShare.where("id", c1));
+                    changeToFormRegister();
+                    funcShare.loadGridView("phieu_nhap", gridView);
                     break;
                 case "but_xoa":
                     string xoa = "DELETE FROM phieu_nhap WHERE id=" + label_id.Text;
@@ -394,7 +412,7 @@ namespace QuanLyKhoHang
                     database.editDB(cmd);
                     changeToFormRegister();
                     funcShare.loadGridView("phieu_nhap", gridView);
-                    funcShare.autoID(label_id, "phieu_nhap");
+                   
                     break;
             }
         }
