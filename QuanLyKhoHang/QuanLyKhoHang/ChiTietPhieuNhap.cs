@@ -13,7 +13,7 @@ namespace QuanLyKhoHang
 {
     public partial class ChiTietPhieuNhap : Form
     {
-        private string phieu_nhap_id,item_id,so_luong, don_gia,don_vi;
+        public string phieu_nhap_id,item_id,so_luong, don_gia,don_vi;
         SqlCommand cmd;
         functionShare funcShare;
         dbAccess database = new dbAccess();
@@ -65,19 +65,23 @@ namespace QuanLyKhoHang
             string xoa = "DELETE FROM chi_tiet_phieu_nhap WHERE phieu_nhap_id=" + phieu_nhap_id +" AND mat_hang_id="+item_id;
             cmd = new SqlCommand(xoa);
             database.editDB(cmd);
+            //MessageBox.Show(xoa);
             this.Close();
         }
 
-        private void but_add_Click(object sender, EventArgs e)
+        private void but_fix_Click(object sender, EventArgs e)
         {
             if (checkInput())
             {
-                funcShare.insertNoIdentity("chi_tiet_phieu_nhap", "phieu_nhap_id,mat_hang_id,so_luong,don_gia,don_vi",
-phieu_nhap_id, item_id, textbox_soluong.Text, textbox_cost.Text, funcShare.Nvarchar(textbox_donvi.Text));
-                this.Close();
+                funcShare.update("chi_tiet_phieu_nhap", "so_luong,don_gia,don_vi",
+     textbox_soluong.Text, textbox_cost.Text, funcShare.Nvarchar(textbox_donvi.Text),
+     funcShare.where("phieu_nhap_id", phieu_nhap_id, "mat_hang_id", item_id));
+            
+                 this.Close();
             }
        
         }
-
+      
+        
     }
 }
