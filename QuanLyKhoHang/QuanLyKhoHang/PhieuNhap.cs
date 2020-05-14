@@ -244,7 +244,11 @@ namespace QuanLyKhoHang
             }
             if (!isFormRegister)
             {
-                ChiTietPhieuNhap sua_item = new ChiTietPhieuNhap();
+                c1 = gridView2.CurrentRow.Cells[1].Value.ToString();
+                c2 = gridView2.CurrentRow.Cells[2].Value.ToString();
+                c3 = gridView2.CurrentRow.Cells[3].Value.ToString();
+
+                ChiTietPhieuNhap sua_item = new ChiTietPhieuNhap(label_id.Text,label_cost.Text,c1,c2, c3);
                 sua_item.ShowDialog();
             }
           
@@ -417,11 +421,17 @@ namespace QuanLyKhoHang
             }
         }
 
-        
+        private void PhieuNhap_Activated(object sender, EventArgs e)
+        {
+            funcShare.loadGridView("chi_tiet_phieu_nhap", "mat_hang_id,so_luong,don_gia,don_vi",
+                   gridView2, funcShare.where("phieu_nhap_id", label_id.Text));
+        }
+
+
         /*
-      nút thêm item  trong trường hợp alter
-      nút sửa
-      sự kiện click đúp vào gridview2 trong trường hợp alter
+      nút thêm item  trong trường hợp alter V
+      nút sửa V
+      sự kiện click đúp vào gridview2 trong trường hợp alter        234
 
          */
 
