@@ -507,8 +507,8 @@ namespace QuanLyKhoHang
   nút thêm item  trong trường hợp alter V
   nút sửa V
   sự kiện click đúp vào gridview2 trong trường hợp alter        V
-  tìm kiếm lỗi khi cố tìm ngày ở tìm chung
-  tìm kiếm ngày chưa làm ở tìm ngày
+  
+  tìm kiếm riêng ngày hoặc tháng hoặc năm
 
 
      */
