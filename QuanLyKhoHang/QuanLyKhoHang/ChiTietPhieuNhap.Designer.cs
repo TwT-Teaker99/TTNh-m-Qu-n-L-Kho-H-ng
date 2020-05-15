@@ -43,6 +43,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.but_xoa = new System.Windows.Forms.Button();
             this.label_sl = new System.Windows.Forms.Label();
+            this.label_ten = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.e_sl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_dvi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_cost)).BeginInit();
@@ -54,7 +55,7 @@
             this.label_cost.AutoSize = true;
             this.label_cost.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_cost.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.label_cost.Location = new System.Drawing.Point(3, 132);
+            this.label_cost.Location = new System.Drawing.Point(3, 172);
             this.label_cost.Name = "label_cost";
             this.label_cost.Size = new System.Drawing.Size(182, 14);
             this.label_cost.TabIndex = 84;
@@ -65,7 +66,7 @@
             // 
             this.e_sl.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
             this.e_sl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.e_sl.Location = new System.Drawing.Point(130, 30);
+            this.e_sl.Location = new System.Drawing.Point(123, 67);
             this.e_sl.Name = "e_sl";
             this.e_sl.Size = new System.Drawing.Size(20, 20);
             this.e_sl.TabIndex = 83;
@@ -76,7 +77,7 @@
             // 
             this.e_dvi.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
             this.e_dvi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.e_dvi.Location = new System.Drawing.Point(130, 171);
+            this.e_dvi.Location = new System.Drawing.Point(123, 205);
             this.e_dvi.Name = "e_dvi";
             this.e_dvi.Size = new System.Drawing.Size(20, 20);
             this.e_dvi.TabIndex = 82;
@@ -87,7 +88,7 @@
             // 
             this.e_cost.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
             this.e_cost.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.e_cost.Location = new System.Drawing.Point(130, 100);
+            this.e_cost.Location = new System.Drawing.Point(124, 137);
             this.e_cost.Name = "e_cost";
             this.e_cost.Size = new System.Drawing.Size(20, 20);
             this.e_cost.TabIndex = 81;
@@ -98,7 +99,7 @@
             // 
             this.textbox_cost.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox_cost.ForeColor = System.Drawing.Color.Black;
-            this.textbox_cost.Location = new System.Drawing.Point(12, 97);
+            this.textbox_cost.Location = new System.Drawing.Point(12, 137);
             this.textbox_cost.Name = "textbox_cost";
             this.textbox_cost.Size = new System.Drawing.Size(106, 24);
             this.textbox_cost.TabIndex = 78;
@@ -107,7 +108,7 @@
             // 
             this.textbox_soluong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox_soluong.ForeColor = System.Drawing.Color.Black;
-            this.textbox_soluong.Location = new System.Drawing.Point(12, 27);
+            this.textbox_soluong.Location = new System.Drawing.Point(12, 67);
             this.textbox_soluong.Name = "textbox_soluong";
             this.textbox_soluong.Size = new System.Drawing.Size(106, 24);
             this.textbox_soluong.TabIndex = 75;
@@ -118,7 +119,7 @@
             this.textbox_donvi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.textbox_donvi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox_donvi.ForeColor = System.Drawing.Color.Black;
-            this.textbox_donvi.Location = new System.Drawing.Point(12, 167);
+            this.textbox_donvi.Location = new System.Drawing.Point(12, 205);
             this.textbox_donvi.Name = "textbox_donvi";
             this.textbox_donvi.Size = new System.Drawing.Size(106, 24);
             this.textbox_donvi.TabIndex = 76;
@@ -130,7 +131,7 @@
             this.but_fix.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.but_fix.FlatAppearance.BorderSize = 0;
             this.but_fix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_fix.Location = new System.Drawing.Point(165, 70);
+            this.but_fix.Location = new System.Drawing.Point(163, 109);
             this.but_fix.Name = "but_fix";
             this.but_fix.Size = new System.Drawing.Size(60, 60);
             this.but_fix.TabIndex = 74;
@@ -139,7 +140,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.label_ten);
             this.panel1.Controls.Add(this.label_dvi);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -154,9 +156,9 @@
             this.panel1.Controls.Add(this.e_dvi);
             this.panel1.Controls.Add(this.e_cost);
             this.panel1.Controls.Add(this.textbox_cost);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(228, 210);
+            this.panel1.Size = new System.Drawing.Size(226, 248);
             this.panel1.TabIndex = 85;
             // 
             // label_dvi
@@ -164,7 +166,7 @@
             this.label_dvi.AutoSize = true;
             this.label_dvi.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_dvi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.label_dvi.Location = new System.Drawing.Point(3, 194);
+            this.label_dvi.Location = new System.Drawing.Point(3, 232);
             this.label_dvi.Name = "label_dvi";
             this.label_dvi.Size = new System.Drawing.Size(140, 14);
             this.label_dvi.TabIndex = 90;
@@ -176,7 +178,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(92)))), ((int)(((byte)(89)))));
-            this.label3.Location = new System.Drawing.Point(9, 146);
+            this.label3.Location = new System.Drawing.Point(9, 186);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 18);
             this.label3.TabIndex = 89;
@@ -187,7 +189,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(92)))), ((int)(((byte)(89)))));
-            this.label2.Location = new System.Drawing.Point(9, 76);
+            this.label2.Location = new System.Drawing.Point(9, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 18);
             this.label2.TabIndex = 88;
@@ -198,7 +200,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(92)))), ((int)(((byte)(89)))));
-            this.label4.Location = new System.Drawing.Point(9, 6);
+            this.label4.Location = new System.Drawing.Point(9, 46);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 18);
             this.label4.TabIndex = 87;
@@ -211,7 +213,7 @@
             this.but_xoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.but_xoa.FlatAppearance.BorderSize = 0;
             this.but_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_xoa.Location = new System.Drawing.Point(188, 171);
+            this.but_xoa.Location = new System.Drawing.Point(186, 208);
             this.but_xoa.Name = "but_xoa";
             this.but_xoa.Size = new System.Drawing.Size(40, 40);
             this.but_xoa.TabIndex = 86;
@@ -223,24 +225,35 @@
             this.label_sl.AutoSize = true;
             this.label_sl.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_sl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.label_sl.Location = new System.Drawing.Point(9, 53);
+            this.label_sl.Location = new System.Drawing.Point(9, 93);
             this.label_sl.Name = "label_sl";
             this.label_sl.Size = new System.Drawing.Size(175, 14);
             this.label_sl.TabIndex = 85;
             this.label_sl.Text = "đơn vị phải là số nguyên";
             this.label_sl.Visible = false;
             // 
+            // label_ten
+            // 
+            this.label_ten.AutoSize = true;
+            this.label_ten.Font = new System.Drawing.Font("Courier New", 14F, System.Drawing.FontStyle.Bold);
+            this.label_ten.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(92)))), ((int)(((byte)(89)))));
+            this.label_ten.Location = new System.Drawing.Point(8, 15);
+            this.label_ten.Name = "label_ten";
+            this.label_ten.Size = new System.Drawing.Size(98, 22);
+            this.label_ten.TabIndex = 92;
+            this.label_ten.Text = "Bánh Quy";
+            // 
             // ChiTietPhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            this.ClientSize = new System.Drawing.Size(234, 216);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(120)))));
+            this.ClientSize = new System.Drawing.Size(234, 256);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ChiTietPhieuNhap";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Sửa đổi chi tiết phiếu nhập";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "Sửa đổi cung cấp mặt hàng";
             ((System.ComponentModel.ISupportInitialize)(this.e_sl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_dvi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_cost)).EndInit();
@@ -266,5 +279,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label_ten;
     }
 }

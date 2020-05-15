@@ -20,6 +20,7 @@ namespace QuanLyKhoHang
         public ChiTietPhieuNhap(string phieu_nhap_id,string item_id,string so_luong,string don_gia,string don_vi)
         {
             InitializeComponent();
+            this.Location = new Point(870, 350);
             this.so_luong = so_luong;
             this.don_gia = don_gia;
             this.don_vi = don_vi;
@@ -30,6 +31,12 @@ namespace QuanLyKhoHang
             textbox_cost.Text = don_gia;
            funcShare = new functionShare(1);
             database.pickSever(1);
+            string query = "SELECT ten FROM mat_hang WHERE id=" + item_id;
+            cmd = new SqlCommand(query);
+           DataTable dataTable = new DataTable();
+            database.pushDataTable(cmd, dataTable);
+
+            label_ten.Text = dataTable.Rows[0]["ten"].ToString();
         }
         private bool checkInput()
         {

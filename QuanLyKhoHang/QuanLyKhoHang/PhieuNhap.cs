@@ -424,7 +424,79 @@ namespace QuanLyKhoHang
             }
         }
 
-    
+        private void but_search_Click(object sender, EventArgs e)
+        {
+            string search;
+            if (comboBox_loc.Text == "")
+            {
+                string inputSearch = textbox_search.Text;
+                string root = query + " WHERE ";
+                string or = " OR ";
+
+                if (funcShare.isNumber(inputSearch))
+                {
+
+                    string searchID = "id= " + inputSearch;
+                    string searchncc = "ncc_id= " + inputSearch;
+                    string searchnv = "nhan_vien_id= " + inputSearch;
+                    string date = "ngay_nhap LIKE '" + inputSearch + "'";
+                    root = root + searchID + or + searchncc + or + searchnv+or+date;
+
+
+                }
+                else
+                {
+
+                    string date = "ngay_nhap LIKE N'%" + inputSearch + "%'";
+
+                    root = root + date;
+                }
+
+                database.pushGridview(root, gridView);
+            }
+            if(funcShare.isNumber(textbox_search.Text))
+            { 
+            if (comboBox_loc.Text == "Mã đơn hàng")
+            {
+                search = query + " WHERE id=" + textbox_search.Text;
+
+                database.pushGridview(search, gridView);
+            }
+            if (comboBox_loc.Text == "Mã nhà cung cấp")
+            {
+                search = query + " WHERE ncc_id=" + textbox_search.Text;
+                database.pushGridview(search, gridView);
+            }
+            if (comboBox_loc.Text == "Mã nhân viên")
+            {
+                search = query + " WHERE nhan_vien_id=" + textbox_search.Text;
+                database.pushGridview(search, gridView);
+            }
+            if (comboBox_loc.Text == "Mã mặt hàng")
+            {
+                search = "SELECT phieu_nhap.id,phieu_nhap.ncc_id,ngay_nhap,nhan_vien_id FROM phieu_nhap " +
+                 "inner join chi_tiet_phieu_nhap on phieu_nhap.id = phieu_nhap_id WHERE mat_hang_id =" + textbox_search.Text;
+                database.pushGridview(search, gridView);
+            }
+        }
+            if (comboBox_loc.Text == "Tên mặt hàng")
+            {
+                search =" SELECT phieu_nhap.id,phieu_nhap.ncc_id,ngay_nhap,nhan_vien_id " +
+                    "FROM phieu_nhap,chi_tiet_phieu_nhap,mat_hang" +
+                    " where phieu_nhap.id = phieu_nhap_id and mat_hang_id = mat_hang.id " +
+                    "and mat_hang.ten LIKE N'%"+ textbox_search.Text+"%';";
+                database.pushGridview(search, gridView);
+            }
+            if (textbox_search.Text == "Tìm kiếm")
+            {
+
+                funcShare.loadGridView("phieu_nhap", gridView);
+            }
+
+
+        }
+
+
 
         /*
       nút thêm item  trong trường hợp alter V

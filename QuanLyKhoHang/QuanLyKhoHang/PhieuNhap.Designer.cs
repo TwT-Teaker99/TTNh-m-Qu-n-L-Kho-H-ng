@@ -34,7 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
             this.textbox_search = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.but_search = new System.Windows.Forms.Button();
@@ -94,6 +93,7 @@
             this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.comboBox_loc = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.e_sl)).BeginInit();
@@ -112,7 +112,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.comboBox_loc);
             this.panel2.Controls.Add(this.textbox_search);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.but_search);
@@ -120,17 +120,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(471, 72);
             this.panel2.TabIndex = 12;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            this.label17.Location = new System.Drawing.Point(278, 43);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(169, 13);
-            this.label17.TabIndex = 28;
-            this.label17.Text = "___________________________";
             // 
             // textbox_search
             // 
@@ -152,11 +141,11 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.label11.Location = new System.Drawing.Point(303, 18);
+            this.label11.Location = new System.Drawing.Point(281, 23);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(124, 27);
+            this.label11.Size = new System.Drawing.Size(54, 27);
             this.label11.TabIndex = 31;
-            this.label11.Text = "Tìm kiếm";
+            this.label11.Text = "Lọc";
             // 
             // but_search
             // 
@@ -176,6 +165,7 @@
             this.but_search.TabIndex = 17;
             this.but_search.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.but_search.UseVisualStyleBackColor = false;
+            this.but_search.Click += new System.EventHandler(this.but_search_Click);
             // 
             // panel1
             // 
@@ -945,6 +935,22 @@
             this.panel4.Size = new System.Drawing.Size(26, 22);
             this.panel4.TabIndex = 30;
             // 
+            // comboBox_loc
+            // 
+            this.comboBox_loc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_loc.FormattingEnabled = true;
+            this.comboBox_loc.Items.AddRange(new object[] {
+            "Mã đơn hàng",
+            "Mã nhà cung cấp",
+            "Ngày nhập ",
+            "Mã nhân viên",
+            "Tên mặt hàng",
+            "Mã mặt hàng"});
+            this.comboBox_loc.Location = new System.Drawing.Point(341, 24);
+            this.comboBox_loc.Name = "comboBox_loc";
+            this.comboBox_loc.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_loc.TabIndex = 32;
+            // 
             // PhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -982,7 +988,6 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox textbox_search;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button but_search;
@@ -1042,5 +1047,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.ComboBox comboBox_loc;
     }
 }
