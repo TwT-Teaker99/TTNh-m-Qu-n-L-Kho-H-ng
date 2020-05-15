@@ -58,6 +58,15 @@ namespace QuanLyKhoHang
                 return true;
             }
         }
+        public bool isDate(string input)
+        {
+            DateTime dt;
+            if (DateTime.TryParse(input, out dt))
+            {
+                return true;            
+            }
+            return false;
+        }
         public void textboxLeave(TextBox tb, string text)
         {
             if (tb.Text == "")

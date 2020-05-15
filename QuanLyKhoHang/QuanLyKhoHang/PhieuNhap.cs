@@ -13,10 +13,10 @@ namespace QuanLyKhoHang
 {
     public partial class PhieuNhap : Form
     {
-        DataTable dt ;
+        DataTable dt;
         string query = "SELECT * FROM phieu_nhap";
         functionShare funcShare;
-        dbAccess database= new dbAccess();
+        dbAccess database = new dbAccess();
         SqlCommand cmd;
         private string c1;
         private string c2;
@@ -37,7 +37,7 @@ namespace QuanLyKhoHang
             goiY(textbox_item, "select id from mat_hang");
             goiY(textbox_donvi, "select distinct don_vi from chi_tiet_phieu_nhap");
         }
-        private void goiY(TextBox tb,string s)
+        private void goiY(TextBox tb, string s)
         {
             AutoCompleteStringCollection cbData = new AutoCompleteStringCollection();
             dbAccess.FillColl(cbData, s);
@@ -45,9 +45,9 @@ namespace QuanLyKhoHang
         }
         private void createDataTable(out DataTable datatable)
         {
-            datatable= new DataTable();
+            datatable = new DataTable();
             datatable.Columns.Add(new DataColumn("mat_hang_id", typeof(string)));
-            datatable.Columns.Add(new DataColumn("so_luong", typeof(string)));           
+            datatable.Columns.Add(new DataColumn("so_luong", typeof(string)));
             datatable.Columns.Add(new DataColumn("don_gia", typeof(string)));
             datatable.Columns.Add(new DataColumn("don_vi", typeof(string)));
         }
@@ -135,7 +135,7 @@ namespace QuanLyKhoHang
             this.gridView.Columns[2].DefaultCellStyle.Format = "dd'/'MM'/'yyyy";
             funcShare.loadGridView("phieu_nhap", gridView);
             funcShare.autoID(label_id, "phieu_nhap");
-         
+
 
         }
 
@@ -209,7 +209,7 @@ namespace QuanLyKhoHang
                 e_cost.Visible = true;
                 check = false;
             }
-            if (textbox_donvi.Text== "đơn vị")
+            if (textbox_donvi.Text == "đơn vị")
             {
                 e_dvi.Visible = true;
                 check = false;
@@ -249,12 +249,12 @@ namespace QuanLyKhoHang
                 c2 = gridView2.CurrentRow.Cells[2].Value.ToString();
                 c3 = gridView2.CurrentRow.Cells[3].Value.ToString();
 
-                ChiTietPhieuNhap sua_item = new ChiTietPhieuNhap(label_id.Text,c4,c1,c2, c3);
+                ChiTietPhieuNhap sua_item = new ChiTietPhieuNhap(label_id.Text, c4, c1, c2, c3);
                 sua_item.ShowDialog();
                 funcShare.loadGridView("chi_tiet_phieu_nhap", "mat_hang_id,so_luong,don_gia,don_vi",
                   gridView2, funcShare.where("phieu_nhap_id", label_id.Text));
             }
-          
+
         }
         private void gridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -294,7 +294,7 @@ namespace QuanLyKhoHang
                     c3 = gridView2.Rows[i].Cells[1].Value.ToString();
                     c4 = gridView2.Rows[i].Cells[2].Value.ToString();
                     c5 = funcShare.Nvarchar(gridView2.Rows[i].Cells[3].Value.ToString());
-            funcShare.insertNoIdentity("chi_tiet_phieu_nhap", "phieu_nhap_id,mat_hang_id,so_luong,don_gia,don_vi", c1, c2, c3, c4, c5);
+                    funcShare.insertNoIdentity("chi_tiet_phieu_nhap", "phieu_nhap_id,mat_hang_id,so_luong,don_gia,don_vi", c1, c2, c3, c4, c5);
                 }
                 funcShare.loadGridView("phieu_nhap", gridView);
                 clear();
@@ -332,10 +332,10 @@ namespace QuanLyKhoHang
                         c4 = textbox_donvi.Text;
 
                         dt.Rows.Add(c1, c2, c3, c4);
-                       
+
                         gridView2.DataSource = dt;
                     }
-                    if(!isFormRegister)
+                    if (!isFormRegister)
                     {
                         c1 = textbox_item.Text;
                         c2 = textbox_soluong.Text;
@@ -343,12 +343,12 @@ namespace QuanLyKhoHang
                         c4 = textbox_donvi.Text;
                         dt = new DataTable();
                         dt = (DataTable)gridView2.DataSource;
-                        dt.Rows.Add(c1, c2, c3, c4);                     
+                        dt.Rows.Add(c1, c2, c3, c4);
                         gridView2.DataSource = dt;
                         c4 = funcShare.Nvarchar(textbox_donvi.Text);
                         funcShare.insertNoIdentity("chi_tiet_phieu_nhap", "phieu_nhap_id,mat_hang_id,so_luong,don_gia,don_vi", label_id.Text, c1, c2, c3, c4);
-                    }    
-                 
+                    }
+
                 }
 
             }
@@ -388,13 +388,13 @@ namespace QuanLyKhoHang
                 isFormRegister = true;
                 resetError();
                 clear();
-                
-              
-            
+
+
+
             }
 
         }
-     
+
 
         private void but_form_alter(object sender, EventArgs e)//but sua chua lam
         {
@@ -415,11 +415,11 @@ namespace QuanLyKhoHang
                     break;
                 case "but_xoa":
                     string xoa = "DELETE FROM phieu_nhap WHERE id=" + label_id.Text;
-                     cmd = new SqlCommand(xoa);                
+                    cmd = new SqlCommand(xoa);
                     database.editDB(cmd);
                     changeToFormRegister();
                     funcShare.loadGridView("phieu_nhap", gridView);
-                   
+
                     break;
             }
         }
@@ -427,91 +427,100 @@ namespace QuanLyKhoHang
         private void but_search_Click(object sender, EventArgs e)
         {
             string search;
-            if (comboBox_loc.Text == "")
-            {
-                string inputSearch = textbox_search.Text;
-                string root = query + " WHERE ";
-                string or = " OR ";
 
-                if (funcShare.isNumber(inputSearch))
+
+            if (funcShare.isNumber(textbox_search.Text))
+            {
+                if (comboBox_loc.Text == "")
                 {
-
-                    string searchID = "id= " + inputSearch;
-                    string searchncc = "ncc_id= " + inputSearch;
-                    string searchnv = "nhan_vien_id= " + inputSearch;
-                    string date = "ngay_nhap LIKE '" + inputSearch + "'";
-                    root = root + searchID + or + searchncc + or + searchnv+or+date;
-
-
+                    string or = " OR ";
+                    string searchID = "id= " + textbox_search.Text;
+                    string searchncc = "ncc_id= " + textbox_search.Text;
+                    string searchnv = "nhan_vien_id= " + textbox_search.Text;
+                    search = query + " where " + searchID + or + searchncc + or + searchnv;
+                    database.pushGridview(search, gridView);
                 }
-                else
+                if (comboBox_loc.Text == "Mã đơn hàng")
                 {
+                    search = query + " WHERE id=" + textbox_search.Text;
 
-                    string date = "ngay_nhap LIKE N'%" + inputSearch + "%'";
-
-                    root = root + date;
+                    database.pushGridview(search, gridView);
+                }
+                if (comboBox_loc.Text == "Mã nhà cung cấp")
+                {
+                    search = query + " WHERE ncc_id=" + textbox_search.Text;
+                    database.pushGridview(search, gridView);
+                }
+                if (comboBox_loc.Text == "Mã nhân viên")
+                {
+                    search = query + " WHERE nhan_vien_id=" + textbox_search.Text;
+                    database.pushGridview(search, gridView);
+                }
+                if (comboBox_loc.Text == "Mã mặt hàng")
+                {
+                    search = "SELECT distinct phieu_nhap.id,phieu_nhap.ncc_id,ngay_nhap,nhan_vien_id FROM phieu_nhap " +
+                     "inner join chi_tiet_phieu_nhap on phieu_nhap.id = phieu_nhap_id WHERE mat_hang_id =" + textbox_search.Text;
+                    database.pushGridview(search, gridView);
                 }
 
-                database.pushGridview(root, gridView);
             }
-            if(funcShare.isNumber(textbox_search.Text))
-            { 
-            if (comboBox_loc.Text == "Mã đơn hàng")
+            else
             {
-                search = query + " WHERE id=" + textbox_search.Text;
+                if (comboBox_loc.Text == "" && funcShare.isDate(textbox_search.Text) == true)
+                {
+                    string date = "ngay_nhap = '" + textbox_search.Text + "'";
+                    search = query + " where " + date;
+                    database.pushGridview(search, gridView);
+                }
+                if (textbox_search.Text == "Tìm kiếm")
+                {
+                    funcShare.loadGridView("phieu_nhap", gridView);
+                }
+                if (comboBox_loc.Text == "Tên mặt hàng")
+                {
+                    search = " SELECT distinct phieu_nhap.id,phieu_nhap.ncc_id,ngay_nhap,nhan_vien_id " +
+                        "FROM phieu_nhap,chi_tiet_phieu_nhap,mat_hang" +
+                        " where phieu_nhap.id = phieu_nhap_id and mat_hang_id = mat_hang.id " +
+                        "and mat_hang.ten LIKE N'%" + textbox_search.Text + "%';";
+                    database.pushGridview(search, gridView);
+                }
+                if (comboBox_loc.Text == "Ngày nhập")
+                {
+                    if (funcShare.isDate(textbox_search.Text) == true)
+                    {
+                        search = query + " WHERE ngay_nhap ='" + textbox_search.Text + "'";
+                        database.pushGridview(search, gridView);
+                    }
+                }
 
-                database.pushGridview(search, gridView);
-            }
-            if (comboBox_loc.Text == "Mã nhà cung cấp")
-            {
-                search = query + " WHERE ncc_id=" + textbox_search.Text;
-                database.pushGridview(search, gridView);
-            }
-            if (comboBox_loc.Text == "Mã nhân viên")
-            {
-                search = query + " WHERE nhan_vien_id=" + textbox_search.Text;
-                database.pushGridview(search, gridView);
-            }
-            if (comboBox_loc.Text == "Mã mặt hàng")
-            {
-                search = "SELECT phieu_nhap.id,phieu_nhap.ncc_id,ngay_nhap,nhan_vien_id FROM phieu_nhap " +
-                 "inner join chi_tiet_phieu_nhap on phieu_nhap.id = phieu_nhap_id WHERE mat_hang_id =" + textbox_search.Text;
-                database.pushGridview(search, gridView);
             }
         }
-            if (comboBox_loc.Text == "Tên mặt hàng")
-            {
-                search =" SELECT phieu_nhap.id,phieu_nhap.ncc_id,ngay_nhap,nhan_vien_id " +
-                    "FROM phieu_nhap,chi_tiet_phieu_nhap,mat_hang" +
-                    " where phieu_nhap.id = phieu_nhap_id and mat_hang_id = mat_hang.id " +
-                    "and mat_hang.ten LIKE N'%"+ textbox_search.Text+"%';";
-                database.pushGridview(search, gridView);
-            }
-            if (textbox_search.Text == "Tìm kiếm")
-            {
-
-                funcShare.loadGridView("phieu_nhap", gridView);
-            }
-
-
-        }
-
-
-
-        /*
-      nút thêm item  trong trường hợp alter V
-      nút sửa V
-      sự kiện click đúp vào gridview2 trong trường hợp alter        234
-
-         */
-
-
-
-
-
 
 
 
 
     }
+
+
+
+    /*
+  nút thêm item  trong trường hợp alter V
+  nút sửa V
+  sự kiện click đúp vào gridview2 trong trường hợp alter        V
+  tìm kiếm lỗi khi cố tìm ngày ở tìm chung
+  tìm kiếm ngày chưa làm ở tìm ngày
+
+
+     */
+
+
+
+
+
+
+
+
+
+
+    
 }
