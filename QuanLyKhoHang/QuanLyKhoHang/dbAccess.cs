@@ -79,6 +79,7 @@ namespace QuanLyKhoHang
         {
             try
             {
+                connection.Open();
                 DataTable data = new DataTable();
                 adapter = new SqlDataAdapter(query, connection);
                 adapter.Fill(data);
@@ -96,6 +97,7 @@ namespace QuanLyKhoHang
         {
             try
             {
+                connection.Open();
                 adapter = new SqlDataAdapter(query, connection);
                 DataTable table = new DataTable();
                 adapter.Fill(table);
@@ -115,6 +117,7 @@ namespace QuanLyKhoHang
         {
             try
             {
+                connection.Open();
                 DataSet ds = new DataSet();
                 command = new SqlCommand(query, connection);
                 adapter = new SqlDataAdapter();
@@ -138,6 +141,7 @@ namespace QuanLyKhoHang
         {
             try
             {
+                connection.Open();
                 DataTable data = new DataTable();
                 adapter = new SqlDataAdapter(query, connection);
                 adapter.Fill(data);
@@ -156,6 +160,7 @@ namespace QuanLyKhoHang
         {
             try
             {
+                connection.Open();
                 adapter = new SqlDataAdapter(query, connection);
                 DataTable data = new DataTable();
                 adapter.Fill(data);

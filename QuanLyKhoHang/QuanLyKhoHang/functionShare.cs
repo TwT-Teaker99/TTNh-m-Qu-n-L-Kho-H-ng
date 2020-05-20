@@ -160,7 +160,6 @@ namespace QuanLyKhoHang
             comman = new SqlCommand(query);
             database.editDB(comman);
         }
-
         public string where(string name_id,string id)
         {
             string x= " WHERE " + name_id + "=" + id;
