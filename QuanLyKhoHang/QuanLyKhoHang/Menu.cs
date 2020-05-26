@@ -209,6 +209,12 @@ namespace QuanLyKhoHang
                     NhanVien form_nv = new NhanVien();
                     call_form(form_nv);
                     break;
+                case "but_thong_ke":
+                    this.screen.Controls.Clear();
+                    ThongKe form_chart = new ThongKe();
+                    
+                        call_form(form_chart);
+                    break;
 
             }
 

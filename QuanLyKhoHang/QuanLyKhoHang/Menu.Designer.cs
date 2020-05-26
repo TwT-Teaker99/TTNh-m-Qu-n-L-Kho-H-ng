@@ -451,6 +451,7 @@
             this.but_thong_ke.Text = " Thống kê";
             this.but_thong_ke.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.but_thong_ke.UseVisualStyleBackColor = false;
+            this.but_thong_ke.Click += new System.EventHandler(this.but_child_form);
             // 
             // timer1
             // 
