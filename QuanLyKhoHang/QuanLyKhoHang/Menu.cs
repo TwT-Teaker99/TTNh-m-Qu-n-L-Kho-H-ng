@@ -193,6 +193,9 @@ namespace QuanLyKhoHang
                 case "but_mat_hang":
                     break;
                 case "but_loai_hang":
+                    this.screen.Controls.Clear();
+                    LoaiHang formLH = new LoaiHang();
+                    call_form(formLH);
                     break;
                 case "but_quay":
                     this.screen.Controls.Clear();

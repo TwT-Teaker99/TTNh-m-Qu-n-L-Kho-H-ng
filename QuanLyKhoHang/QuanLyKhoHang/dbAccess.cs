@@ -51,35 +51,11 @@ namespace QuanLyKhoHang
                 throw e;
             }
         }
-        //public void readDataToAdapter(string query, DataTable data)
-        //{
-        //    try
-        //    {
-        //        if (connection.State == ConnectionState.Closed)
-        //        {
-        //            createConn();
-        //        }
-        //        command = new SqlCommand();
-        //        command.Connection = connection;
-        //        command.CommandText = query;
-        //        command.CommandType = CommandType.Text;
-        //        adapter = new SqlDataAdapter();
-        //        adapter = new SqlDataAdapter(command);
-        //        adapter.Fill(data);
-        //        //command.Dispose();
-        //        //adapter.Dispose();
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        throw e;
-        //    }
-        //}
-        //lấy dữ liệu vào gridview, hoặc dùng chạy câu lệnh 
         public static void GetData(string query, DataGridView grid)
         {
             try
             {
-                connection.Open();
+                //connection.Open();
                 DataTable data = new DataTable();
                 adapter = new SqlDataAdapter(query, connection);
                 adapter.Fill(data);
@@ -97,7 +73,7 @@ namespace QuanLyKhoHang
         {
             try
             {
-                connection.Open();
+                //connection.Open();
                 adapter = new SqlDataAdapter(query, connection);
                 DataTable table = new DataTable();
                 adapter.Fill(table);
@@ -117,7 +93,7 @@ namespace QuanLyKhoHang
         {
             try
             {
-                connection.Open();
+                //connection.Open();
                 DataSet ds = new DataSet();
                 command = new SqlCommand(query, connection);
                 adapter = new SqlDataAdapter();
@@ -141,7 +117,7 @@ namespace QuanLyKhoHang
         {
             try
             {
-                connection.Open();
+                //connection.Open();
                 DataTable data = new DataTable();
                 adapter = new SqlDataAdapter(query, connection);
                 adapter.Fill(data);
@@ -160,7 +136,7 @@ namespace QuanLyKhoHang
         {
             try
             {
-                connection.Open();
+                //connection.Open();
                 adapter = new SqlDataAdapter(query, connection);
                 DataTable data = new DataTable();
                 adapter.Fill(data);
@@ -181,7 +157,7 @@ namespace QuanLyKhoHang
             
             try
             {
-                connection.Open();
+                //connection.Open();
               
                 DataTable data = new DataTable();
                 adapter = new SqlDataAdapter(query, connection);
