@@ -460,7 +460,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.flowLayoutPanel2);
             this.panel1.Controls.Add(this.label2);
@@ -513,7 +513,7 @@
             // 
             // but_exit
             // 
-            this.but_exit.BackColor = System.Drawing.Color.White;
+            this.but_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.but_exit.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.exit;
             this.but_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.but_exit.FlatAppearance.BorderSize = 0;
