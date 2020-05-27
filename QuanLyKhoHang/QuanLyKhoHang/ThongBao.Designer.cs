@@ -30,48 +30,15 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.gridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.WELCOME = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.gridView = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // gridView
-            // 
-            this.gridView.AllowUserToAddRows = false;
-            this.gridView.AllowUserToResizeColumns = false;
-            this.gridView.AllowUserToResizeRows = false;
-            this.gridView.BackgroundColor = System.Drawing.Color.White;
-            this.gridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.gridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridView.ColumnHeadersHeight = 60;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.gridView.EnableHeadersVisualStyles = false;
-            this.gridView.GridColor = System.Drawing.Color.White;
-            this.gridView.Location = new System.Drawing.Point(36, 107);
-            this.gridView.Name = "gridView";
-            this.gridView.ReadOnly = true;
-            this.gridView.RowHeadersVisible = false;
-            this.gridView.RowTemplate.Height = 40;
-            this.gridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridView.Size = new System.Drawing.Size(636, 360);
-            this.gridView.TabIndex = 35;
             // 
             // label1
             // 
@@ -104,16 +71,81 @@
             this.label2.TabIndex = 38;
             this.label2.Text = "Yêu cầu nhập hàng";
             // 
+            // gridView
+            // 
+            this.gridView.AllowUserToAddRows = false;
+            this.gridView.AllowUserToResizeColumns = false;
+            this.gridView.AllowUserToResizeRows = false;
+            this.gridView.BackgroundColor = System.Drawing.Color.White;
+            this.gridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridView.ColumnHeadersHeight = 60;
+            this.gridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.sdt,
+            this.quan});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.gridView.EnableHeadersVisualStyles = false;
+            this.gridView.GridColor = System.Drawing.Color.White;
+            this.gridView.Location = new System.Drawing.Point(76, 85);
+            this.gridView.Name = "gridView";
+            this.gridView.ReadOnly = true;
+            this.gridView.RowHeadersVisible = false;
+            this.gridView.RowTemplate.Height = 40;
+            this.gridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridView.Size = new System.Drawing.Size(539, 363);
+            this.gridView.TabIndex = 39;
+            this.gridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridView_CellDoubleClick);
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "#";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Width = 70;
+            // 
+            // sdt
+            // 
+            this.sdt.DataPropertyName = "ngay_nhap";
+            this.sdt.HeaderText = "Tên Mặt Hàng";
+            this.sdt.Name = "sdt";
+            this.sdt.ReadOnly = true;
+            this.sdt.Width = 170;
+            // 
+            // quan
+            // 
+            this.quan.DataPropertyName = "nhan_vien_id";
+            this.quan.HeaderText = "Số lượng còn lại";
+            this.quan.Name = "quan";
+            this.quan.ReadOnly = true;
+            this.quan.Width = 85;
+            // 
             // ThongBao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(900, 561);
+            this.Controls.Add(this.gridView);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.WELCOME);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.gridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ThongBao";
             this.Text = "ThongBao";
@@ -124,10 +156,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView gridView;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label WELCOME;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView gridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sdt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quan;
     }
 }

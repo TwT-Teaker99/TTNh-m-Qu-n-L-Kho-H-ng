@@ -15,6 +15,17 @@ namespace QuanLyKhoHang
         public ThongBao()
         {
             InitializeComponent();
+            
+        }
+
+        private void gridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            PhieuNhap pn = new PhieuNhap();
+            this.Controls.Clear();
+             pn.TopLevel = false;
+            this.Controls.Add(pn);
+            pn.Dock = DockStyle.Fill;
+            pn.Show();
         }
     }
 }
