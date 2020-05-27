@@ -139,7 +139,7 @@
             series2.Name = "Series1";
             series2.YValuesPerPoint = 6;
             this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(273, 201);
+            this.chart2.Size = new System.Drawing.Size(278, 201);
             this.chart2.TabIndex = 2;
             this.chart2.Text = "chart2";
             // 
@@ -257,9 +257,9 @@
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(92)))), ((int)(((byte)(89)))));
             this.label10.Location = new System.Drawing.Point(3, 9);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(240, 16);
+            this.label10.Size = new System.Drawing.Size(208, 16);
             this.label10.TabIndex = 6;
-            this.label10.Text = "Top 5 nhà cung cấp nhiều nhất";
+            this.label10.Text = "Chi phí nhập kho từng năm";
             // 
             // panel4
             // 
@@ -536,7 +536,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(429, 3);
+            this.label14.Location = new System.Drawing.Point(434, 3);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(50, 24);
             this.label14.TabIndex = 14;
@@ -635,7 +635,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::QuanLyKhoHang.Properties.Resources._return;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(347, 0);
+            this.button1.Location = new System.Drawing.Point(348, 1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(26, 27);
             this.button1.TabIndex = 74;

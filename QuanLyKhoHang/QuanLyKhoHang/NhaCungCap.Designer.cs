@@ -180,14 +180,16 @@
             // 
             // but_changeToRegis
             // 
-            this.but_changeToRegis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(120)))));
+            this.but_changeToRegis.BackColor = System.Drawing.Color.White;
+            this.but_changeToRegis.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.circle__3_;
+            this.but_changeToRegis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.but_changeToRegis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.but_changeToRegis.FlatAppearance.BorderSize = 0;
             this.but_changeToRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.but_changeToRegis.ForeColor = System.Drawing.Color.White;
-            this.but_changeToRegis.Location = new System.Drawing.Point(252, 3);
+            this.but_changeToRegis.Location = new System.Drawing.Point(253, 3);
             this.but_changeToRegis.Name = "but_changeToRegis";
-            this.but_changeToRegis.Size = new System.Drawing.Size(26, 27);
+            this.but_changeToRegis.Size = new System.Drawing.Size(25, 25);
             this.but_changeToRegis.TabIndex = 52;
             this.but_changeToRegis.Text = "-";
             this.but_changeToRegis.UseVisualStyleBackColor = false;

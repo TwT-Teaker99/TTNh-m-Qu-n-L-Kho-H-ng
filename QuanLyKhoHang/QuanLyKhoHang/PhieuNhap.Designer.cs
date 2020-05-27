@@ -28,30 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.comboBox_loc = new System.Windows.Forms.ComboBox();
             this.textbox_search = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.but_search = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.but_changeToRegis = new System.Windows.Forms.Button();
-            this.but_xoa = new System.Windows.Forms.Button();
             this.label_last = new System.Windows.Forms.Label();
-            this.but_sua = new System.Windows.Forms.Button();
             this.label_sl = new System.Windows.Forms.Label();
             this.label_cost = new System.Windows.Forms.Label();
-            this.e_sl = new System.Windows.Forms.PictureBox();
-            this.e_dvi = new System.Windows.Forms.PictureBox();
-            this.e_cost = new System.Windows.Forms.PictureBox();
-            this.e_item = new System.Windows.Forms.PictureBox();
-            this.e_date = new System.Windows.Forms.PictureBox();
-            this.e_ncc = new System.Windows.Forms.PictureBox();
-            this.e_nv = new System.Windows.Forms.PictureBox();
             this.label_item = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -62,7 +51,6 @@
             this.textbox_donvi = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.textbox_item = new System.Windows.Forms.TextBox();
-            this.but_add = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.textbox_thang = new System.Windows.Forms.TextBox();
@@ -84,7 +72,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label_dk = new System.Windows.Forms.Label();
             this.textbox_ncc = new System.Windows.Forms.TextBox();
-            this.but_register = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -93,9 +80,26 @@
             this.ncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.but_changeToRegis = new System.Windows.Forms.Button();
+            this.but_xoa = new System.Windows.Forms.Button();
+            this.but_sua = new System.Windows.Forms.Button();
+            this.e_sl = new System.Windows.Forms.PictureBox();
+            this.e_dvi = new System.Windows.Forms.PictureBox();
+            this.e_cost = new System.Windows.Forms.PictureBox();
+            this.e_item = new System.Windows.Forms.PictureBox();
+            this.e_date = new System.Windows.Forms.PictureBox();
+            this.e_ncc = new System.Windows.Forms.PictureBox();
+            this.e_nv = new System.Windows.Forms.PictureBox();
+            this.but_add = new System.Windows.Forms.Button();
+            this.but_register = new System.Windows.Forms.Button();
+            this.but_search = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_sl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_dvi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_cost)).BeginInit();
@@ -103,10 +107,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.e_date)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_ncc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_nv)).BeginInit();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -163,26 +163,6 @@
             this.label11.TabIndex = 31;
             this.label11.Text = "Lọc";
             // 
-            // but_search
-            // 
-            this.but_search.BackColor = System.Drawing.Color.White;
-            this.but_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_search.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_search.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            this.but_search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            this.but_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_search.Font = new System.Drawing.Font("Courier New", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            this.but_search.Image = global::QuanLyKhoHang.Properties.Resources.search;
-            this.but_search.Location = new System.Drawing.Point(223, 19);
-            this.but_search.Name = "but_search";
-            this.but_search.Size = new System.Drawing.Size(45, 38);
-            this.but_search.TabIndex = 17;
-            this.but_search.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.but_search.UseVisualStyleBackColor = false;
-            this.but_search.Click += new System.EventHandler(this.but_search_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -230,43 +210,6 @@
             this.panel1.Size = new System.Drawing.Size(423, 564);
             this.panel1.TabIndex = 13;
             // 
-            // but_changeToRegis
-            // 
-            this.but_changeToRegis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.but_changeToRegis.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_changeToRegis.FlatAppearance.BorderSize = 0;
-            this.but_changeToRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_changeToRegis.ForeColor = System.Drawing.Color.White;
-            this.but_changeToRegis.Location = new System.Drawing.Point(388, 12);
-            this.but_changeToRegis.Name = "but_changeToRegis";
-            this.but_changeToRegis.Size = new System.Drawing.Size(26, 27);
-            this.but_changeToRegis.TabIndex = 72;
-            this.but_changeToRegis.Text = "-";
-            this.but_changeToRegis.UseVisualStyleBackColor = false;
-            this.but_changeToRegis.Visible = false;
-            this.but_changeToRegis.Click += new System.EventHandler(this.but_form_alter);
-            // 
-            // but_xoa
-            // 
-            this.but_xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.but_xoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_xoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_xoa.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.but_xoa.FlatAppearance.BorderSize = 0;
-            this.but_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_xoa.Font = new System.Drawing.Font("Courier New", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_xoa.ForeColor = System.Drawing.Color.White;
-            this.but_xoa.Image = global::QuanLyKhoHang.Properties.Resources.delete;
-            this.but_xoa.Location = new System.Drawing.Point(288, 510);
-            this.but_xoa.Name = "but_xoa";
-            this.but_xoa.Size = new System.Drawing.Size(118, 45);
-            this.but_xoa.TabIndex = 53;
-            this.but_xoa.Text = "Xóa";
-            this.but_xoa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.but_xoa.UseVisualStyleBackColor = false;
-            this.but_xoa.Visible = false;
-            this.but_xoa.Click += new System.EventHandler(this.but_form_alter);
-            // 
             // label_last
             // 
             this.label_last.AutoSize = true;
@@ -278,27 +221,6 @@
             this.label_last.TabIndex = 71;
             this.label_last.Text = "Chưa\r\n\r\ncó \r\n\r\nmặt \r\n\r\nhàng";
             this.label_last.Visible = false;
-            // 
-            // but_sua
-            // 
-            this.but_sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.but_sua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_sua.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_sua.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.but_sua.FlatAppearance.BorderSize = 0;
-            this.but_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_sua.Font = new System.Drawing.Font("Courier New", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_sua.ForeColor = System.Drawing.Color.White;
-            this.but_sua.Image = global::QuanLyKhoHang.Properties.Resources.repair;
-            this.but_sua.Location = new System.Drawing.Point(31, 510);
-            this.but_sua.Name = "but_sua";
-            this.but_sua.Size = new System.Drawing.Size(223, 45);
-            this.but_sua.TabIndex = 52;
-            this.but_sua.Text = "Thay thế";
-            this.but_sua.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.but_sua.UseVisualStyleBackColor = false;
-            this.but_sua.Visible = false;
-            this.but_sua.Click += new System.EventHandler(this.but_form_alter);
             // 
             // label_sl
             // 
@@ -323,83 +245,6 @@
             this.label_cost.TabIndex = 69;
             this.label_cost.Text = "đơn giá phải là số nguyên";
             this.label_cost.Visible = false;
-            // 
-            // e_sl
-            // 
-            this.e_sl.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_sl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.e_sl.Location = new System.Drawing.Point(285, 225);
-            this.e_sl.Name = "e_sl";
-            this.e_sl.Size = new System.Drawing.Size(20, 20);
-            this.e_sl.TabIndex = 68;
-            this.e_sl.TabStop = false;
-            this.e_sl.Visible = false;
-            // 
-            // e_dvi
-            // 
-            this.e_dvi.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_dvi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.e_dvi.Location = new System.Drawing.Point(284, 264);
-            this.e_dvi.Name = "e_dvi";
-            this.e_dvi.Size = new System.Drawing.Size(20, 20);
-            this.e_dvi.TabIndex = 67;
-            this.e_dvi.TabStop = false;
-            this.e_dvi.Visible = false;
-            // 
-            // e_cost
-            // 
-            this.e_cost.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_cost.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.e_cost.Location = new System.Drawing.Point(137, 263);
-            this.e_cost.Name = "e_cost";
-            this.e_cost.Size = new System.Drawing.Size(20, 20);
-            this.e_cost.TabIndex = 66;
-            this.e_cost.TabStop = false;
-            this.e_cost.Visible = false;
-            // 
-            // e_item
-            // 
-            this.e_item.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_item.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.e_item.Location = new System.Drawing.Point(138, 225);
-            this.e_item.Name = "e_item";
-            this.e_item.Size = new System.Drawing.Size(20, 20);
-            this.e_item.TabIndex = 65;
-            this.e_item.TabStop = false;
-            this.e_item.Visible = false;
-            // 
-            // e_date
-            // 
-            this.e_date.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_date.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.e_date.Location = new System.Drawing.Point(247, 172);
-            this.e_date.Name = "e_date";
-            this.e_date.Size = new System.Drawing.Size(26, 26);
-            this.e_date.TabIndex = 64;
-            this.e_date.TabStop = false;
-            this.e_date.Visible = false;
-            // 
-            // e_ncc
-            // 
-            this.e_ncc.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_ncc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.e_ncc.Location = new System.Drawing.Point(228, 123);
-            this.e_ncc.Name = "e_ncc";
-            this.e_ncc.Size = new System.Drawing.Size(26, 26);
-            this.e_ncc.TabIndex = 63;
-            this.e_ncc.TabStop = false;
-            this.e_ncc.Visible = false;
-            // 
-            // e_nv
-            // 
-            this.e_nv.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_nv.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.e_nv.Location = new System.Drawing.Point(228, 76);
-            this.e_nv.Name = "e_nv";
-            this.e_nv.Size = new System.Drawing.Size(26, 26);
-            this.e_nv.TabIndex = 62;
-            this.e_nv.TabStop = false;
-            this.e_nv.Visible = false;
             // 
             // label_item
             // 
@@ -510,20 +355,6 @@
             this.textbox_item.Text = "mã mặt hàng";
             this.textbox_item.Enter += new System.EventHandler(this.textbox_Enter);
             this.textbox_item.Leave += new System.EventHandler(this.textbox_Leave);
-            // 
-            // but_add
-            // 
-            this.but_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.but_add.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.add;
-            this.but_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_add.FlatAppearance.BorderSize = 0;
-            this.but_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_add.Location = new System.Drawing.Point(319, 225);
-            this.but_add.Name = "but_add";
-            this.but_add.Size = new System.Drawing.Size(60, 60);
-            this.but_add.TabIndex = 50;
-            this.but_add.UseVisualStyleBackColor = false;
-            this.but_add.Click += new System.EventHandler(this.but_add_Click);
             // 
             // panel9
             // 
@@ -657,42 +488,42 @@
             this.gridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.gridView2.ColumnHeadersHeight = 40;
             this.gridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridView2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridView2.DefaultCellStyle = dataGridViewCellStyle7;
             this.gridView2.EnableHeadersVisualStyles = false;
             this.gridView2.GridColor = System.Drawing.Color.White;
             this.gridView2.Location = new System.Drawing.Point(44, 303);
             this.gridView2.Name = "gridView2";
             this.gridView2.ReadOnly = true;
             this.gridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.gridView2.RowHeadersVisible = false;
             this.gridView2.RowHeadersWidth = 60;
             this.gridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
@@ -813,26 +644,6 @@
             this.textbox_ncc.Enter += new System.EventHandler(this.textbox_Enter);
             this.textbox_ncc.Leave += new System.EventHandler(this.textbox_Leave);
             // 
-            // but_register
-            // 
-            this.but_register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.but_register.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_register.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_register.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.but_register.FlatAppearance.BorderSize = 0;
-            this.but_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_register.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_register.ForeColor = System.Drawing.Color.White;
-            this.but_register.Image = global::QuanLyKhoHang.Properties.Resources.add;
-            this.but_register.Location = new System.Drawing.Point(97, 510);
-            this.but_register.Name = "but_register";
-            this.but_register.Size = new System.Drawing.Size(220, 45);
-            this.but_register.TabIndex = 3;
-            this.but_register.Text = "Tạo đơn hàng";
-            this.but_register.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.but_register.UseVisualStyleBackColor = false;
-            this.but_register.Click += new System.EventHandler(this.but_register_Click);
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -876,28 +687,28 @@
             this.gridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.gridView.ColumnHeadersHeight = 60;
             this.gridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.ncc,
             this.sdt,
             this.quan});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridView.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridView.DefaultCellStyle = dataGridViewCellStyle10;
             this.gridView.EnableHeadersVisualStyles = false;
             this.gridView.GridColor = System.Drawing.Color.White;
             this.gridView.Location = new System.Drawing.Point(12, 40);
@@ -942,6 +753,197 @@
             this.quan.ReadOnly = true;
             this.quan.Width = 85;
             // 
+            // but_changeToRegis
+            // 
+            this.but_changeToRegis.BackColor = System.Drawing.Color.White;
+            this.but_changeToRegis.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.circle__2_;
+            this.but_changeToRegis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.but_changeToRegis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_changeToRegis.FlatAppearance.BorderSize = 0;
+            this.but_changeToRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_changeToRegis.ForeColor = System.Drawing.Color.White;
+            this.but_changeToRegis.Location = new System.Drawing.Point(395, 3);
+            this.but_changeToRegis.Name = "but_changeToRegis";
+            this.but_changeToRegis.Size = new System.Drawing.Size(25, 25);
+            this.but_changeToRegis.TabIndex = 72;
+            this.but_changeToRegis.Text = "-";
+            this.but_changeToRegis.UseVisualStyleBackColor = false;
+            this.but_changeToRegis.Visible = false;
+            this.but_changeToRegis.Click += new System.EventHandler(this.but_form_alter);
+            // 
+            // but_xoa
+            // 
+            this.but_xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
+            this.but_xoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_xoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_xoa.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.but_xoa.FlatAppearance.BorderSize = 0;
+            this.but_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_xoa.Font = new System.Drawing.Font("Courier New", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_xoa.ForeColor = System.Drawing.Color.White;
+            this.but_xoa.Image = global::QuanLyKhoHang.Properties.Resources.delete;
+            this.but_xoa.Location = new System.Drawing.Point(288, 510);
+            this.but_xoa.Name = "but_xoa";
+            this.but_xoa.Size = new System.Drawing.Size(118, 45);
+            this.but_xoa.TabIndex = 53;
+            this.but_xoa.Text = "Xóa";
+            this.but_xoa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.but_xoa.UseVisualStyleBackColor = false;
+            this.but_xoa.Visible = false;
+            this.but_xoa.Click += new System.EventHandler(this.but_form_alter);
+            // 
+            // but_sua
+            // 
+            this.but_sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.but_sua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_sua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_sua.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.but_sua.FlatAppearance.BorderSize = 0;
+            this.but_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_sua.Font = new System.Drawing.Font("Courier New", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_sua.ForeColor = System.Drawing.Color.White;
+            this.but_sua.Image = global::QuanLyKhoHang.Properties.Resources.repair;
+            this.but_sua.Location = new System.Drawing.Point(31, 510);
+            this.but_sua.Name = "but_sua";
+            this.but_sua.Size = new System.Drawing.Size(223, 45);
+            this.but_sua.TabIndex = 52;
+            this.but_sua.Text = "Thay thế";
+            this.but_sua.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.but_sua.UseVisualStyleBackColor = false;
+            this.but_sua.Visible = false;
+            this.but_sua.Click += new System.EventHandler(this.but_form_alter);
+            // 
+            // e_sl
+            // 
+            this.e_sl.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_sl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.e_sl.Location = new System.Drawing.Point(285, 225);
+            this.e_sl.Name = "e_sl";
+            this.e_sl.Size = new System.Drawing.Size(20, 20);
+            this.e_sl.TabIndex = 68;
+            this.e_sl.TabStop = false;
+            this.e_sl.Visible = false;
+            // 
+            // e_dvi
+            // 
+            this.e_dvi.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_dvi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.e_dvi.Location = new System.Drawing.Point(284, 264);
+            this.e_dvi.Name = "e_dvi";
+            this.e_dvi.Size = new System.Drawing.Size(20, 20);
+            this.e_dvi.TabIndex = 67;
+            this.e_dvi.TabStop = false;
+            this.e_dvi.Visible = false;
+            // 
+            // e_cost
+            // 
+            this.e_cost.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_cost.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.e_cost.Location = new System.Drawing.Point(137, 263);
+            this.e_cost.Name = "e_cost";
+            this.e_cost.Size = new System.Drawing.Size(20, 20);
+            this.e_cost.TabIndex = 66;
+            this.e_cost.TabStop = false;
+            this.e_cost.Visible = false;
+            // 
+            // e_item
+            // 
+            this.e_item.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_item.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.e_item.Location = new System.Drawing.Point(138, 225);
+            this.e_item.Name = "e_item";
+            this.e_item.Size = new System.Drawing.Size(20, 20);
+            this.e_item.TabIndex = 65;
+            this.e_item.TabStop = false;
+            this.e_item.Visible = false;
+            // 
+            // e_date
+            // 
+            this.e_date.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_date.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.e_date.Location = new System.Drawing.Point(247, 172);
+            this.e_date.Name = "e_date";
+            this.e_date.Size = new System.Drawing.Size(26, 26);
+            this.e_date.TabIndex = 64;
+            this.e_date.TabStop = false;
+            this.e_date.Visible = false;
+            // 
+            // e_ncc
+            // 
+            this.e_ncc.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_ncc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.e_ncc.Location = new System.Drawing.Point(228, 123);
+            this.e_ncc.Name = "e_ncc";
+            this.e_ncc.Size = new System.Drawing.Size(26, 26);
+            this.e_ncc.TabIndex = 63;
+            this.e_ncc.TabStop = false;
+            this.e_ncc.Visible = false;
+            // 
+            // e_nv
+            // 
+            this.e_nv.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_nv.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.e_nv.Location = new System.Drawing.Point(228, 76);
+            this.e_nv.Name = "e_nv";
+            this.e_nv.Size = new System.Drawing.Size(26, 26);
+            this.e_nv.TabIndex = 62;
+            this.e_nv.TabStop = false;
+            this.e_nv.Visible = false;
+            // 
+            // but_add
+            // 
+            this.but_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.but_add.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.add;
+            this.but_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_add.FlatAppearance.BorderSize = 0;
+            this.but_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_add.Location = new System.Drawing.Point(319, 225);
+            this.but_add.Name = "but_add";
+            this.but_add.Size = new System.Drawing.Size(60, 60);
+            this.but_add.TabIndex = 50;
+            this.but_add.UseVisualStyleBackColor = false;
+            this.but_add.Click += new System.EventHandler(this.but_add_Click);
+            // 
+            // but_register
+            // 
+            this.but_register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.but_register.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_register.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_register.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.but_register.FlatAppearance.BorderSize = 0;
+            this.but_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_register.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_register.ForeColor = System.Drawing.Color.White;
+            this.but_register.Image = global::QuanLyKhoHang.Properties.Resources.add;
+            this.but_register.Location = new System.Drawing.Point(97, 510);
+            this.but_register.Name = "but_register";
+            this.but_register.Size = new System.Drawing.Size(220, 45);
+            this.but_register.TabIndex = 3;
+            this.but_register.Text = "Tạo đơn hàng";
+            this.but_register.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.but_register.UseVisualStyleBackColor = false;
+            this.but_register.Click += new System.EventHandler(this.but_register_Click);
+            // 
+            // but_search
+            // 
+            this.but_search.BackColor = System.Drawing.Color.White;
+            this.but_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_search.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_search.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            this.but_search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            this.but_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_search.Font = new System.Drawing.Font("Courier New", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            this.but_search.Image = global::QuanLyKhoHang.Properties.Resources.search;
+            this.but_search.Location = new System.Drawing.Point(223, 19);
+            this.but_search.Name = "but_search";
+            this.but_search.Size = new System.Drawing.Size(45, 38);
+            this.but_search.TabIndex = 17;
+            this.but_search.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.but_search.UseVisualStyleBackColor = false;
+            this.but_search.Click += new System.EventHandler(this.but_search_Click);
+            // 
             // panel4
             // 
             this.panel4.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.right;
@@ -969,6 +971,12 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_sl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_dvi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_cost)).EndInit();
@@ -976,12 +984,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.e_date)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_ncc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_nv)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
             this.ResumeLayout(false);
 
         }
