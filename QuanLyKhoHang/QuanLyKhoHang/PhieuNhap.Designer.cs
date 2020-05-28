@@ -37,10 +37,21 @@
             this.comboBox_loc = new System.Windows.Forms.ComboBox();
             this.textbox_search = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.but_search = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.but_changeToRegis = new System.Windows.Forms.Button();
+            this.but_xoa = new System.Windows.Forms.Button();
             this.label_last = new System.Windows.Forms.Label();
+            this.but_sua = new System.Windows.Forms.Button();
             this.label_sl = new System.Windows.Forms.Label();
             this.label_cost = new System.Windows.Forms.Label();
+            this.e_sl = new System.Windows.Forms.PictureBox();
+            this.e_dvi = new System.Windows.Forms.PictureBox();
+            this.e_cost = new System.Windows.Forms.PictureBox();
+            this.e_item = new System.Windows.Forms.PictureBox();
+            this.e_date = new System.Windows.Forms.PictureBox();
+            this.e_ncc = new System.Windows.Forms.PictureBox();
+            this.e_nv = new System.Windows.Forms.PictureBox();
             this.label_item = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -51,6 +62,7 @@
             this.textbox_donvi = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.textbox_item = new System.Windows.Forms.TextBox();
+            this.but_add = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.textbox_thang = new System.Windows.Forms.TextBox();
@@ -72,6 +84,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label_dk = new System.Windows.Forms.Label();
             this.textbox_ncc = new System.Windows.Forms.TextBox();
+            this.but_register = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -80,26 +93,9 @@
             this.ncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.but_changeToRegis = new System.Windows.Forms.Button();
-            this.but_xoa = new System.Windows.Forms.Button();
-            this.but_sua = new System.Windows.Forms.Button();
-            this.e_sl = new System.Windows.Forms.PictureBox();
-            this.e_dvi = new System.Windows.Forms.PictureBox();
-            this.e_cost = new System.Windows.Forms.PictureBox();
-            this.e_item = new System.Windows.Forms.PictureBox();
-            this.e_date = new System.Windows.Forms.PictureBox();
-            this.e_ncc = new System.Windows.Forms.PictureBox();
-            this.e_nv = new System.Windows.Forms.PictureBox();
-            this.but_add = new System.Windows.Forms.Button();
-            this.but_register = new System.Windows.Forms.Button();
-            this.but_search = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_sl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_dvi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_cost)).BeginInit();
@@ -107,6 +103,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.e_date)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_ncc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_nv)).BeginInit();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -163,6 +163,26 @@
             this.label11.TabIndex = 31;
             this.label11.Text = "Lọc";
             // 
+            // but_search
+            // 
+            this.but_search.BackColor = System.Drawing.Color.White;
+            this.but_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_search.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_search.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            this.but_search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
+            this.but_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            this.but_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_search.Font = new System.Drawing.Font("Courier New", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            this.but_search.Image = global::QuanLyKhoHang.Properties.Resources.search;
+            this.but_search.Location = new System.Drawing.Point(223, 19);
+            this.but_search.Name = "but_search";
+            this.but_search.Size = new System.Drawing.Size(45, 38);
+            this.but_search.TabIndex = 17;
+            this.but_search.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.but_search.UseVisualStyleBackColor = false;
+            this.but_search.Click += new System.EventHandler(this.but_search_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -210,6 +230,45 @@
             this.panel1.Size = new System.Drawing.Size(423, 564);
             this.panel1.TabIndex = 13;
             // 
+            // but_changeToRegis
+            // 
+            this.but_changeToRegis.BackColor = System.Drawing.Color.White;
+            this.but_changeToRegis.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.circle__2_;
+            this.but_changeToRegis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.but_changeToRegis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_changeToRegis.FlatAppearance.BorderSize = 0;
+            this.but_changeToRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_changeToRegis.ForeColor = System.Drawing.Color.White;
+            this.but_changeToRegis.Location = new System.Drawing.Point(395, 3);
+            this.but_changeToRegis.Name = "but_changeToRegis";
+            this.but_changeToRegis.Size = new System.Drawing.Size(25, 25);
+            this.but_changeToRegis.TabIndex = 72;
+            this.but_changeToRegis.Text = "-";
+            this.but_changeToRegis.UseVisualStyleBackColor = false;
+            this.but_changeToRegis.Visible = false;
+            this.but_changeToRegis.Click += new System.EventHandler(this.but_form_alter);
+            // 
+            // but_xoa
+            // 
+            this.but_xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
+            this.but_xoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_xoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_xoa.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.but_xoa.FlatAppearance.BorderSize = 0;
+            this.but_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_xoa.Font = new System.Drawing.Font("Courier New", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_xoa.ForeColor = System.Drawing.Color.White;
+            this.but_xoa.Image = global::QuanLyKhoHang.Properties.Resources.delete;
+            this.but_xoa.Location = new System.Drawing.Point(288, 510);
+            this.but_xoa.Name = "but_xoa";
+            this.but_xoa.Size = new System.Drawing.Size(118, 45);
+            this.but_xoa.TabIndex = 53;
+            this.but_xoa.Text = "Xóa";
+            this.but_xoa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.but_xoa.UseVisualStyleBackColor = false;
+            this.but_xoa.Visible = false;
+            this.but_xoa.Click += new System.EventHandler(this.but_form_alter);
+            // 
             // label_last
             // 
             this.label_last.AutoSize = true;
@@ -221,6 +280,27 @@
             this.label_last.TabIndex = 71;
             this.label_last.Text = "Chưa\r\n\r\ncó \r\n\r\nmặt \r\n\r\nhàng";
             this.label_last.Visible = false;
+            // 
+            // but_sua
+            // 
+            this.but_sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.but_sua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_sua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_sua.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.but_sua.FlatAppearance.BorderSize = 0;
+            this.but_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_sua.Font = new System.Drawing.Font("Courier New", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_sua.ForeColor = System.Drawing.Color.White;
+            this.but_sua.Image = global::QuanLyKhoHang.Properties.Resources.repair;
+            this.but_sua.Location = new System.Drawing.Point(31, 510);
+            this.but_sua.Name = "but_sua";
+            this.but_sua.Size = new System.Drawing.Size(223, 45);
+            this.but_sua.TabIndex = 52;
+            this.but_sua.Text = "Thay thế";
+            this.but_sua.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.but_sua.UseVisualStyleBackColor = false;
+            this.but_sua.Visible = false;
+            this.but_sua.Click += new System.EventHandler(this.but_form_alter);
             // 
             // label_sl
             // 
@@ -245,6 +325,83 @@
             this.label_cost.TabIndex = 69;
             this.label_cost.Text = "đơn giá phải là số nguyên";
             this.label_cost.Visible = false;
+            // 
+            // e_sl
+            // 
+            this.e_sl.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_sl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.e_sl.Location = new System.Drawing.Point(285, 225);
+            this.e_sl.Name = "e_sl";
+            this.e_sl.Size = new System.Drawing.Size(20, 20);
+            this.e_sl.TabIndex = 68;
+            this.e_sl.TabStop = false;
+            this.e_sl.Visible = false;
+            // 
+            // e_dvi
+            // 
+            this.e_dvi.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_dvi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.e_dvi.Location = new System.Drawing.Point(284, 264);
+            this.e_dvi.Name = "e_dvi";
+            this.e_dvi.Size = new System.Drawing.Size(20, 20);
+            this.e_dvi.TabIndex = 67;
+            this.e_dvi.TabStop = false;
+            this.e_dvi.Visible = false;
+            // 
+            // e_cost
+            // 
+            this.e_cost.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_cost.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.e_cost.Location = new System.Drawing.Point(137, 263);
+            this.e_cost.Name = "e_cost";
+            this.e_cost.Size = new System.Drawing.Size(20, 20);
+            this.e_cost.TabIndex = 66;
+            this.e_cost.TabStop = false;
+            this.e_cost.Visible = false;
+            // 
+            // e_item
+            // 
+            this.e_item.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_item.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.e_item.Location = new System.Drawing.Point(138, 225);
+            this.e_item.Name = "e_item";
+            this.e_item.Size = new System.Drawing.Size(20, 20);
+            this.e_item.TabIndex = 65;
+            this.e_item.TabStop = false;
+            this.e_item.Visible = false;
+            // 
+            // e_date
+            // 
+            this.e_date.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_date.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.e_date.Location = new System.Drawing.Point(247, 172);
+            this.e_date.Name = "e_date";
+            this.e_date.Size = new System.Drawing.Size(26, 26);
+            this.e_date.TabIndex = 64;
+            this.e_date.TabStop = false;
+            this.e_date.Visible = false;
+            // 
+            // e_ncc
+            // 
+            this.e_ncc.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_ncc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.e_ncc.Location = new System.Drawing.Point(186, 124);
+            this.e_ncc.Name = "e_ncc";
+            this.e_ncc.Size = new System.Drawing.Size(26, 26);
+            this.e_ncc.TabIndex = 63;
+            this.e_ncc.TabStop = false;
+            this.e_ncc.Visible = false;
+            // 
+            // e_nv
+            // 
+            this.e_nv.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_nv.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.e_nv.Location = new System.Drawing.Point(186, 77);
+            this.e_nv.Name = "e_nv";
+            this.e_nv.Size = new System.Drawing.Size(26, 26);
+            this.e_nv.TabIndex = 62;
+            this.e_nv.TabStop = false;
+            this.e_nv.Visible = false;
             // 
             // label_item
             // 
@@ -356,12 +513,26 @@
             this.textbox_item.Enter += new System.EventHandler(this.textbox_Enter);
             this.textbox_item.Leave += new System.EventHandler(this.textbox_Leave);
             // 
+            // but_add
+            // 
+            this.but_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.but_add.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.add;
+            this.but_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_add.FlatAppearance.BorderSize = 0;
+            this.but_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_add.Location = new System.Drawing.Point(319, 225);
+            this.but_add.Name = "but_add";
+            this.but_add.Size = new System.Drawing.Size(60, 60);
+            this.but_add.TabIndex = 50;
+            this.but_add.UseVisualStyleBackColor = false;
+            this.but_add.Click += new System.EventHandler(this.but_add_Click);
+            // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Gray;
-            this.panel9.Location = new System.Drawing.Point(30, 148);
+            this.panel9.Location = new System.Drawing.Point(24, 147);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(200, 1);
+            this.panel9.Size = new System.Drawing.Size(150, 1);
             this.panel9.TabIndex = 48;
             // 
             // panel8
@@ -450,9 +621,9 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Gray;
-            this.panel7.Location = new System.Drawing.Point(30, 101);
+            this.panel7.Location = new System.Drawing.Point(24, 100);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 1);
+            this.panel7.Size = new System.Drawing.Size(150, 1);
             this.panel7.TabIndex = 47;
             // 
             // label_ncc
@@ -585,9 +756,9 @@
             this.textbox_nv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textbox_nv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox_nv.ForeColor = System.Drawing.Color.Silver;
-            this.textbox_nv.Location = new System.Drawing.Point(31, 73);
+            this.textbox_nv.Location = new System.Drawing.Point(25, 77);
             this.textbox_nv.Name = "textbox_nv";
-            this.textbox_nv.Size = new System.Drawing.Size(191, 17);
+            this.textbox_nv.Size = new System.Drawing.Size(131, 17);
             this.textbox_nv.TabIndex = 8;
             this.textbox_nv.Text = "Nhập mã nhân viên";
             this.textbox_nv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -599,7 +770,7 @@
             this.label_id.AutoSize = true;
             this.label_id.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(120)))));
-            this.label_id.Location = new System.Drawing.Point(352, 106);
+            this.label_id.Location = new System.Drawing.Point(334, 96);
             this.label_id.Name = "label_id";
             this.label_id.Size = new System.Drawing.Size(62, 24);
             this.label_id.TabIndex = 16;
@@ -610,7 +781,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(120)))));
-            this.label8.Location = new System.Drawing.Point(284, 106);
+            this.label8.Location = new System.Drawing.Point(266, 96);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(62, 24);
             this.label8.TabIndex = 15;
@@ -635,14 +806,34 @@
             this.textbox_ncc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textbox_ncc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox_ncc.ForeColor = System.Drawing.Color.Silver;
-            this.textbox_ncc.Location = new System.Drawing.Point(25, 123);
+            this.textbox_ncc.Location = new System.Drawing.Point(21, 124);
             this.textbox_ncc.Name = "textbox_ncc";
-            this.textbox_ncc.Size = new System.Drawing.Size(197, 17);
+            this.textbox_ncc.Size = new System.Drawing.Size(161, 17);
             this.textbox_ncc.TabIndex = 9;
             this.textbox_ncc.Text = "Nhập mã nhà cung cấp";
             this.textbox_ncc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textbox_ncc.Enter += new System.EventHandler(this.textbox_Enter);
             this.textbox_ncc.Leave += new System.EventHandler(this.textbox_Leave);
+            // 
+            // but_register
+            // 
+            this.but_register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.but_register.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_register.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_register.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.but_register.FlatAppearance.BorderSize = 0;
+            this.but_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_register.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_register.ForeColor = System.Drawing.Color.White;
+            this.but_register.Image = global::QuanLyKhoHang.Properties.Resources.add;
+            this.but_register.Location = new System.Drawing.Point(97, 510);
+            this.but_register.Name = "but_register";
+            this.but_register.Size = new System.Drawing.Size(220, 45);
+            this.but_register.TabIndex = 3;
+            this.but_register.Text = "Tạo đơn hàng";
+            this.but_register.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.but_register.UseVisualStyleBackColor = false;
+            this.but_register.Click += new System.EventHandler(this.but_register_Click);
             // 
             // label18
             // 
@@ -753,197 +944,6 @@
             this.quan.ReadOnly = true;
             this.quan.Width = 85;
             // 
-            // but_changeToRegis
-            // 
-            this.but_changeToRegis.BackColor = System.Drawing.Color.White;
-            this.but_changeToRegis.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.circle__2_;
-            this.but_changeToRegis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.but_changeToRegis.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_changeToRegis.FlatAppearance.BorderSize = 0;
-            this.but_changeToRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_changeToRegis.ForeColor = System.Drawing.Color.White;
-            this.but_changeToRegis.Location = new System.Drawing.Point(395, 3);
-            this.but_changeToRegis.Name = "but_changeToRegis";
-            this.but_changeToRegis.Size = new System.Drawing.Size(25, 25);
-            this.but_changeToRegis.TabIndex = 72;
-            this.but_changeToRegis.Text = "-";
-            this.but_changeToRegis.UseVisualStyleBackColor = false;
-            this.but_changeToRegis.Visible = false;
-            this.but_changeToRegis.Click += new System.EventHandler(this.but_form_alter);
-            // 
-            // but_xoa
-            // 
-            this.but_xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.but_xoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_xoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_xoa.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.but_xoa.FlatAppearance.BorderSize = 0;
-            this.but_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_xoa.Font = new System.Drawing.Font("Courier New", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_xoa.ForeColor = System.Drawing.Color.White;
-            this.but_xoa.Image = global::QuanLyKhoHang.Properties.Resources.delete;
-            this.but_xoa.Location = new System.Drawing.Point(288, 510);
-            this.but_xoa.Name = "but_xoa";
-            this.but_xoa.Size = new System.Drawing.Size(118, 45);
-            this.but_xoa.TabIndex = 53;
-            this.but_xoa.Text = "Xóa";
-            this.but_xoa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.but_xoa.UseVisualStyleBackColor = false;
-            this.but_xoa.Visible = false;
-            this.but_xoa.Click += new System.EventHandler(this.but_form_alter);
-            // 
-            // but_sua
-            // 
-            this.but_sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.but_sua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_sua.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_sua.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.but_sua.FlatAppearance.BorderSize = 0;
-            this.but_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_sua.Font = new System.Drawing.Font("Courier New", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_sua.ForeColor = System.Drawing.Color.White;
-            this.but_sua.Image = global::QuanLyKhoHang.Properties.Resources.repair;
-            this.but_sua.Location = new System.Drawing.Point(31, 510);
-            this.but_sua.Name = "but_sua";
-            this.but_sua.Size = new System.Drawing.Size(223, 45);
-            this.but_sua.TabIndex = 52;
-            this.but_sua.Text = "Thay thế";
-            this.but_sua.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.but_sua.UseVisualStyleBackColor = false;
-            this.but_sua.Visible = false;
-            this.but_sua.Click += new System.EventHandler(this.but_form_alter);
-            // 
-            // e_sl
-            // 
-            this.e_sl.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_sl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.e_sl.Location = new System.Drawing.Point(285, 225);
-            this.e_sl.Name = "e_sl";
-            this.e_sl.Size = new System.Drawing.Size(20, 20);
-            this.e_sl.TabIndex = 68;
-            this.e_sl.TabStop = false;
-            this.e_sl.Visible = false;
-            // 
-            // e_dvi
-            // 
-            this.e_dvi.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_dvi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.e_dvi.Location = new System.Drawing.Point(284, 264);
-            this.e_dvi.Name = "e_dvi";
-            this.e_dvi.Size = new System.Drawing.Size(20, 20);
-            this.e_dvi.TabIndex = 67;
-            this.e_dvi.TabStop = false;
-            this.e_dvi.Visible = false;
-            // 
-            // e_cost
-            // 
-            this.e_cost.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_cost.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.e_cost.Location = new System.Drawing.Point(137, 263);
-            this.e_cost.Name = "e_cost";
-            this.e_cost.Size = new System.Drawing.Size(20, 20);
-            this.e_cost.TabIndex = 66;
-            this.e_cost.TabStop = false;
-            this.e_cost.Visible = false;
-            // 
-            // e_item
-            // 
-            this.e_item.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_item.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.e_item.Location = new System.Drawing.Point(138, 225);
-            this.e_item.Name = "e_item";
-            this.e_item.Size = new System.Drawing.Size(20, 20);
-            this.e_item.TabIndex = 65;
-            this.e_item.TabStop = false;
-            this.e_item.Visible = false;
-            // 
-            // e_date
-            // 
-            this.e_date.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_date.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.e_date.Location = new System.Drawing.Point(247, 172);
-            this.e_date.Name = "e_date";
-            this.e_date.Size = new System.Drawing.Size(26, 26);
-            this.e_date.TabIndex = 64;
-            this.e_date.TabStop = false;
-            this.e_date.Visible = false;
-            // 
-            // e_ncc
-            // 
-            this.e_ncc.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_ncc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.e_ncc.Location = new System.Drawing.Point(228, 123);
-            this.e_ncc.Name = "e_ncc";
-            this.e_ncc.Size = new System.Drawing.Size(26, 26);
-            this.e_ncc.TabIndex = 63;
-            this.e_ncc.TabStop = false;
-            this.e_ncc.Visible = false;
-            // 
-            // e_nv
-            // 
-            this.e_nv.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_nv.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.e_nv.Location = new System.Drawing.Point(228, 76);
-            this.e_nv.Name = "e_nv";
-            this.e_nv.Size = new System.Drawing.Size(26, 26);
-            this.e_nv.TabIndex = 62;
-            this.e_nv.TabStop = false;
-            this.e_nv.Visible = false;
-            // 
-            // but_add
-            // 
-            this.but_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.but_add.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.add;
-            this.but_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_add.FlatAppearance.BorderSize = 0;
-            this.but_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_add.Location = new System.Drawing.Point(319, 225);
-            this.but_add.Name = "but_add";
-            this.but_add.Size = new System.Drawing.Size(60, 60);
-            this.but_add.TabIndex = 50;
-            this.but_add.UseVisualStyleBackColor = false;
-            this.but_add.Click += new System.EventHandler(this.but_add_Click);
-            // 
-            // but_register
-            // 
-            this.but_register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.but_register.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_register.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_register.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.but_register.FlatAppearance.BorderSize = 0;
-            this.but_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_register.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_register.ForeColor = System.Drawing.Color.White;
-            this.but_register.Image = global::QuanLyKhoHang.Properties.Resources.add;
-            this.but_register.Location = new System.Drawing.Point(97, 510);
-            this.but_register.Name = "but_register";
-            this.but_register.Size = new System.Drawing.Size(220, 45);
-            this.but_register.TabIndex = 3;
-            this.but_register.Text = "Tạo đơn hàng";
-            this.but_register.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.but_register.UseVisualStyleBackColor = false;
-            this.but_register.Click += new System.EventHandler(this.but_register_Click);
-            // 
-            // but_search
-            // 
-            this.but_search.BackColor = System.Drawing.Color.White;
-            this.but_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_search.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_search.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            this.but_search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            this.but_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_search.Font = new System.Drawing.Font("Courier New", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            this.but_search.Image = global::QuanLyKhoHang.Properties.Resources.search;
-            this.but_search.Location = new System.Drawing.Point(223, 19);
-            this.but_search.Name = "but_search";
-            this.but_search.Size = new System.Drawing.Size(45, 38);
-            this.but_search.TabIndex = 17;
-            this.but_search.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.but_search.UseVisualStyleBackColor = false;
-            this.but_search.Click += new System.EventHandler(this.but_search_Click);
-            // 
             // panel4
             // 
             this.panel4.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.right;
@@ -971,12 +971,6 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_sl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_dvi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_cost)).EndInit();
@@ -984,6 +978,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.e_date)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_ncc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_nv)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
             this.ResumeLayout(false);
 
         }
