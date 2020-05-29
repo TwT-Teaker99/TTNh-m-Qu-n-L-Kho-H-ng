@@ -50,35 +50,35 @@
             this.chart_spline = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.but_changeToRegis = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.chart_column = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.but_changeToRegis = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart_pie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_doughnut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_spline)).BeginInit();
@@ -88,14 +88,14 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_column)).BeginInit();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // chart_pie
@@ -229,6 +229,25 @@
             this.panel2.Size = new System.Drawing.Size(512, 308);
             this.panel2.TabIndex = 6;
             // 
+            // but_changeToRegis
+            // 
+            this.but_changeToRegis.BackColor = System.Drawing.Color.White;
+            this.but_changeToRegis.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.circle__1_;
+            this.but_changeToRegis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_changeToRegis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_changeToRegis.FlatAppearance.BorderSize = 0;
+            this.but_changeToRegis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.but_changeToRegis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.but_changeToRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_changeToRegis.ForeColor = System.Drawing.Color.White;
+            this.but_changeToRegis.Image = global::QuanLyKhoHang.Properties.Resources._return;
+            this.but_changeToRegis.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.but_changeToRegis.Location = new System.Drawing.Point(481, 1);
+            this.but_changeToRegis.Name = "but_changeToRegis";
+            this.but_changeToRegis.Size = new System.Drawing.Size(26, 27);
+            this.but_changeToRegis.TabIndex = 73;
+            this.but_changeToRegis.UseVisualStyleBackColor = false;
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -295,6 +314,25 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(377, 308);
             this.panel4.TabIndex = 8;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.circle__1_;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::QuanLyKhoHang.Properties.Resources._return;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(348, 1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(26, 27);
+            this.button1.TabIndex = 74;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // label15
             // 
@@ -382,10 +420,20 @@
             this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.label1);
-            this.panel5.Location = new System.Drawing.Point(14, 133);
+            this.panel5.Location = new System.Drawing.Point(12, 131);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(116, 100);
             this.panel5.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.cost__1_;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(28, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(59, 35);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -415,10 +463,20 @@
             this.panel6.Controls.Add(this.pictureBox2);
             this.panel6.Controls.Add(this.label4);
             this.panel6.Controls.Add(this.label5);
-            this.panel6.Location = new System.Drawing.Point(14, 14);
+            this.panel6.Location = new System.Drawing.Point(12, 6);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(116, 100);
             this.panel6.TabIndex = 9;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.inventory;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(26, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(59, 35);
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
             // 
             // label4
             // 
@@ -448,10 +506,20 @@
             this.panel8.Controls.Add(this.pictureBox4);
             this.panel8.Controls.Add(this.label8);
             this.panel8.Controls.Add(this.label9);
-            this.panel8.Location = new System.Drawing.Point(147, 14);
+            this.panel8.Location = new System.Drawing.Point(145, 6);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(118, 100);
             this.panel8.TabIndex = 11;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.group;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox4.Location = new System.Drawing.Point(26, 4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(58, 34);
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
             // 
             // label8
             // 
@@ -481,10 +549,20 @@
             this.panel10.Controls.Add(this.pictureBox6);
             this.panel10.Controls.Add(this.label16);
             this.panel10.Controls.Add(this.label17);
-            this.panel10.Location = new System.Drawing.Point(147, 133);
+            this.panel10.Location = new System.Drawing.Point(145, 131);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(118, 100);
             this.panel10.TabIndex = 12;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.supplier__1_;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox6.Location = new System.Drawing.Point(26, 4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(58, 35);
+            this.pictureBox6.TabIndex = 8;
+            this.pictureBox6.TabStop = false;
             // 
             // label16
             // 
@@ -524,84 +602,6 @@
             this.panel9.Size = new System.Drawing.Size(897, 563);
             this.panel9.TabIndex = 13;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.supplier__1_;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox6.Location = new System.Drawing.Point(26, 4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(58, 35);
-            this.pictureBox6.TabIndex = 8;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.group;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox4.Location = new System.Drawing.Point(26, 4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(58, 34);
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.inventory;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(26, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(59, 35);
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.cost__1_;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(28, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(59, 35);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.circle__1_;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::QuanLyKhoHang.Properties.Resources._return;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(348, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(26, 27);
-            this.button1.TabIndex = 74;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // but_changeToRegis
-            // 
-            this.but_changeToRegis.BackColor = System.Drawing.Color.White;
-            this.but_changeToRegis.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.circle__1_;
-            this.but_changeToRegis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_changeToRegis.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_changeToRegis.FlatAppearance.BorderSize = 0;
-            this.but_changeToRegis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.but_changeToRegis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.but_changeToRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_changeToRegis.ForeColor = System.Drawing.Color.White;
-            this.but_changeToRegis.Image = global::QuanLyKhoHang.Properties.Resources._return;
-            this.but_changeToRegis.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.but_changeToRegis.Location = new System.Drawing.Point(481, 1);
-            this.but_changeToRegis.Name = "but_changeToRegis";
-            this.but_changeToRegis.Size = new System.Drawing.Size(26, 27);
-            this.but_changeToRegis.TabIndex = 73;
-            this.but_changeToRegis.UseVisualStyleBackColor = false;
-            // 
             // ThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -625,17 +625,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart_column)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            this.panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

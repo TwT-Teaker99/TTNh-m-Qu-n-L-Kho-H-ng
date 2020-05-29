@@ -491,7 +491,7 @@
             this.flowLayoutPanel2.Controls.Add(this.but_resize);
             this.flowLayoutPanel2.Controls.Add(this.but_exit);
             this.flowLayoutPanel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(831, -2);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(831, -3);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(72, 30);
             this.flowLayoutPanel2.TabIndex = 0;

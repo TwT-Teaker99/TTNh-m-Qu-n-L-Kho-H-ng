@@ -39,6 +39,11 @@ namespace QuanLyKhoHang
             query = "SELECT * FROM " + name_table;        
           database.pushGridview(query, gridView);
         }
+        public void loadGridView(string name_table, string colum_type, DataGridView gridView)
+        {
+            query = "SELECT " + colum_type + " FROM " + name_table;
+            database.pushGridview(query, gridView);
+        }
         public void loadGridView(string name_table, string colum_type, DataGridView gridView,string where)
         {
             query = "SELECT "+colum_type+" FROM " + name_table+where;

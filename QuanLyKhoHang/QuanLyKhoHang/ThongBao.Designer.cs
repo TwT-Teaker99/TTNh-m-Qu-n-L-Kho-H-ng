@@ -109,7 +109,7 @@
             this.gridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridView.EnableHeadersVisualStyles = false;
             this.gridView.GridColor = System.Drawing.Color.White;
-            this.gridView.Location = new System.Drawing.Point(35, 84);
+            this.gridView.Location = new System.Drawing.Point(47, 73);
             this.gridView.Name = "gridView";
             this.gridView.ReadOnly = true;
             this.gridView.RowHeadersVisible = false;

@@ -133,7 +133,8 @@ namespace QuanLyKhoHang
         private void PhieuNhap_Load(object sender, EventArgs e)
         {
             this.gridView.Columns[2].DefaultCellStyle.Format = "dd'/'MM'/'yyyy";
-            funcShare.loadGridView("phieu_nhap", gridView);
+            funcShare.loadGridView("phieu_nhap,nha_cung_cap,nhan_vien where ncc_id=nha_cung_cap.id and nhan_vien_id=nhan_vien.id"
+                , "phieu_nhap.id,nha_cung_cap.ten,ngay_nhap,nhan_vien.ten", gridView);
             funcShare.autoID(label_id, "phieu_nhap");
 
 
@@ -270,8 +271,13 @@ namespace QuanLyKhoHang
                 textbox_thang.ForeColor = Color.Black;
                 textbox_nam.ForeColor = Color.Black;
                 label_id.Text = this.gridView.CurrentRow.Cells[0].Value.ToString();
-                textbox_nv.Text = this.gridView.CurrentRow.Cells[3].Value.ToString();
-                textbox_ncc.Text = this.gridView.CurrentRow.Cells[1].Value.ToString();
+                string temp_query = query + " WHERE id=" + this.gridView.CurrentRow.Cells[0].Value.ToString();
+                cmd = new SqlCommand(temp_query);
+                 DataTable temp_dt = new DataTable();
+                database.pushDataTable(cmd, temp_dt);
+
+                textbox_nv.Text = temp_dt.Rows[0]["nhan_vien_id"].ToString();
+                textbox_ncc.Text = temp_dt.Rows[0]["ncc_id"].ToString();
                 funcShare.getDate(this.gridView.CurrentRow.Cells[2].Value.ToString(), textbox_ngay, textbox_thang, textbox_nam);
                 funcShare.loadGridView("chi_tiet_phieu_nhap", "mat_hang_id,so_luong,don_gia,don_vi",
                     gridView2, funcShare.where("phieu_nhap_id", label_id.Text));
@@ -296,7 +302,8 @@ namespace QuanLyKhoHang
                     c5 = funcShare.Nvarchar(gridView2.Rows[i].Cells[3].Value.ToString());
                     funcShare.insertNoIdentity("chi_tiet_phieu_nhap", "phieu_nhap_id,mat_hang_id,so_luong,don_gia,don_vi", c1, c2, c3, c4, c5);
                 }
-                funcShare.loadGridView("phieu_nhap", gridView);
+                funcShare.loadGridView("phieu_nhap,nha_cung_cap,nhan_vien where ncc_id=nha_cung_cap.id and nhan_vien_id=nhan_vien.id"
+                , "phieu_nhap.id,nha_cung_cap.ten,ngay_nhap,nhan_vien.ten", gridView);
                 clear();
                 funcShare.autoID(label_id, "phieu_nhap");
 
@@ -411,14 +418,16 @@ namespace QuanLyKhoHang
                     c4 = textbox_nv.Text;
                     funcShare.update("phieu_nhap", "ncc_id,ngay_nhap,nhan_vien_id", c2, c3, c4, funcShare.where("id", c1));
                     changeToFormRegister();
-                    funcShare.loadGridView("phieu_nhap", gridView);
+                    funcShare.loadGridView("phieu_nhap,nha_cung_cap,nhan_vien where ncc_id=nha_cung_cap.id and nhan_vien_id=nhan_vien.id"
+                , "phieu_nhap.id,nha_cung_cap.ten,ngay_nhap,nhan_vien.ten", gridView);
                     break;
                 case "but_xoa":
                     string xoa = "DELETE FROM phieu_nhap WHERE id=" + label_id.Text;
                     cmd = new SqlCommand(xoa);
                     database.editDB(cmd);
                     changeToFormRegister();
-                    funcShare.loadGridView("phieu_nhap", gridView);
+                    funcShare.loadGridView("phieu_nhap,nha_cung_cap,nhan_vien where ncc_id=nha_cung_cap.id and nhan_vien_id=nhan_vien.id"
+                , "phieu_nhap.id,nha_cung_cap.ten,ngay_nhap,nhan_vien.ten", gridView);
 
                     break;
             }
@@ -474,7 +483,8 @@ namespace QuanLyKhoHang
                 }
                 if (textbox_search.Text == "Tìm kiếm")
                 {
-                    funcShare.loadGridView("phieu_nhap", gridView);
+                    funcShare.loadGridView("phieu_nhap,nha_cung_cap,nhan_vien where ncc_id=nha_cung_cap.id and nhan_vien_id=nhan_vien.id"
+               , "phieu_nhap.id,nha_cung_cap.ten,ngay_nhap,nhan_vien.ten", gridView);
                 }
                 if (comboBox_loc.Text == "Tên mặt hàng")
                 {
