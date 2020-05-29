@@ -191,6 +191,9 @@ namespace QuanLyKhoHang
                     call_form(formPhieuNhap);
                     break;
                 case "but_mat_hang":
+                    this.screen.Controls.Clear();
+                    MatHang formMH = new MatHang();
+                    call_form(formMH);
                     break;
                 case "but_loai_hang":
                     this.screen.Controls.Clear();

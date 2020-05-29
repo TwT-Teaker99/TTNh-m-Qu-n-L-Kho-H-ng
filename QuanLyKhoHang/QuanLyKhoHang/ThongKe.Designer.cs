@@ -45,45 +45,40 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongKe));
             this.chart_pie = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_doughnut = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_spline = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.but_changeToRegis = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.chart_column = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.but_changeToRegis = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart_pie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_doughnut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_spline)).BeginInit();
@@ -93,16 +88,14 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_column)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // chart_pie
@@ -113,7 +106,7 @@
             legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
             legend1.Name = "Legend1";
             this.chart_pie.Legends.Add(legend1);
-            this.chart_pie.Location = new System.Drawing.Point(8, 4);
+            this.chart_pie.Location = new System.Drawing.Point(3, 4);
             this.chart_pie.Name = "chart_pie";
             this.chart_pie.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series1.ChartArea = "ChartArea1";
@@ -121,7 +114,7 @@
             series1.Legend = "Legend1";
             series1.Name = "s1";
             this.chart_pie.Series.Add(series1);
-            this.chart_pie.Size = new System.Drawing.Size(178, 221);
+            this.chart_pie.Size = new System.Drawing.Size(291, 221);
             this.chart_pie.TabIndex = 0;
             this.chart_pie.Text = "chart1";
             title1.Font = new System.Drawing.Font("Courier New", 10.25F, System.Drawing.FontStyle.Bold);
@@ -218,9 +211,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.chart_pie);
-            this.panel1.Location = new System.Drawing.Point(698, 8);
+            this.panel1.Location = new System.Drawing.Point(594, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(193, 232);
+            this.panel1.Size = new System.Drawing.Size(300, 232);
             this.panel1.TabIndex = 5;
             // 
             // panel2
@@ -235,25 +228,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(512, 308);
             this.panel2.TabIndex = 6;
-            // 
-            // but_changeToRegis
-            // 
-            this.but_changeToRegis.BackColor = System.Drawing.Color.White;
-            this.but_changeToRegis.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.circle__1_;
-            this.but_changeToRegis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_changeToRegis.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_changeToRegis.FlatAppearance.BorderSize = 0;
-            this.but_changeToRegis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.but_changeToRegis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.but_changeToRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_changeToRegis.ForeColor = System.Drawing.Color.White;
-            this.but_changeToRegis.Image = global::QuanLyKhoHang.Properties.Resources._return;
-            this.but_changeToRegis.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.but_changeToRegis.Location = new System.Drawing.Point(481, 1);
-            this.but_changeToRegis.Name = "but_changeToRegis";
-            this.but_changeToRegis.Size = new System.Drawing.Size(26, 27);
-            this.but_changeToRegis.TabIndex = 73;
-            this.but_changeToRegis.UseVisualStyleBackColor = false;
             // 
             // label14
             // 
@@ -293,7 +267,7 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.chart_doughnut);
-            this.panel3.Location = new System.Drawing.Point(375, 8);
+            this.panel3.Location = new System.Drawing.Point(271, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(317, 232);
             this.panel3.TabIndex = 7;
@@ -321,25 +295,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(377, 308);
             this.panel4.TabIndex = 8;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.circle__1_;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::QuanLyKhoHang.Properties.Resources._return;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(348, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(26, 27);
-            this.button1.TabIndex = 74;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // label15
             // 
@@ -427,20 +382,10 @@
             this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.label1);
-            this.panel5.Location = new System.Drawing.Point(43, 117);
+            this.panel5.Location = new System.Drawing.Point(14, 133);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(116, 100);
             this.panel5.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.money__1_;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(28, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(59, 35);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -470,27 +415,17 @@
             this.panel6.Controls.Add(this.pictureBox2);
             this.panel6.Controls.Add(this.label4);
             this.panel6.Controls.Add(this.label5);
-            this.panel6.Location = new System.Drawing.Point(6, 8);
+            this.panel6.Location = new System.Drawing.Point(14, 14);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(109, 100);
+            this.panel6.Size = new System.Drawing.Size(116, 100);
             this.panel6.TabIndex = 9;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(26, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(59, 35);
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(58)))), ((int)(((byte)(34)))));
-            this.label4.Location = new System.Drawing.Point(22, 72);
+            this.label4.Location = new System.Drawing.Point(33, 72);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 20);
             this.label4.TabIndex = 7;
@@ -507,69 +442,16 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Tổng số loại \rmặt hàng";
             // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.pictureBox3);
-            this.panel7.Controls.Add(this.label6);
-            this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(196, 117);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(120, 100);
-            this.panel7.TabIndex = 10;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.money__1_;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Location = new System.Drawing.Point(29, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(59, 35);
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.label6.Location = new System.Drawing.Point(29, 78);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 20);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "65350";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(92)))), ((int)(((byte)(89)))));
-            this.label7.Location = new System.Drawing.Point(10, 41);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 28);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Tổng chi phí\r\nhàng tồn kho";
-            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.Controls.Add(this.pictureBox4);
             this.panel8.Controls.Add(this.label8);
             this.panel8.Controls.Add(this.label9);
-            this.panel8.Location = new System.Drawing.Point(130, 8);
+            this.panel8.Location = new System.Drawing.Point(147, 14);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(107, 100);
+            this.panel8.Size = new System.Drawing.Size(118, 100);
             this.panel8.TabIndex = 11;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.employ;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox4.Location = new System.Drawing.Point(26, 4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(58, 34);
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
             // 
             // label8
             // 
@@ -587,7 +469,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(92)))), ((int)(((byte)(89)))));
-            this.label9.Location = new System.Drawing.Point(3, 41);
+            this.label9.Location = new System.Drawing.Point(5, 43);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(98, 28);
             this.label9.TabIndex = 6;
@@ -599,20 +481,10 @@
             this.panel10.Controls.Add(this.pictureBox6);
             this.panel10.Controls.Add(this.label16);
             this.panel10.Controls.Add(this.label17);
-            this.panel10.Location = new System.Drawing.Point(252, 8);
+            this.panel10.Location = new System.Drawing.Point(147, 133);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(107, 100);
+            this.panel10.Size = new System.Drawing.Size(118, 100);
             this.panel10.TabIndex = 12;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.supplier;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox6.Location = new System.Drawing.Point(26, 4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(55, 35);
-            this.pictureBox6.TabIndex = 8;
-            this.pictureBox6.TabStop = false;
             // 
             // label16
             // 
@@ -644,7 +516,6 @@
             this.panel9.Controls.Add(this.panel8);
             this.panel9.Controls.Add(this.panel3);
             this.panel9.Controls.Add(this.panel6);
-            this.panel9.Controls.Add(this.panel7);
             this.panel9.Controls.Add(this.panel5);
             this.panel9.Controls.Add(this.panel4);
             this.panel9.Controls.Add(this.panel2);
@@ -652,6 +523,84 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(897, 563);
             this.panel9.TabIndex = 13;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.supplier__1_;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox6.Location = new System.Drawing.Point(26, 4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(58, 35);
+            this.pictureBox6.TabIndex = 8;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.group;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox4.Location = new System.Drawing.Point(26, 4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(58, 34);
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.inventory;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(26, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(59, 35);
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.cost__1_;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(28, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(59, 35);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.circle__1_;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::QuanLyKhoHang.Properties.Resources._return;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(348, 1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(26, 27);
+            this.button1.TabIndex = 74;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // but_changeToRegis
+            // 
+            this.but_changeToRegis.BackColor = System.Drawing.Color.White;
+            this.but_changeToRegis.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.circle__1_;
+            this.but_changeToRegis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.but_changeToRegis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_changeToRegis.FlatAppearance.BorderSize = 0;
+            this.but_changeToRegis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.but_changeToRegis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.but_changeToRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_changeToRegis.ForeColor = System.Drawing.Color.White;
+            this.but_changeToRegis.Image = global::QuanLyKhoHang.Properties.Resources._return;
+            this.but_changeToRegis.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.but_changeToRegis.Location = new System.Drawing.Point(481, 1);
+            this.but_changeToRegis.Name = "but_changeToRegis";
+            this.but_changeToRegis.Size = new System.Drawing.Size(26, 27);
+            this.but_changeToRegis.TabIndex = 73;
+            this.but_changeToRegis.UseVisualStyleBackColor = false;
             // 
             // ThongKe
             // 
@@ -676,20 +625,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart_column)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -712,10 +658,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label8;

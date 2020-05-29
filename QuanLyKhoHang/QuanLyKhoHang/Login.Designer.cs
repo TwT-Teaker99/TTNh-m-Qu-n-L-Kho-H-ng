@@ -51,22 +51,22 @@
             // textBoxUName
             // 
             this.textBoxUName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBoxUName.Location = new System.Drawing.Point(113, 31);
+            this.textBoxUName.Location = new System.Drawing.Point(65, 29);
             this.textBoxUName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxUName.Multiline = true;
             this.textBoxUName.Name = "textBoxUName";
-            this.textBoxUName.Size = new System.Drawing.Size(245, 42);
+            this.textBoxUName.Size = new System.Drawing.Size(324, 42);
             this.textBoxUName.TabIndex = 1;
             // 
             // textBoxPass
             // 
             this.textBoxPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBoxPass.Location = new System.Drawing.Point(113, 112);
+            this.textBoxPass.Location = new System.Drawing.Point(65, 110);
             this.textBoxPass.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPass.Multiline = true;
             this.textBoxPass.Name = "textBoxPass";
             this.textBoxPass.PasswordChar = '●';
-            this.textBoxPass.Size = new System.Drawing.Size(245, 41);
+            this.textBoxPass.Size = new System.Drawing.Size(324, 41);
             this.textBoxPass.TabIndex = 3;
             // 
             // btnClear
@@ -106,7 +106,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(102, 9);
+            this.label3.Location = new System.Drawing.Point(122, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(195, 32);
             this.label3.TabIndex = 7;
@@ -117,7 +117,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(92)))), ((int)(((byte)(89)))));
-            this.label4.Location = new System.Drawing.Point(110, 11);
+            this.label4.Location = new System.Drawing.Point(62, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 18);
             this.label4.TabIndex = 8;
@@ -128,7 +128,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(92)))), ((int)(((byte)(89)))));
-            this.label1.Location = new System.Drawing.Point(110, 92);
+            this.label1.Location = new System.Drawing.Point(62, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 18);
             this.label1.TabIndex = 9;
@@ -138,7 +138,7 @@
             // 
             this.pictureBox2.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.user__1_;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(65, 32);
+            this.pictureBox2.Location = new System.Drawing.Point(17, 30);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(43, 41);
             this.pictureBox2.TabIndex = 11;
@@ -148,7 +148,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.pass;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(65, 112);
+            this.pictureBox1.Location = new System.Drawing.Point(17, 110);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(43, 41);
             this.pictureBox1.TabIndex = 10;
@@ -213,9 +213,9 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.textBoxUName);
             this.panel2.Controls.Add(this.textBoxPass);
-            this.panel2.Location = new System.Drawing.Point(2, 64);
+            this.panel2.Location = new System.Drawing.Point(1, 64);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(429, 271);
+            this.panel2.Size = new System.Drawing.Size(430, 271);
             this.panel2.TabIndex = 13;
             // 
             // Login

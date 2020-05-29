@@ -34,12 +34,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.WELCOME = new System.Windows.Forms.Label();
             this.gridView = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox_loc = new System.Windows.Forms.ComboBox();
-            this.textbox_search = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.but_search = new System.Windows.Forms.Button();
-            this.panel14 = new System.Windows.Forms.Panel();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,8 +41,14 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox_loc = new System.Windows.Forms.ComboBox();
+            this.textbox_search = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.but_search = new System.Windows.Forms.Button();
+            this.panel14 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -121,6 +121,58 @@
             this.gridView.TabIndex = 39;
             this.gridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridView_CellDoubleClick);
             // 
+            // id
+            // 
+            this.id.DataPropertyName = "mat_hang_id";
+            this.id.HeaderText = "Mã mặt hàng";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Width = 70;
+            // 
+            // sdt
+            // 
+            this.sdt.DataPropertyName = "ten";
+            this.sdt.HeaderText = "Tên Mặt Hàng";
+            this.sdt.Name = "sdt";
+            this.sdt.ReadOnly = true;
+            this.sdt.Width = 170;
+            // 
+            // quan
+            // 
+            this.quan.DataPropertyName = "remain";
+            this.quan.HeaderText = "Số lượng hiện tại";
+            this.quan.Name = "quan";
+            this.quan.ReadOnly = true;
+            this.quan.Width = 85;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "don_gia";
+            this.Column2.HeaderText = "Đơn giá hiện tại";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "datee";
+            this.Column1.HeaderText = "Ngày nhập gần nhất";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "phieu_nhap_id";
+            this.Column4.HeaderText = "Phiếu nhập gần nhất";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "tinh_trang";
+            this.Column3.HeaderText = "Tình trạng";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -138,6 +190,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(897, 563);
             this.panel1.TabIndex = 40;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            this.panel3.Location = new System.Drawing.Point(550, 473);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(3, 100);
+            this.panel3.TabIndex = 51;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            this.panel2.Location = new System.Drawing.Point(0, 473);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(550, 3);
+            this.panel2.TabIndex = 50;
             // 
             // comboBox_loc
             // 
@@ -205,74 +273,6 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(550, 1);
             this.panel14.TabIndex = 49;
-            // 
-            // id
-            // 
-            this.id.DataPropertyName = "mat_hang_id";
-            this.id.HeaderText = "Mã mặt hàng";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Width = 70;
-            // 
-            // sdt
-            // 
-            this.sdt.DataPropertyName = "ten";
-            this.sdt.HeaderText = "Tên Mặt Hàng";
-            this.sdt.Name = "sdt";
-            this.sdt.ReadOnly = true;
-            this.sdt.Width = 170;
-            // 
-            // quan
-            // 
-            this.quan.DataPropertyName = "remain";
-            this.quan.HeaderText = "Số lượng hiện tại";
-            this.quan.Name = "quan";
-            this.quan.ReadOnly = true;
-            this.quan.Width = 85;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "don_gia";
-            this.Column2.HeaderText = "Đơn giá hiện tại";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "datee";
-            this.Column1.HeaderText = "Ngày nhập gần nhất";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "phieu_nhap_id";
-            this.Column4.HeaderText = "Phiếu nhập gần nhất";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "tinh_trang";
-            this.Column3.HeaderText = "Tình trạng";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.panel2.Location = new System.Drawing.Point(0, 473);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(550, 3);
-            this.panel2.TabIndex = 50;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.panel3.Location = new System.Drawing.Point(550, 473);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(3, 100);
-            this.panel3.TabIndex = 51;
             // 
             // ThongBao
             // 
