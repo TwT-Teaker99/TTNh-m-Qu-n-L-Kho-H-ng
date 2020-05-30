@@ -340,9 +340,7 @@ namespace QuanLyKhoHang
                         c2 = textbox_soluong.Text;
                         c3 = textbox_cost.Text;
                         c4 = textbox_donvi.Text;
-
                         dt.Rows.Add(c1, c2, c3, c4);
-
                         gridView2.DataSource = dt;
                     }
                     if (!isFormRegister)
@@ -461,23 +459,31 @@ namespace QuanLyKhoHang
                         if (funcShare.isNumber(textbox_search.Text))
                         {
                             string or = " OR ";
-                            string searchID = "id= " + textbox_search.Text;
-                            string searchncc = "ncc_id= " + textbox_search.Text;
-                            string searchnv = "nhan_vien_id= " + textbox_search.Text;
-                            search = query + " where " + searchID + or + searchncc + or + searchnv;
+                            string searchID = "phieu_nhap.id= " + textbox_search.Text;                          
+                            string ngay = "DAY(ngay_nhap) = " + textbox_search.Text;
+                            string thang = "MONTH(ngay_nhap) = " + textbox_search.Text;
+                            search = query + " and (" + searchID + or +ngay+or+thang+")";
                             
                         }
                         else 
                         {
                             if (funcShare.isDate(textbox_search.Text) == true)
                             {
-                                string date = "ngay_nhap = '" + textbox_search.Text + "'";
-                                search = query + " where " + date;
-                                database.pushGridview(search, gridView);
+                                string[] arr = textbox_search.Text.Split('/', '-');
+
+                                search = query + " and ngay_nhap =" + funcShare.date(arr[0], arr[1], arr[2]);
+                                
+
                             }
+                            else
+                            {
+                                string tenNCC = "nha_cung_cap.ten LIKE N'%" + textbox_search.Text + "%'";
+                                string tenNV = "nhan_vien.ten LIKE N'%" + textbox_search.Text + "%'";
+                                search = query + " and (" + tenNCC + " or " + tenNV + ")";
+                            }    
 
                         }
-                        
+                        database.pushGridview(search, gridView);
                         break;
                     }
                     if (comboBox_loc.Text == "Mã phiếu nhập hàng" && funcShare.isNumber(textbox_search.Text))
@@ -505,19 +511,29 @@ namespace QuanLyKhoHang
                     {
                         if (funcShare.isNumber(textbox_search.Text))
                         {
-
+                            if (textbox_search.Text.Length<=2)
+                            {
+                                search = query + " and (DAY(ngay_nhap)=" + textbox_search.Text +" or MONTH(ngay_nhap)=" + textbox_search.Text+")";
+                            }
+                            else
+                            {
+                                search = query + " and YEAR(ngay_nhap)=" + textbox_search.Text;
+                            }
+                            database.pushGridview(search, gridView);
                         }
                         else
                         {
                             if (funcShare.isDate(textbox_search.Text) == true)
                             {
-                                search = query + " WHERE ngay_nhap ='" + textbox_search.Text + "'";
+                                string[] arr = textbox_search.Text.Split('/','-');                               
+                                search = query + " and ngay_nhap =" + funcShare.date(arr[0],arr[1],arr[2]) ;
                                 database.pushGridview(search, gridView);
                             }
+
                         }
                         
                         break;
-                    }
+                    }    //v
                     if (comboBox_loc.Text == "Nhân viên")
                     {
                         if (funcShare.isNumber(textbox_search.Text))

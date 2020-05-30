@@ -67,16 +67,16 @@
             this.but_search = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.gridView = new System.Windows.Forms.DataGridView();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.city = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -643,53 +643,6 @@
             this.gridView.TabIndex = 34;
             this.gridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridView_CellDoubleClick);
             // 
-            // id
-            // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "#";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Width = 40;
-            // 
-            // ncc
-            // 
-            this.ncc.DataPropertyName = "ten";
-            this.ncc.HeaderText = "Tên";
-            this.ncc.Name = "ncc";
-            this.ncc.ReadOnly = true;
-            this.ncc.Width = 115;
-            // 
-            // sdt
-            // 
-            this.sdt.DataPropertyName = "sdt";
-            this.sdt.HeaderText = "Liên hệ";
-            this.sdt.Name = "sdt";
-            this.sdt.ReadOnly = true;
-            // 
-            // quan
-            // 
-            this.quan.DataPropertyName = "quan";
-            this.quan.HeaderText = "Quận";
-            this.quan.Name = "quan";
-            this.quan.ReadOnly = true;
-            this.quan.Width = 115;
-            // 
-            // phuong
-            // 
-            this.phuong.DataPropertyName = "phuong";
-            this.phuong.HeaderText = "Phường";
-            this.phuong.Name = "phuong";
-            this.phuong.ReadOnly = true;
-            this.phuong.Width = 116;
-            // 
-            // city
-            // 
-            this.city.DataPropertyName = "city";
-            this.city.HeaderText = "Thành phố";
-            this.city.Name = "city";
-            this.city.ReadOnly = true;
-            this.city.Width = 93;
-            // 
             // panel4
             // 
             this.panel4.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.right;
@@ -730,6 +683,53 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(614, 570);
             this.panel5.TabIndex = 32;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "#";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Width = 40;
+            // 
+            // ncc
+            // 
+            this.ncc.DataPropertyName = "ten";
+            this.ncc.HeaderText = "Tên NCC";
+            this.ncc.Name = "ncc";
+            this.ncc.ReadOnly = true;
+            this.ncc.Width = 115;
+            // 
+            // sdt
+            // 
+            this.sdt.DataPropertyName = "sdt";
+            this.sdt.HeaderText = "Liên hệ";
+            this.sdt.Name = "sdt";
+            this.sdt.ReadOnly = true;
+            // 
+            // quan
+            // 
+            this.quan.DataPropertyName = "quan";
+            this.quan.HeaderText = "Quận";
+            this.quan.Name = "quan";
+            this.quan.ReadOnly = true;
+            this.quan.Width = 115;
+            // 
+            // phuong
+            // 
+            this.phuong.DataPropertyName = "phuong";
+            this.phuong.HeaderText = "Phường";
+            this.phuong.Name = "phuong";
+            this.phuong.ReadOnly = true;
+            this.phuong.Width = 116;
+            // 
+            // city
+            // 
+            this.city.DataPropertyName = "city";
+            this.city.HeaderText = "Thành phố";
+            this.city.Name = "city";
+            this.city.ReadOnly = true;
+            this.city.Width = 93;
             // 
             // NhaCungCap
             // 

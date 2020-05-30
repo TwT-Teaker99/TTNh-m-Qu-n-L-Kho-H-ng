@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,11 +67,19 @@ namespace QuanLyKhoHang
         public bool isDate(string input)
         {
             DateTime dt;
-            if (DateTime.TryParse(input, out dt))
+            //if (DateTime.TryParse(input, out dt))
+            //{
+            //    return true;            
+            //}
+            string[] formats = { "dd/MM/yyyy", "d/M/yyyy", "dd-MM-yyyy", "d-M-yyyy" };
+            if (DateTime.TryParseExact(input, formats,
+                           CultureInfo.InvariantCulture,
+                           DateTimeStyles.None,
+                           out dt))
             {
-                return true;            
-            }
-            return false;
+                return true;
+            }    
+                return false;
         }
         public void textboxLeave(TextBox tb, string text)
         {
