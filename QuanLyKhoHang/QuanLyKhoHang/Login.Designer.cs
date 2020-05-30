@@ -51,6 +51,7 @@
             // textBoxUName
             // 
             this.textBoxUName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBoxUName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(92)))), ((int)(((byte)(89)))));
             this.textBoxUName.Location = new System.Drawing.Point(65, 29);
             this.textBoxUName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxUName.Multiline = true;
@@ -61,6 +62,7 @@
             // textBoxPass
             // 
             this.textBoxPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBoxPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(92)))), ((int)(((byte)(89)))));
             this.textBoxPass.Location = new System.Drawing.Point(65, 110);
             this.textBoxPass.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPass.Multiline = true;

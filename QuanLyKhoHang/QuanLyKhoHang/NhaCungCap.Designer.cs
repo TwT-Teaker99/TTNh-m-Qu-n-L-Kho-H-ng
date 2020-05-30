@@ -175,7 +175,7 @@
             this.panel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.panel1.Location = new System.Drawing.Point(616, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(281, 564);
+            this.panel1.Size = new System.Drawing.Size(282, 564);
             this.panel1.TabIndex = 8;
             // 
             // but_changeToRegis

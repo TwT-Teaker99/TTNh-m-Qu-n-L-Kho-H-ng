@@ -478,7 +478,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::QuanLyKhoHang.Properties.Resources.user4;
+            this.pictureBox3.Image = global::QuanLyKhoHang.Properties.Resources.tiger2;
             this.pictureBox3.Location = new System.Drawing.Point(559, 9);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(64, 60);
