@@ -67,16 +67,16 @@
             this.but_search = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.gridView = new System.Windows.Forms.DataGridView();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.city = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -552,7 +552,6 @@
             this.textbox_search.Name = "textbox_search";
             this.textbox_search.Size = new System.Drawing.Size(200, 38);
             this.textbox_search.TabIndex = 21;
-            this.textbox_search.Text = "sdfsdf";
             this.textbox_search.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
@@ -643,47 +642,6 @@
             this.gridView.TabIndex = 34;
             this.gridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridView_CellDoubleClick);
             // 
-            // panel4
-            // 
-            this.panel4.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.right;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Location = new System.Drawing.Point(121, 12);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(26, 22);
-            this.panel4.TabIndex = 33;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.label19.Location = new System.Drawing.Point(153, 12);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(107, 20);
-            this.label19.TabIndex = 29;
-            this.label19.Text = "Nhà cung cấp";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            this.label18.Location = new System.Drawing.Point(13, 12);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(102, 20);
-            this.label18.TabIndex = 29;
-            this.label18.Text = "Quản lý nhập";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            this.panel5.Controls.Add(this.panel2);
-            this.panel5.Controls.Add(this.panel3);
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(614, 570);
-            this.panel5.TabIndex = 32;
-            // 
             // id
             // 
             this.id.DataPropertyName = "id";
@@ -730,6 +688,47 @@
             this.city.Name = "city";
             this.city.ReadOnly = true;
             this.city.Width = 93;
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.right;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Location = new System.Drawing.Point(121, 12);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(26, 22);
+            this.panel4.TabIndex = 33;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.label19.Location = new System.Drawing.Point(153, 12);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(107, 20);
+            this.label19.TabIndex = 29;
+            this.label19.Text = "Nhà cung cấp";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
+            this.label18.Location = new System.Drawing.Point(13, 12);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(102, 20);
+            this.label18.TabIndex = 29;
+            this.label18.Text = "Quản lý nhập";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
+            this.panel5.Controls.Add(this.panel2);
+            this.panel5.Controls.Add(this.panel3);
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(614, 570);
+            this.panel5.TabIndex = 32;
             // 
             // NhaCungCap
             // 

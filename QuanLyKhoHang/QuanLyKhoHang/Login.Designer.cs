@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.textBoxUName = new System.Windows.Forms.TextBox();
             this.textBoxPass = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
@@ -76,7 +75,7 @@
             this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Location = new System.Drawing.Point(65, 210);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
@@ -92,7 +91,7 @@
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Location = new System.Drawing.Point(65, 161);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
@@ -106,11 +105,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(107, 13);
+            this.label3.Location = new System.Drawing.Point(87, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(227, 36);
+            this.label3.Size = new System.Drawing.Size(237, 39);
             this.label3.TabIndex = 7;
             this.label3.Text = "ADMIN LOGIN";
             // 
@@ -158,45 +157,52 @@
             // 
             // but_resize
             // 
-            this.but_resize.BackColor = System.Drawing.Color.White;
-            this.but_resize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("but_resize.BackgroundImage")));
+            this.but_resize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
             this.but_resize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.but_resize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_resize.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
             this.but_resize.FlatAppearance.BorderSize = 0;
             this.but_resize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
             this.but_resize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
             this.but_resize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_resize.Location = new System.Drawing.Point(399, 209);
+            this.but_resize.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_resize.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.but_resize.Location = new System.Drawing.Point(372, 0);
             this.but_resize.Name = "but_resize";
             this.but_resize.Size = new System.Drawing.Size(30, 30);
             this.but_resize.TabIndex = 1;
+            this.but_resize.Text = "−";
             this.but_resize.UseVisualStyleBackColor = false;
             this.but_resize.Click += new System.EventHandler(this.but_border);
             // 
             // but_exit
             // 
-            this.but_exit.BackColor = System.Drawing.Color.White;
-            this.but_exit.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.exit;
+            this.but_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
             this.but_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.but_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.but_exit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
             this.but_exit.FlatAppearance.BorderSize = 0;
             this.but_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
             this.but_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
             this.but_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_exit.Location = new System.Drawing.Point(399, 239);
+            this.but_exit.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.but_exit.Location = new System.Drawing.Point(402, 0);
             this.but_exit.Name = "but_exit";
             this.but_exit.Size = new System.Drawing.Size(30, 30);
             this.but_exit.TabIndex = 3;
+            this.but_exit.Text = "X";
             this.but_exit.UseVisualStyleBackColor = false;
             this.but_exit.Click += new System.EventHandler(this.but_border);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            this.panel1.Controls.Add(this.but_resize);
+            this.panel1.Controls.Add(this.but_exit);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(431, 63);
+            this.panel1.Size = new System.Drawing.Size(432, 63);
             this.panel1.TabIndex = 12;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -205,8 +211,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.but_resize);
-            this.panel2.Controls.Add(this.but_exit);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btnLogin);

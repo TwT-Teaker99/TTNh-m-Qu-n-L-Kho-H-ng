@@ -498,7 +498,7 @@
             // 
             // but_resize
             // 
-            this.but_resize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("but_resize.BackgroundImage")));
+            this.but_resize.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.resize;
             this.but_resize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.but_resize.FlatAppearance.BorderSize = 0;
             this.but_resize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
