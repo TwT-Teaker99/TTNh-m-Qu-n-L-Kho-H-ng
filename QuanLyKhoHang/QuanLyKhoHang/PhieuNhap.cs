@@ -14,8 +14,9 @@ namespace QuanLyKhoHang
     public partial class PhieuNhap : Form
     {
         DataTable dt;
-        string query = "SELECT phieu_nhap.id,nha_cung_cap.ten,ngay_nhap,nhan_vien.ten FROM " +
-            "phieu_nhap,nha_cung_cap,nhan_vien where ncc_id=nha_cung_cap.id and nhan_vien_id=nhan_vien.id";
+           string query = "SELECT phieu_nhap.id,nha_cung_cap.ten,ngay_nhap,nhan_vien.ten FROM " +
+           "phieu_nhap,nha_cung_cap,nhan_vien where ncc_id=nha_cung_cap.id and nhan_vien_id=nhan_vien.id";
+      
         functionShare funcShare;
         dbAccess database = new dbAccess();
         SqlCommand cmd;
@@ -142,8 +143,9 @@ namespace QuanLyKhoHang
 
         private void LoadPhieuNhap()
         {
-            funcShare.loadGridView("phieu_nhap,nha_cung_cap,nhan_vien where ncc_id=nha_cung_cap.id and nhan_vien_id=nhan_vien.id"
-               , "phieu_nhap.id,nha_cung_cap.ten,ngay_nhap,nhan_vien.ten", gridView);
+            //  funcShare.loadGridView("phieu_nhap,nha_cung_cap,nhan_vien where ncc_id=nha_cung_cap.id and nhan_vien_id=nhan_vien.id"
+            //   , "phieu_nhap.id,nha_cung_cap.ten,ngay_nhap,nhan_vien.ten", gridView);
+            funcShare.loadGridView("PHIEUNHAP", gridView);
         }
         private void resetError()
         {
@@ -404,7 +406,7 @@ namespace QuanLyKhoHang
         }
 
 
-        private void but_form_alter(object sender, EventArgs e)//but sua chua lam
+        private void but_form_alter(object sender, EventArgs e)
         {
             Button but = (Button)sender;
             switch (but.Name)
@@ -413,13 +415,16 @@ namespace QuanLyKhoHang
                     changeToFormRegister();
                     break;
                 case "but_sua":
-                    c1 = label_id.Text;
-                    c2 = textbox_ncc.Text;
-                    c3 = funcShare.date(textbox_ngay.Text, textbox_thang.Text, textbox_nam.Text);
-                    c4 = textbox_nv.Text;
-                    funcShare.update("phieu_nhap", "ncc_id,ngay_nhap,nhan_vien_id", c2, c3, c4, funcShare.where("id", c1));
-                    changeToFormRegister();
-                    LoadPhieuNhap();
+                    if (checkInput())
+                    {
+                        c1 = label_id.Text;
+                        c2 = textbox_ncc.Text;
+                        c3 = funcShare.date(textbox_ngay.Text, textbox_thang.Text, textbox_nam.Text);
+                        c4 = textbox_nv.Text;
+                        funcShare.update("phieu_nhap", "ncc_id,ngay_nhap,nhan_vien_id", c2, c3, c4, funcShare.where("id", c1));
+                        changeToFormRegister();
+                        LoadPhieuNhap();
+                    }
                     break;
                 case "but_xoa":
                     string xoa = "DELETE FROM phieu_nhap WHERE id=" + label_id.Text;

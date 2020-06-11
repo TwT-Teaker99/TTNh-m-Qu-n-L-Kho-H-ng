@@ -9,7 +9,11 @@ FROM chi_tiet_phieu_nhap,phieu_nhap,mat_hang
 WHERE phieu_nhap.id=phieu_nhap_id AND mat_hang_id=mat_hang.id 
 AND  mat_hang.remain<30 GROUP BY mat_hang_id) as t2 ON t1.mat_hang_id=t2.mat_hang_id AND t1.datee=t2.datee
 SELECT *FROM ListRunOut ORDER BY tinh_trang
+-----------------------------------------------------
+CREATE VIEW PHIEUNHAP AS SELECT phieu_nhap.id,nha_cung_cap.ten,ngay_nhap,nhan_vien.ten ten1 FROM 
+            phieu_nhap,nha_cung_cap,nhan_vien where ncc_id=nha_cung_cap.id and nhan_vien_id=nhan_vien.id;
 
+			SELECT *FROM PHIEUNHAP
 
 
 
