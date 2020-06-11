@@ -53,29 +53,29 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox_loc = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label_dk = new System.Windows.Forms.Label();
             this.textbox_remain = new System.Windows.Forms.TextBox();
             this.but_register = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.e_remain = new System.Windows.Forms.PictureBox();
+            this.e_loai = new System.Windows.Forms.PictureBox();
+            this.e_ten = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.textbox_loai = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.e_ten = new System.Windows.Forms.PictureBox();
-            this.e_loai = new System.Windows.Forms.PictureBox();
-            this.e_remain = new System.Windows.Forms.PictureBox();
-            this.comboBox_loc = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.e_ten)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e_loai)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_remain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.e_loai)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.e_ten)).BeginInit();
             this.SuspendLayout();
             // 
             // textbox_search
@@ -108,6 +108,7 @@
             this.but_search.TabIndex = 17;
             this.but_search.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.but_search.UseVisualStyleBackColor = false;
+            this.but_search.Click += new System.EventHandler(this.but_search_Click);
             // 
             // panel3
             // 
@@ -391,6 +392,30 @@
             this.panel2.Size = new System.Drawing.Size(548, 72);
             this.panel2.TabIndex = 9;
             // 
+            // comboBox_loc
+            // 
+            this.comboBox_loc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_loc.FormattingEnabled = true;
+            this.comboBox_loc.Items.AddRange(new object[] {
+            "Mặt hàng",
+            "Loại hàng",
+            "Tồn kho"});
+            this.comboBox_loc.Location = new System.Drawing.Point(401, 23);
+            this.comboBox_loc.Name = "comboBox_loc";
+            this.comboBox_loc.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_loc.TabIndex = 34;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.label11.Location = new System.Drawing.Point(341, 22);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(54, 27);
+            this.label11.TabIndex = 33;
+            this.label11.Text = "Lọc";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -477,6 +502,39 @@
             this.panel1.Size = new System.Drawing.Size(318, 552);
             this.panel1.TabIndex = 33;
             // 
+            // e_remain
+            // 
+            this.e_remain.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_remain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.e_remain.Location = new System.Drawing.Point(245, 277);
+            this.e_remain.Name = "e_remain";
+            this.e_remain.Size = new System.Drawing.Size(26, 26);
+            this.e_remain.TabIndex = 65;
+            this.e_remain.TabStop = false;
+            this.e_remain.Visible = false;
+            // 
+            // e_loai
+            // 
+            this.e_loai.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_loai.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.e_loai.Location = new System.Drawing.Point(216, 191);
+            this.e_loai.Name = "e_loai";
+            this.e_loai.Size = new System.Drawing.Size(26, 26);
+            this.e_loai.TabIndex = 64;
+            this.e_loai.TabStop = false;
+            this.e_loai.Visible = false;
+            // 
+            // e_ten
+            // 
+            this.e_ten.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
+            this.e_ten.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.e_ten.Location = new System.Drawing.Point(242, 123);
+            this.e_ten.Name = "e_ten";
+            this.e_ten.Size = new System.Drawing.Size(26, 26);
+            this.e_ten.TabIndex = 63;
+            this.e_ten.TabStop = false;
+            this.e_ten.Visible = false;
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Gray;
@@ -532,63 +590,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Số lượng tồn";
             // 
-            // e_ten
-            // 
-            this.e_ten.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_ten.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.e_ten.Location = new System.Drawing.Point(242, 123);
-            this.e_ten.Name = "e_ten";
-            this.e_ten.Size = new System.Drawing.Size(26, 26);
-            this.e_ten.TabIndex = 63;
-            this.e_ten.TabStop = false;
-            this.e_ten.Visible = false;
-            // 
-            // e_loai
-            // 
-            this.e_loai.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_loai.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.e_loai.Location = new System.Drawing.Point(216, 191);
-            this.e_loai.Name = "e_loai";
-            this.e_loai.Size = new System.Drawing.Size(26, 26);
-            this.e_loai.TabIndex = 64;
-            this.e_loai.TabStop = false;
-            this.e_loai.Visible = false;
-            // 
-            // e_remain
-            // 
-            this.e_remain.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.error;
-            this.e_remain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.e_remain.Location = new System.Drawing.Point(245, 277);
-            this.e_remain.Name = "e_remain";
-            this.e_remain.Size = new System.Drawing.Size(26, 26);
-            this.e_remain.TabIndex = 65;
-            this.e_remain.TabStop = false;
-            this.e_remain.Visible = false;
-            // 
-            // comboBox_loc
-            // 
-            this.comboBox_loc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_loc.FormattingEnabled = true;
-            this.comboBox_loc.Items.AddRange(new object[] {
-            "Mặt hàng",
-            "Loại hàng",
-            "Tồn kho"});
-            this.comboBox_loc.Location = new System.Drawing.Point(401, 23);
-            this.comboBox_loc.Name = "comboBox_loc";
-            this.comboBox_loc.Size = new System.Drawing.Size(121, 21);
-            this.comboBox_loc.TabIndex = 34;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.label11.Location = new System.Drawing.Point(341, 22);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 27);
-            this.label11.TabIndex = 33;
-            this.label11.Text = "Lọc";
-            // 
             // MatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -610,9 +611,9 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.e_ten)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.e_loai)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.e_remain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.e_loai)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.e_ten)).EndInit();
             this.ResumeLayout(false);
 
         }

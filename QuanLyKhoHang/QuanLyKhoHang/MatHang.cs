@@ -175,5 +175,94 @@ namespace QuanLyKhoHang
                 clear();
             }
             }
+
+    private bool IsNullsearch()
+        {
+            if (textbox_search.Text == "")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        private void but_search_Click(object sender, EventArgs e)
+        {
+            string search;
+            if (IsNullsearch())
+            {
+                LoadMatHang();
+            }
+            else
+            {
+                while (true)
+                {
+                    if (comboBox_loc.Text == "")
+                    {
+                        string or = " OR ";
+                        if (funcShare.isNumber(textbox_search.Text))
+                        {
+                            
+                            string id = "mat_hang.id= " + textbox_search.Text;
+                            string loai_hang_id = "loai_hang.id= " + textbox_search.Text;
+                            string remain = "remain= " + textbox_search.Text;
+                            search = query + " where "+id +or+loai_hang_id+or+remain;
+
+                        }
+                        else
+                        {
+                            string mat_hang_ten="( mat_hang.ten LIKE N'%" + textbox_search.Text + "%') ";
+                            string loai_hang_ten = "( loai_hang.ten LIKE N'%" + textbox_search.Text + "%') ";
+                            search = query + " where " + mat_hang_ten + or + loai_hang_ten;
+
+                        }
+                        db.pushGridview(search, gridView);
+                        break;
+                    }             
+                    if (comboBox_loc.Text == "Tồn kho" && funcShare.isNumber(textbox_search.Text))
+                    {
+                        search = query + " where remain=" + textbox_search.Text;
+
+                        db.pushGridview(search, gridView);
+                        
+                      
+
+                        break;
+                    }    
+                    if (comboBox_loc.Text == "Loại hàng")
+                    {
+                        if (funcShare.isNumber(textbox_search.Text))
+                        {
+                            search = query + " where loai_hang.id=" + textbox_search.Text;
+
+                        }
+                        else
+                        {
+                            search = query + " where loai_hang.ten LIKE N'%" + textbox_search.Text + "%';";
+
+                        }
+                        db.pushGridview(search, gridView);
+                        break;
+                    }  
+                    if (comboBox_loc.Text == "Mặt hàng")
+                    {
+                        if (funcShare.isNumber(textbox_search.Text))
+                        {
+                            search = query +" where mat_hang.id="+ textbox_search.Text;
+
+                        }
+                        else
+                        {
+                            search = query+" where mat_hang.ten LIKE N'%" + textbox_search.Text + "%';";
+
+                        }
+                        db.pushGridview(search, gridView);
+                        break;
+                    }   //v
+                    break;
+                }
+            }
+        }
     }
 }
