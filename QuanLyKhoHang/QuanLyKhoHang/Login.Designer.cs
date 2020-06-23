@@ -28,240 +28,200 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxUName = new System.Windows.Forms.TextBox();
-            this.textBoxPass = new System.Windows.Forms.TextBox();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.but_resize = new System.Windows.Forms.Button();
-            this.but_exit = new System.Windows.Forms.Button();
+            this.tbMK = new System.Windows.Forms.TextBox();
+            this.pnMK = new System.Windows.Forms.Panel();
+            this.tbTDN = new System.Windows.Forms.TextBox();
+            this.pnTDN = new System.Windows.Forms.Panel();
+            this.btnDangNhap = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.picMK = new System.Windows.Forms.PictureBox();
+            this.picTDN = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMK)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTDN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBoxUName
+            // tbMK
             // 
-            this.textBoxUName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBoxUName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.textBoxUName.Location = new System.Drawing.Point(65, 29);
-            this.textBoxUName.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxUName.Multiline = true;
-            this.textBoxUName.Name = "textBoxUName";
-            this.textBoxUName.Size = new System.Drawing.Size(324, 42);
-            this.textBoxUName.TabIndex = 1;
+            this.tbMK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tbMK.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbMK.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMK.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbMK.Location = new System.Drawing.Point(88, 261);
+            this.tbMK.Name = "tbMK";
+            this.tbMK.Size = new System.Drawing.Size(193, 19);
+            this.tbMK.TabIndex = 45;
+            this.tbMK.Text = "Mật khẩu";
+            this.tbMK.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tbMK_MouseClick);
             // 
-            // textBoxPass
+            // pnMK
             // 
-            this.textBoxPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBoxPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.textBoxPass.Location = new System.Drawing.Point(65, 110);
-            this.textBoxPass.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxPass.Multiline = true;
-            this.textBoxPass.Name = "textBoxPass";
-            this.textBoxPass.PasswordChar = '●';
-            this.textBoxPass.Size = new System.Drawing.Size(324, 41);
-            this.textBoxPass.TabIndex = 3;
+            this.pnMK.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pnMK.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.pnMK.Location = new System.Drawing.Point(51, 283);
+            this.pnMK.Name = "pnMK";
+            this.pnMK.Size = new System.Drawing.Size(230, 1);
+            this.pnMK.TabIndex = 44;
             // 
-            // btnClear
+            // tbTDN
             // 
-            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.btnClear.FlatAppearance.BorderSize = 0;
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(65, 210);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(293, 45);
-            this.btnClear.TabIndex = 4;
-            this.btnClear.Text = "CLEAR";
-            this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.tbTDN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.tbTDN.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbTDN.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTDN.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbTDN.Location = new System.Drawing.Point(88, 210);
+            this.tbTDN.Name = "tbTDN";
+            this.tbTDN.Size = new System.Drawing.Size(179, 19);
+            this.tbTDN.TabIndex = 43;
+            this.tbTDN.Text = "Tên đăng nhập";
+            this.tbTDN.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tbTDN_MouseClick);
             // 
-            // btnLogin
+            // pnTDN
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(65, 161);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(293, 45);
-            this.btnLogin.TabIndex = 5;
-            this.btnLogin.Text = "LOGIN";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.pnTDN.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pnTDN.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.pnTDN.Location = new System.Drawing.Point(51, 235);
+            this.pnTDN.Name = "pnTDN";
+            this.pnTDN.Size = new System.Drawing.Size(230, 1);
+            this.pnTDN.TabIndex = 40;
             // 
-            // label3
+            // btnDangNhap
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(87, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(237, 39);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "ADMIN LOGIN";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(92)))), ((int)(((byte)(89)))));
-            this.label4.Location = new System.Drawing.Point(62, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 18);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "User Name";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(92)))), ((int)(((byte)(89)))));
-            this.label1.Location = new System.Drawing.Point(62, 90);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 18);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Password";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.user__1_;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(17, 30);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.pass;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 110);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
-            // but_resize
-            // 
-            this.but_resize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.but_resize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_resize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_resize.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.but_resize.FlatAppearance.BorderSize = 0;
-            this.but_resize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.but_resize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.but_resize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_resize.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_resize.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.but_resize.Location = new System.Drawing.Point(372, 0);
-            this.but_resize.Name = "but_resize";
-            this.but_resize.Size = new System.Drawing.Size(30, 30);
-            this.but_resize.TabIndex = 1;
-            this.but_resize.Text = "−";
-            this.but_resize.UseVisualStyleBackColor = false;
-            this.but_resize.Click += new System.EventHandler(this.but_border);
-            // 
-            // but_exit
-            // 
-            this.but_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.but_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_exit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.but_exit.FlatAppearance.BorderSize = 0;
-            this.but_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            this.but_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            this.but_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_exit.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.but_exit.Location = new System.Drawing.Point(402, 0);
-            this.but_exit.Name = "but_exit";
-            this.but_exit.Size = new System.Drawing.Size(30, 30);
-            this.but_exit.TabIndex = 3;
-            this.but_exit.Text = "X";
-            this.but_exit.UseVisualStyleBackColor = false;
-            this.but_exit.Click += new System.EventHandler(this.but_border);
+            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.btnDangNhap.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnDangNhap.FlatAppearance.BorderSize = 0;
+            this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangNhap.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnDangNhap.Location = new System.Drawing.Point(51, 317);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(230, 30);
+            this.btnDangNhap.TabIndex = 39;
+            this.btnDangNhap.Text = "Đăng nhập";
+            this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            this.panel1.Controls.Add(this.but_resize);
-            this.panel1.Controls.Add(this.but_exit);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.btnMinimize);
+            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(432, 63);
-            this.panel1.TabIndex = 12;
+            this.panel1.Size = new System.Drawing.Size(333, 45);
+            this.panel1.TabIndex = 38;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
-            // panel2
+            // btnMinimize
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.btnLogin);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.btnClear);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBoxUName);
-            this.panel2.Controls.Add(this.textBoxPass);
-            this.panel2.Location = new System.Drawing.Point(1, 64);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(430, 271);
-            this.panel2.TabIndex = 13;
+            this.btnMinimize.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.minimize2;
+            this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.btnMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Location = new System.Drawing.Point(264, 3);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(30, 30);
+            this.btnMinimize.TabIndex = 19;
+            this.btnMinimize.UseVisualStyleBackColor = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnExit.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.close;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(300, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(30, 30);
+            this.btnExit.TabIndex = 20;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // picMK
+            // 
+            this.picMK.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.password;
+            this.picMK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picMK.Location = new System.Drawing.Point(54, 252);
+            this.picMK.Name = "picMK";
+            this.picMK.Size = new System.Drawing.Size(28, 28);
+            this.picMK.TabIndex = 46;
+            this.picMK.TabStop = false;
+            // 
+            // picTDN
+            // 
+            this.picTDN.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.tdn;
+            this.picTDN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picTDN.Location = new System.Drawing.Point(54, 204);
+            this.picTDN.Name = "picTDN";
+            this.picTDN.Size = new System.Drawing.Size(28, 28);
+            this.picTDN.TabIndex = 42;
+            this.picTDN.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::QuanLyKhoHang.Properties.Resources.nha_kho_login;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(121, 88);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(91, 86);
+            this.pictureBox1.TabIndex = 41;
+            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(85)))), ((int)(((byte)(124)))));
-            this.ClientSize = new System.Drawing.Size(433, 336);
-            this.Controls.Add(this.panel2);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.ClientSize = new System.Drawing.Size(333, 377);
+            this.Controls.Add(this.picMK);
+            this.Controls.Add(this.tbMK);
+            this.Controls.Add(this.pnMK);
+            this.Controls.Add(this.tbTDN);
+            this.Controls.Add(this.picTDN);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pnTDN);
+            this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.Activated += new System.EventHandler(this.Login_Activated);
-            this.Load += new System.EventHandler(this.Login_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMK)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTDN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBoxUName;
-        private System.Windows.Forms.TextBox textBoxPass;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button but_resize;
-        private System.Windows.Forms.Button but_exit;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
+
+        private System.Windows.Forms.PictureBox picMK;
+        private System.Windows.Forms.TextBox tbMK;
+        private System.Windows.Forms.Panel pnMK;
+        private System.Windows.Forms.TextBox tbTDN;
+        private System.Windows.Forms.PictureBox picTDN;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel pnTDN;
+        private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnMinimize;
+        private System.Windows.Forms.Button btnExit;
     }
 }

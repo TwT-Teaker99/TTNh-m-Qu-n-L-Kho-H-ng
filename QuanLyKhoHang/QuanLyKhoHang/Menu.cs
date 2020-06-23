@@ -121,7 +121,11 @@ namespace QuanLyKhoHang
 
         private void Menu_Load(object sender, EventArgs e)
         {
-
+            if (Login.user == "member")
+            {
+                but_thong_ke.Enabled = false;
+                but_nhan_vien.Enabled = false;
+            }
         }
 
         private void but_expand(object sender, EventArgs e)

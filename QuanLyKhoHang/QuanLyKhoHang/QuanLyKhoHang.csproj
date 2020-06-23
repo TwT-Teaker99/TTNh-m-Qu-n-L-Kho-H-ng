@@ -296,5 +296,15 @@
   <ItemGroup>
     <None Include="Resources\tiger2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\close.jpg" />
+    <Content Include="Resources\minimize.png" />
+    <Content Include="Resources\minimize2.png" />
+    <Content Include="Resources\nha_kho_login.jpg" />
+    <Content Include="Resources\password - 2.jpg" />
+    <Content Include="Resources\password.jpg" />
+    <Content Include="Resources\tdn - 2.jpg" />
+    <Content Include="Resources\tdn.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

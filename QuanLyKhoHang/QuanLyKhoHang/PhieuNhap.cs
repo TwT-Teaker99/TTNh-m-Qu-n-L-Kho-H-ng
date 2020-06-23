@@ -30,7 +30,7 @@ namespace QuanLyKhoHang
         public PhieuNhap()
         {
             InitializeComponent();
-            int sever = 1;
+            int sever = 3;
             database.pickSever(sever);
             funcShare = new functionShare(sever);
             createDataTable(out dt);

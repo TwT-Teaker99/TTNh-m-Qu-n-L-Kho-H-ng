@@ -24,7 +24,7 @@ namespace QuanLyKhoHang
         public QuayHang()
         {
             InitializeComponent();
-            funcShare = new functionShare(1);
+            funcShare = new functionShare(3);
         }
         private bool isNumber(string pValue)
         {

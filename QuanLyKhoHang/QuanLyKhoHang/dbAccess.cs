@@ -11,12 +11,13 @@ namespace QuanLyKhoHang
 {
     class dbAccess
     {
-        public static string strConn = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QuanLyKhoHang;Integrated Security=True";              
+        public static string strConn = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QuanLyKhoHang;Integrated Security=True";
         private static string connVu =
            "Data Source = DESKTOP-VES4POV\\MSSQLSERVER03;Database =QuanLyKhoHang; Integrated Security=SSPI;";
+        private static string connDung = @"Data Source=DUNG-PC\SQLEXPRESS;Initial Catalog=QuanLyKhoHang;Integrated Security=True";
+        public static string strDat = @"Data Source=DESKTOP-H3E9OCI\SQLEXPRESS;Initial Catalog = QuanLyKhoHang; Integrated Security = True";
 
-
-        public static SqlConnection connection = new SqlConnection(strConn);
+        public static SqlConnection connection = new SqlConnection(connDung);
 
 
         private static SqlDataAdapter adapter;
@@ -24,13 +25,21 @@ namespace QuanLyKhoHang
 
         public void pickSever(int choice)
         {
-            if (choice ==1)
+            if (choice == 1)
             {
-                connection= new SqlConnection(connVu);
+                connection = new SqlConnection(connVu);
             }
-            if (choice==2)
+            if (choice == 2)
             {
                 connection = new SqlConnection(strConn);
+            }
+            if (choice == 3)
+            {
+                connection = new SqlConnection(connDung);
+            }
+            if (choice == 4)
+            {
+                connection = new SqlConnection(strDat);
             }
         }//chọn sever cho khớp từng máy riêng
 
@@ -42,7 +51,7 @@ namespace QuanLyKhoHang
             {
                 if (connection.State != ConnectionState.Open)
                 {
-                    connection.ConnectionString = strConn;
+                    connection.ConnectionString = connDung;
                     connection.Open();
                 }
             }
@@ -88,8 +97,26 @@ namespace QuanLyKhoHang
             finally { connection.Close(); }
         }
 
+        public static void pushDataSet(SqlCommand cmd, DataSet set)
+        {
+            try
+            {
+                //connection.Open();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Connection = connection;
+                adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(set);
+
+                //adapter.Dispose();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message.ToString());
+            }
+            finally { connection.Close(); }
+        }
         //đổ dữ liệu vào dataCollection để dùng suggest combobox
-        public static void FillColl(AutoCompleteStringCollection dataColl,string query)
+        public static void FillColl(AutoCompleteStringCollection dataColl, string query)
         {
             try
             {
@@ -110,7 +137,7 @@ namespace QuanLyKhoHang
                 throw e;
             }
             finally { connection.Close(); }
-            
+
         }
         // lấy dữ liệu trong 1 cell của table
         public static string GetFieldValues(string query)
@@ -151,23 +178,41 @@ namespace QuanLyKhoHang
             finally { connection.Close(); }
         }
 
-
-        public void pushGridview(string query, DataGridView gridview)//đẩy dữ liệu vào gridview 
+        public static void PushGridView(SqlCommand sqlCommand, DataGridView grid)
         {
-            
             try
             {
                 //connection.Open();
-              
+                sqlCommand.Connection = connection;
+                sqlCommand.CommandType = CommandType.Text;
+                DataTable data = new DataTable();
+                adapter = new SqlDataAdapter(sqlCommand);
+                adapter.Fill(data);
+                grid.DataSource = data;
+                //adapter.Dispose();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { connection.Close(); }
+        }
+        public void pushGridview(string query, DataGridView gridview)//đẩy dữ liệu vào gridview 
+        {
+
+            try
+            {
+                //connection.Open();
+
                 DataTable data = new DataTable();
                 adapter = new SqlDataAdapter(query, connection);
                 adapter.Fill(data);
                 gridview.DataSource = data;
-               
+
             }
-            catch (Exception)
+            catch (Exception err)
             {
-                throw;
+                MessageBox.Show(err.Message.ToString(), "ERROR", MessageBoxButtons.OK);
             }
             finally
             {
@@ -175,7 +220,7 @@ namespace QuanLyKhoHang
 
             }
         }
-     
+
         public void pushDataTable(SqlCommand dbCommand, DataTable data)//đẩy dữ liệu vào dataTable
         {
 
@@ -257,7 +302,7 @@ namespace QuanLyKhoHang
                 {
                     dataColl.Add(row[0].ToString());
                 }
-              
+
             }
             catch (Exception)
             {
@@ -265,7 +310,7 @@ namespace QuanLyKhoHang
                 throw;
             }
             finally { connection.Close(); }
-           
+
         }
 
 

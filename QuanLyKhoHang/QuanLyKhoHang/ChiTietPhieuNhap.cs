@@ -29,8 +29,8 @@ namespace QuanLyKhoHang
             textbox_soluong.Text = so_luong;
             textbox_donvi.Text = don_vi;
             textbox_cost.Text = don_gia;
-           funcShare = new functionShare(1);
-            database.pickSever(1);
+           funcShare = new functionShare(3);
+            database.pickSever(3);
             string query = "SELECT ten FROM mat_hang WHERE id=" + item_id;
             cmd = new SqlCommand(query);
            DataTable dataTable = new DataTable();

@@ -17,8 +17,8 @@ namespace QuanLyKhoHang
         public ThongBao()
         {
             InitializeComponent();
-            database.pickSever(1);
-            funcShare = new functionShare(1);
+            database.pickSever(3);
+            funcShare = new functionShare(3);
         }
 
         private void gridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
