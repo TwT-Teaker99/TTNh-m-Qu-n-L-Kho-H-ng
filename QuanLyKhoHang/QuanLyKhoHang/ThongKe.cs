@@ -81,29 +81,30 @@ namespace QuanLyKhoHang
             labelTongChiPhi.Text = dbAccess.GetFieldValues("select sum(so_luong*don_gia) from chi_tiet_phieu_nhap");
             dbAccess.FillCombo("select distinct(DATEPART(year, ngay_nhap)) as t from phieu_nhap", comboBoxQuy, "t", "t");
             dbAccess.FillCombo("select distinct(DATEPART(year, ngay_nhap)) as t from phieu_nhap", comboBoxPhieu, "t", "t");
-            DataSet dataSet1 = new DataSet();
-            SqlCommand commandQuy = new SqlCommand("ChiPhiNhapTheoQuy");
-            //MessageBox.Show(comboBoxQuy.Text);
-            commandQuy.Parameters.AddWithValue("@nam", comboBoxQuy.Text);
-            dbAccess.pushDataSet(commandQuy, dataSet1);
-            chart_doughnut.DataSource = dataSet1;
-            chart_doughnut.Series["s1"].XValueMember = "Quy";
-            chart_doughnut.Series["s1"].YValueMembers = "tongtien";
+            //DataSet dataSet1 = new DataSet();
+            //SqlCommand commandQuy = new SqlCommand("ChiPhiNhapTheoQuy");
+            ////MessageBox.Show(comboBoxQuy.Text);
+            //commandQuy.Parameters.AddWithValue("@nam", comboBoxQuy.Text);
+            //dbAccess.pushDataSet(commandQuy, dataSet1);
+            //chart_doughnut.DataSource = dataSet1;
+            //chart_doughnut.Series["s1"].XValueMember = "Quy";
+            //chart_doughnut.Series["s1"].YValueMembers = "tongtien";
 
-            DataSet dataSet2 = new DataSet();
-            SqlCommand commandPhieu = new SqlCommand("ThongKePhieuTheoThang");
-            //MessageBox.Show(comboBoxQuy.Text);
-            commandPhieu.Parameters.AddWithValue("@nam", comboBoxPhieu.Text);
-            dbAccess.pushDataSet(commandPhieu, dataSet2);
-            chart_column.DataSource = dataSet2;
-            chart_column.Series["Số lượng phiếu nhập"].XValueMember = "Thang";
-            chart_column.Series["Số lượng phiếu nhập"].YValueMembers = "nhap";
-            chart_column.Series["Số lượng phiếu xuất"].XValueMember = "Thang";
-            chart_column.Series["Số lượng phiếu xuất"].YValueMembers = "xuat";
+            //DataSet dataSet2 = new DataSet();
+            //SqlCommand commandPhieu = new SqlCommand("ThongKePhieuTheoThang");
+            ////MessageBox.Show(comboBoxQuy.Text);
+            //commandPhieu.Parameters.AddWithValue("@nam", "2020");
+            //dbAccess.pushDataSet(commandPhieu, dataSet2);
+            //chart_column.DataSource = dataSet2;
+            //chart_column.Series["Số lượng phiếu nhập"].XValueMember = "Thang";
+            //chart_column.Series["Số lượng phiếu nhập"].YValueMembers = "nhap";
+            //chart_column.Series["Số lượng phiếu xuất"].XValueMember = "Thang";
+            //chart_column.Series["Số lượng phiếu xuất"].YValueMembers = "xuat";
         }
 
         private void comboBoxQuy_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //MessageBox.Show(comboBoxQuy.Text);
             DataSet dataSet1 = new DataSet();
             SqlCommand commandQuy = new SqlCommand("ChiPhiNhapTheoQuy");
             //MessageBox.Show(comboBoxQuy.Text);
@@ -116,6 +117,7 @@ namespace QuanLyKhoHang
 
         private void comboBoxPhieu_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
             DataSet dataSet2 = new DataSet();
             SqlCommand commandPhieu = new SqlCommand("ThongKePhieuTheoThang");
             //MessageBox.Show(comboBoxQuy.Text);
@@ -127,5 +129,7 @@ namespace QuanLyKhoHang
             chart_column.Series["Số lượng phiếu xuất"].XValueMember = "Thang";
             chart_column.Series["Số lượng phiếu xuất"].YValueMembers = "xuat";
         }
+
+      
     }
 }
