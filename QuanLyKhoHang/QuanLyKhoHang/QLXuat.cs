@@ -23,7 +23,7 @@ namespace QuanLyKhoHang
         public QLXuat()
         {
             InitializeComponent();
-            funcShare = new functionShare(3);
+            funcShare = new functionShare(1);
         }
 
         private void cbBox_Suggest(ComboBox cb, string s)

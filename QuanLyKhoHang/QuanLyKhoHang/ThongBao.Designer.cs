@@ -31,7 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.label1 = new System.Windows.Forms.Label();
             this.WELCOME = new System.Windows.Forms.Label();
             this.gridView = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,25 +41,10 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox_loc = new System.Windows.Forms.ComboBox();
-            this.textbox_search = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.but_search = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(623, 498);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 13);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "click đúp vào row mặt hàng bạn muốn nhập hàng ";
             // 
             // WELCOME
             // 
@@ -117,7 +101,7 @@
             this.gridView.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.gridView.RowTemplate.Height = 40;
             this.gridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridView.Size = new System.Drawing.Size(751, 368);
+            this.gridView.Size = new System.Drawing.Size(751, 458);
             this.gridView.TabIndex = 39;
             this.gridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridView_CellDoubleClick);
             // 
@@ -176,96 +160,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.comboBox_loc);
-            this.panel1.Controls.Add(this.textbox_search);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.but_search);
             this.panel1.Controls.Add(this.panel14);
             this.panel1.Controls.Add(this.gridView);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.WELCOME);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(898, 564);
             this.panel1.TabIndex = 40;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.panel3.Location = new System.Drawing.Point(550, 473);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(2, 100);
-            this.panel3.TabIndex = 51;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(101)))));
-            this.panel2.Location = new System.Drawing.Point(0, 473);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(550, 2);
-            this.panel2.TabIndex = 50;
-            // 
-            // comboBox_loc
-            // 
-            this.comboBox_loc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_loc.FormattingEnabled = true;
-            this.comboBox_loc.Items.AddRange(new object[] {
-            "Mã đơn hàng",
-            "Mã nhà cung cấp",
-            "Ngày nhập",
-            "Mã nhân viên",
-            "Tên mặt hàng",
-            "Mã mặt hàng"});
-            this.comboBox_loc.Location = new System.Drawing.Point(371, 503);
-            this.comboBox_loc.Name = "comboBox_loc";
-            this.comboBox_loc.Size = new System.Drawing.Size(121, 21);
-            this.comboBox_loc.TabIndex = 53;
-            // 
-            // textbox_search
-            // 
-            this.textbox_search.BackColor = System.Drawing.Color.White;
-            this.textbox_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_search.ForeColor = System.Drawing.Color.Silver;
-            this.textbox_search.Location = new System.Drawing.Point(47, 498);
-            this.textbox_search.Multiline = true;
-            this.textbox_search.Name = "textbox_search";
-            this.textbox_search.Size = new System.Drawing.Size(200, 38);
-            this.textbox_search.TabIndex = 51;
-            this.textbox_search.Text = "Tìm kiếm";
-            this.textbox_search.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.label11.Location = new System.Drawing.Point(311, 502);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 27);
-            this.label11.TabIndex = 52;
-            this.label11.Text = "Lọc";
-            // 
-            // but_search
-            // 
-            this.but_search.BackColor = System.Drawing.Color.White;
-            this.but_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.but_search.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but_search.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            this.but_search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(218)))), ((int)(((byte)(218)))));
-            this.but_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            this.but_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.but_search.Font = new System.Drawing.Font("Courier New", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.but_search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(106)))), ((int)(((byte)(155)))));
-            this.but_search.Image = global::QuanLyKhoHang.Properties.Resources.search;
-            this.but_search.Location = new System.Drawing.Point(253, 498);
-            this.but_search.Name = "but_search";
-            this.but_search.Size = new System.Drawing.Size(45, 38);
-            this.but_search.TabIndex = 50;
-            this.but_search.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.but_search.UseVisualStyleBackColor = false;
             // 
             // panel14
             // 
@@ -293,15 +194,10 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label WELCOME;
         private System.Windows.Forms.DataGridView gridView;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.ComboBox comboBox_loc;
-        private System.Windows.Forms.TextBox textbox_search;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button but_search;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn sdt;
         private System.Windows.Forms.DataGridViewTextBoxColumn quan;
@@ -309,7 +205,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
     }
 }

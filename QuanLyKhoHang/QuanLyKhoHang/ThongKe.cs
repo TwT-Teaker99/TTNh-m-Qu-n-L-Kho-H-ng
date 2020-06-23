@@ -19,8 +19,8 @@ namespace QuanLyKhoHang
 
             demoChartDoughnut();
             demoChartColumn();
-            db.pickSever(3);
-            functionShare share = new functionShare(3);
+            db.pickSever(1);
+            functionShare share = new functionShare(1);
 
 
         }

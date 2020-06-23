@@ -20,7 +20,7 @@ namespace QuanLyKhoHang
         public NhanVien()
         {
             InitializeComponent();
-            int sever = 3;
+            int sever = 1;
             database.pickSever(sever);
             funcShare = new functionShare(sever);
         }
@@ -193,7 +193,7 @@ namespace QuanLyKhoHang
 
         private void NhanVien_Load(object sender, EventArgs e)
         {
-            int sever = 3;
+            int sever = 1;
             database.pickSever(sever);
             funcShare = new functionShare(sever);
             //dbAccess.connection.Open();

@@ -35,7 +35,7 @@ namespace QuanLyKhoHang
         public NhaCungCap()
         {
             InitializeComponent();
-            int sever = 3;
+            int sever = 1;
             database.pickSever(sever);
             funcShare = new functionShare(sever);
         }

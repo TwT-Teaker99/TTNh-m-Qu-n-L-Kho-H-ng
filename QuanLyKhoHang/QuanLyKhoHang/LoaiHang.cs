@@ -21,7 +21,7 @@ namespace QuanLyKhoHang
         public LoaiHang()
         {
             InitializeComponent();
-            funcShare = new functionShare(0);
+            funcShare = new functionShare(1);
         }
 
         private void LoaiHang_Load(object sender, EventArgs e)
