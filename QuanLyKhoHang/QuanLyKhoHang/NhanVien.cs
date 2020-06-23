@@ -152,7 +152,7 @@ namespace QuanLyKhoHang
             sqlCommand.Parameters.AddWithValue("@ten", textbox_ten.Text);
             sqlCommand.Parameters.AddWithValue("@tuoi", textbox_tuoi.Text);
             sqlCommand.Parameters.AddWithValue("@sex", iTemp);
-            sqlCommand.Parameters.AddWithValue("@dia_chi", iTemp);
+            sqlCommand.Parameters.AddWithValue("@dia_chi", textbox_dc.Text);
             sqlCommand.Parameters.AddWithValue("@luong", textbox_luong.Text);
             sqlCommand.Parameters.AddWithValue("@sdt", textbox_sdt.Text);
             sqlCommand.Connection = dbAccess.connection;
