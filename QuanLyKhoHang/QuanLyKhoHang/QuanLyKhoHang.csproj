@@ -54,6 +54,12 @@
       <DependentUpon>ChiTietPhieuNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="dbAccess.cs" />
+    <Compile Include="FormChooseDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChooseDB.Designer.cs">
+      <DependentUpon>FormChooseDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="functionShare.cs" />
     <Compile Include="LoaiHang.cs">
       <SubType>Form</SubType>
@@ -125,6 +131,9 @@
     </Compile>
     <EmbeddedResource Include="ChiTietPhieuNhap.resx">
       <DependentUpon>ChiTietPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChooseDB.resx">
+      <DependentUpon>FormChooseDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoaiHang.resx">
       <DependentUpon>LoaiHang.cs</DependentUpon>

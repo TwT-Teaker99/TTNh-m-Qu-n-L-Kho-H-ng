@@ -15,7 +15,7 @@ namespace QuanLyKhoHang
     {
         public string phieu_nhap_id,item_id,so_luong, don_gia,don_vi;
         SqlCommand cmd;
-        functionShare funcShare;
+        functionShare funcShare = new functionShare();
         dbAccess database = new dbAccess();
         public ChiTietPhieuNhap(string phieu_nhap_id,string item_id,string so_luong,string don_gia,string don_vi)
         {
@@ -29,8 +29,8 @@ namespace QuanLyKhoHang
             textbox_soluong.Text = so_luong;
             textbox_donvi.Text = don_vi;
             textbox_cost.Text = don_gia;
-           funcShare = new functionShare(3);
-            database.pickSever(3);
+          // funcShare = new functionShare();
+           // database.pickSever();
             string query = "SELECT ten FROM mat_hang WHERE id=" + item_id;
             cmd = new SqlCommand(query);
            DataTable dataTable = new DataTable();

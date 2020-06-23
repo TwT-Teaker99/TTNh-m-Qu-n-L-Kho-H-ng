@@ -17,7 +17,7 @@ namespace QuanLyKhoHang
         private static string connDung = @"Data Source=DUNG-PC\SQLEXPRESS;Initial Catalog=QuanLyKhoHang;Integrated Security=True";
         public static string strDat = @"Data Source=DESKTOP-H3E9OCI\SQLEXPRESS;Initial Catalog = QuanLyKhoHang; Integrated Security = True";
 
-        public static SqlConnection connection = new SqlConnection(connDung);
+        public static SqlConnection connection = new SqlConnection(FormChooseDB.str);
 
 
         private static SqlDataAdapter adapter;
@@ -27,19 +27,19 @@ namespace QuanLyKhoHang
         {
             if (choice == 1)
             {
-                connection = new SqlConnection(connVu);
+                connection = new SqlConnection(FormChooseDB.str);
             }
             if (choice == 2)
             {
-                connection = new SqlConnection(strConn);
+                connection = new SqlConnection(FormChooseDB.str);
             }
             if (choice == 3)
             {
-                connection = new SqlConnection(connDung);
+                connection = new SqlConnection(FormChooseDB.str);
             }
             if (choice == 4)
             {
-                connection = new SqlConnection(strDat);
+                connection = new SqlConnection(FormChooseDB.str);
             }
         }//chọn sever cho khớp từng máy riêng
 
@@ -51,7 +51,7 @@ namespace QuanLyKhoHang
             {
                 if (connection.State != ConnectionState.Open)
                 {
-                    connection.ConnectionString = connDung;
+                    connection.ConnectionString = FormChooseDB.str;
                     connection.Open();
                 }
             }

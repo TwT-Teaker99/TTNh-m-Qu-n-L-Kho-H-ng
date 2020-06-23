@@ -145,7 +145,7 @@ namespace QuanLyKhoHang
         {
             //  funcShare.loadGridView("phieu_nhap,nha_cung_cap,nhan_vien where ncc_id=nha_cung_cap.id and nhan_vien_id=nhan_vien.id"
             //   , "phieu_nhap.id,nha_cung_cap.ten,ngay_nhap,nhan_vien.ten", gridView);
-            funcShare.loadGridView("PHIEUNHAP", gridView);
+            funcShare.loadGridView("phieu_nhap", gridView);
         }
         private void resetError()
         {

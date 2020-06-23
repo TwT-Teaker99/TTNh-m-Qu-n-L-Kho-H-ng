@@ -29,8 +29,8 @@ namespace QuanLyKhoHang
         public MatHang()
         {
             InitializeComponent();
-            db.pickSever(1);
-            funcShare = new functionShare(1);
+          //  db.pickSever(1);
+            funcShare = new functionShare();
         }
         private void clear()
         {

@@ -22,6 +22,10 @@ namespace QuanLyKhoHang
         {
             database.pickSever(sever);
         }
+        public functionShare()
+        {
+            
+        }
         public void autoID(Label primaryKey,string name_table)
         {
             query = "SELECT MAX(id) AS MAX FROM "+name_table;
