@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -205,14 +206,20 @@ namespace QuanLyKhoHang
         {
             if (e.RowIndex != -1)//not header           
             {
-
-                label_id.Text = this.gridView.CurrentRow.Cells[0].Value.ToString();
-                textbox_ten.Text = this.gridView.CurrentRow.Cells[1].Value.ToString();
-                textbox_tuoi.Text = this.gridView.CurrentRow.Cells[2].Value.ToString();
-                cbGioiTinh.Text = this.gridView.CurrentRow.Cells[3].Value.ToString();
-                textbox_dc.Text = this.gridView.CurrentRow.Cells[4].Value.ToString();
-                textbox_luong.Text = this.gridView.CurrentRow.Cells[5].Value.ToString();
-                textbox_sdt.Text = this.gridView.CurrentRow.Cells[6].Value.ToString();
+                try
+                {
+                    label_id.Text = this.gridView.CurrentRow.Cells[0].Value.ToString();
+                    textbox_ten.Text = this.gridView.CurrentRow.Cells[1].Value.ToString();
+                    textbox_tuoi.Text = this.gridView.CurrentRow.Cells[2].Value.ToString();
+                    cbGioiTinh.Text = this.gridView.CurrentRow.Cells[3].Value.ToString();
+                    textbox_dc.Text = this.gridView.CurrentRow.Cells[4].Value.ToString();
+                    textbox_luong.Text = this.gridView.CurrentRow.Cells[5].Value.ToString();
+                    textbox_sdt.Text = this.gridView.CurrentRow.Cells[6].Value.ToString();
+                }
+                catch (Exception err)
+                {
+                    MessageBox.Show(err.Message.ToString(), "ERROR", MessageBoxButtons.OK);
+                }
             }
         }
     }

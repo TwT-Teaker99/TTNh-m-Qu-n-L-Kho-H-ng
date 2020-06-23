@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
@@ -38,13 +38,6 @@
             this.but_search = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.gridView = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.city = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label18 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbGioiTinh = new System.Windows.Forms.ComboBox();
@@ -78,6 +71,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tennv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tuoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.luong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -181,31 +181,31 @@
             this.gridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(28)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridView.ColumnHeadersHeight = 60;
             this.gridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
-            this.ncc,
-            this.sdt,
-            this.quan,
-            this.phuong,
-            this.city,
-            this.Column1});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridView.DefaultCellStyle = dataGridViewCellStyle4;
+            this.tennv,
+            this.tuoi,
+            this.sex,
+            this.diachi,
+            this.luong,
+            this.sdt});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridView.EnableHeadersVisualStyles = false;
             this.gridView.GridColor = System.Drawing.Color.White;
             this.gridView.Location = new System.Drawing.Point(13, 41);
@@ -217,54 +217,6 @@
             this.gridView.Size = new System.Drawing.Size(598, 442);
             this.gridView.TabIndex = 34;
             this.gridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridView_CellClick);
-            // 
-            // id
-            // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "#";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            // 
-            // ncc
-            // 
-            this.ncc.DataPropertyName = "ten";
-            this.ncc.HeaderText = "Tên nhân viên";
-            this.ncc.Name = "ncc";
-            this.ncc.ReadOnly = true;
-            // 
-            // sdt
-            // 
-            this.sdt.DataPropertyName = "sdt";
-            this.sdt.HeaderText = "Tuổi";
-            this.sdt.Name = "sdt";
-            this.sdt.ReadOnly = true;
-            // 
-            // quan
-            // 
-            this.quan.DataPropertyName = "quan";
-            this.quan.HeaderText = "Giới tính";
-            this.quan.Name = "quan";
-            this.quan.ReadOnly = true;
-            // 
-            // phuong
-            // 
-            this.phuong.DataPropertyName = "phuong";
-            this.phuong.HeaderText = "Địa chỉ";
-            this.phuong.Name = "phuong";
-            this.phuong.ReadOnly = true;
-            // 
-            // city
-            // 
-            this.city.DataPropertyName = "city";
-            this.city.HeaderText = "Lương";
-            this.city.Name = "city";
-            this.city.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Số điện thoại";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
             // 
             // label18
             // 
@@ -728,6 +680,55 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Giới tính";
             // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "#";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // tennv
+            // 
+            this.tennv.DataPropertyName = "ten";
+            this.tennv.HeaderText = "Tên nhân viên";
+            this.tennv.Name = "tennv";
+            this.tennv.ReadOnly = true;
+            // 
+            // tuoi
+            // 
+            this.tuoi.DataPropertyName = "tuoi";
+            this.tuoi.HeaderText = "Tuổi";
+            this.tuoi.Name = "tuoi";
+            this.tuoi.ReadOnly = true;
+            // 
+            // sex
+            // 
+            this.sex.DataPropertyName = "sex";
+            this.sex.HeaderText = "Giới tính";
+            this.sex.Name = "sex";
+            this.sex.ReadOnly = true;
+            // 
+            // diachi
+            // 
+            this.diachi.DataPropertyName = "dia_chi";
+            this.diachi.HeaderText = "Địa chỉ";
+            this.diachi.Name = "diachi";
+            this.diachi.ReadOnly = true;
+            // 
+            // luong
+            // 
+            this.luong.DataPropertyName = "luong";
+            this.luong.HeaderText = "Lương";
+            this.luong.Name = "luong";
+            this.luong.ReadOnly = true;
+            // 
+            // sdt
+            // 
+            this.sdt.DataPropertyName = "sdt";
+            this.sdt.HeaderText = "Số điện thoại";
+            this.sdt.Name = "sdt";
+            this.sdt.ReadOnly = true;
+            // 
             // NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -763,13 +764,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView gridView;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ncc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sdt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phuong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn city;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cbGioiTinh;
         private System.Windows.Forms.Button but_error_sdt;
@@ -802,5 +796,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tennv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tuoi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sex;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diachi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn luong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sdt;
     }
 }
